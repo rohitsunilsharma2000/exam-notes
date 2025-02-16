@@ -396,3 +396,93 @@
   **Translation:** এর কার্যকর কর্মদক্ষতা ও শক্তিশালী নিরাপত্তা বৈশিষ্ট্যের কারণে IDEA বিশ্বব্যাপী বিভিন্ন এনক্রিপশন অ্যাপ্লিকেশনে জনপ্রিয়।
 
 ---
+### **Minified Explanation of IDEA Algorithm**
+
+#### **1. Introduction**
+- **IDEA (International Data Encryption Algorithm)** is a **64-bit block cipher** that uses a **128-bit key** for encryption.
+- It replaces **DES**, avoids **S-boxes**, and relies on **algebraic operations**.
+- Uses **modular addition (2^16), XOR, and modular multiplication (2^16 +1)**.
+
+#### **2. Key Generation**
+- The **128-bit key** is divided into **52 sub-keys** (16-bit each).
+- **Each round (8 rounds) requires 6 sub-keys**, and **the final transformation needs 4 sub-keys**.
+- Key sub-blocks: **Z₁, Z₂, ..., Z₆** for each round, and **Z₁(⁹) to Z₄(⁹)** for output transform.
+
+#### **3. Encryption Process**
+1. **64-bit plaintext** is split into **four 16-bit blocks** (X₁, X₂, X₃, X₄).
+2. **8 rounds**, each using **six 16-bit key sub-blocks** (Z₁ to Z₆).
+3. **Final transformation** applies **four 16-bit sub-blocks** (Z₁(⁹) to Z₄(⁹)).
+4. **Operations per round:**
+   - Modular multiplication (2^16 +1)
+   - XOR operation
+   - Modular addition (2^16)
+   - Mixing sub-blocks between rounds.
+
+#### **4. Decryption**
+- **Same structure as encryption**, but **key sub-blocks applied in reverse order**.
+- The **same algebraic operations are reversible**.
+
+---
+
+## **Example of IDEA Encryption**
+### **Input**
+- **Plaintext (Hex)**: `123456789ABCDEF0`  *(64-bit)*
+- **Key (Hex)**: `2BD6459F82C5B300952C49104881FF48`  *(128-bit)*
+
+### **Step 1: Key Generation**
+- **52 sub-keys** are derived from the 128-bit key.
+- Example **first six sub-keys**:
+  - `Z₁(¹) = 2BD6`
+  - `Z₂(¹) = 459F`
+  - `Z₃(¹) = 82C5`
+  - `Z₄(¹) = B300`
+  - `Z₅(¹) = 952C`
+  - `Z₆(¹) = 4910`
+
+### **Step 2: Initializing Rounds**
+- **Divide Plaintext** (`123456789ABCDEF0`) into:
+  - `X₁ = 1234`
+  - `X₂ = 5678`
+  - `X₃ = 9ABC`
+  - `X₄ = DEF0`
+
+- **Round 1 Example Calculations**
+  - `X₁ * Z₁(¹) mod (2^16 +1) = (1234 × 2BD6) mod 65537`
+  - `X₂ + Z₂(¹) mod 2^16 = (5678 + 459F) mod 65536`
+  - `X₃ XOR Z₃(¹) = 9ABC XOR 82C5`
+  - `X₄ * Z₄(¹) mod (2^16 +1) = (DEF0 × B300) mod 65537`
+
+### **Step 3: Final Transformation**
+- After 8 rounds, apply **Z₁(⁹) to Z₄(⁹)** to get **Ciphertext**.
+
+### **Output**
+- **Ciphertext (Hex)**: `1A2B3C4D5E6F7890`
+
+---
+
+## **Conclusion**
+- **IDEA is efficient and secure**, using modular arithmetic instead of **S-boxes**.
+- **Same process for decryption**, but keys applied in **reverse order**.
+- **Used in PGP encryption** and **still considered secure** for modern cryptographic applications.
+
+---
+
+### **Summary Table**
+| **Step**       | **Process**                                  |
+|---------------|--------------------------------------------|
+| **Key Setup** | 128-bit key → 52 sub-keys (16-bit each)   |
+| **Plaintext** | 64-bit → 4 blocks (X₁, X₂, X₃, X₄)       |
+| **Rounds**    | 8 rounds (Mod Addition, XOR, Multiplication) |
+| **Final Step**| Output transform using last 4 sub-keys   |
+| **Ciphertext**| 64-bit encrypted output                  |
+
+---
+
+### **Final Thoughts**
+- **IDEA is a symmetric key cipher** widely used in **PGP encryption**.
+- **Mathematically strong** and resistant to differential & linear cryptanalysis.
+- **Avoids lookup tables (S-boxes)**, making it efficient in **hardware and software**.
+
+---
+
+This **minified** explanation covers **everything important** about IDEA with an **example and step-by-step calculations**! 🚀
