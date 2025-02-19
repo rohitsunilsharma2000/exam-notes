@@ -20,17 +20,17 @@
    - [Additional Topics](#additional-topics)
 
  5. [Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION](#chapter-5-internet-security-protocols-user-authentication)
-   - [Short Answer Type Questions](#short-answer-type-questions-1)
-   - [Long Answer Type Questions](#long-answer-type-questions-1)
+      - [Short Answer Type Questions](#short-answer-type-questions-1)
+      - [Long Answer Type Questions](#long-answer-type-questions-1)
 
  6. [Chapter 6: ELECTRONIC MAIL SECURITY](#chapter-6-electronic-mail-security)
-   - [Short Answer Type Questions](#short-answer-type-questions-2)
-   - [Long Answer Type Questions](#long-answer-type-questions-2)
+      - [Short Answer Type Questions](#short-answer-type-questions-2)
+      - [Long Answer Type Questions](#long-answer-type-questions-2)
 
  7. [Chapter 7: FIREWALL](#chapter-7-firewall)
-   - [MCQ](#MCQ)
-   - [FIREWALL Short Answer Type Questions](#FIREWALL-short-answer-type-questions)
-   - [FIREWALL Long Answer Type Questions](#FIREWALL-long-answer-type-questions)
+      - [MCQ](#MCQ)
+      - [FIREWALL Short Answer Type Questions](#FIREWALL-short-answer-type-questions)
+      - [FIREWALL Long Answer Type Questions](#FIREWALL-long-answer-type-questions)
 
 
 
