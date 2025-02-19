@@ -13,10 +13,15 @@
    - [Group B](#group-b-2)
    - [Group C](#group-c-2)
 4. [Chapter 4: Asymmetric Key Algorithm, Digital Signature and RSA](#chapter-4-asymmetric-key-algorithm-digital-signature-and-rsa)
-5. [Multiple Choice Questions](#multiple-choice-questions)
-6. [Short Answer Type Questions](#short-answer-type-questions)
-7. [Long Answer Type Questions](#long-answer-type-questions)
-8. [Additional Topics](#additional-topics)
+   - [Multiple Choice Questions](#multiple-choice-questions)
+   - [Short Answer Type Questions](#short-answer-type-questions)
+   - [Long Answer Type Questions](#long-answer-type-questions)
+   -  [Additional Topics](#additional-topics)
+5. [Chapter 5: Internet Security Protocols & User Authentication](#chapter-3-symmetric-key-algorithm)
+6. [Chapter 6: Electronic Mail Security](#chapter-3-symmetric-key-algorithm)
+7. [Chapter 7: Firewalls](#chapter-3-symmetric-key-algorithm)
+
+
 
 ---
 
