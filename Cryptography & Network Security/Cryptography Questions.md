@@ -647,33 +647,16 @@
 ## Short Answer Type Questions
 
 1. **Discuss different types of firewall with neat diagram.**
-
-   Firewalls can be classified into:
-   - **Packet Filtering Firewalls**: Examine packets at the network layer and block or allow based on predefined rules.
-   - **Stateful Inspection Firewalls**: Monitor the state of active connections and make decisions based on the state of traffic.
-   - **Proxy Firewalls**: Act as an intermediary between clients and servers, filtering content and ensuring secure communication.
-
 2. **What is the difference between application and network layer firewall?**
-
-   - **Application Layer Firewall**: Filters traffic at the application layer, checking data for threats like malware or malicious code.
-   - **Network Layer Firewall**: Operates at the network layer, filtering traffic based on IP addresses and port numbers.
-
 3. **What do you mean by trusted service and trusted devices in firewall configuration?**
-
-   A **trusted service** is one that is recognized as secure and is allowed to pass through the firewall. **Trusted devices** are devices within the secure network that are authorized to communicate with external services.
-
 4. **Differentiate between Packet filters and Application Gateways.**
 
-   - **Packet Filters**: Operate at the network layer and filter packets based on IP addresses and port numbers.
-   - **Application Gateways**: Operate at the application layer, filtering traffic based on the content and behavior of specific applications.
-
+   
 ## Long Answer Type Questions
 
 1. **What is a firewall? What are the different types of firewall? State the limitations of a firewall.**
 
-   A firewall is a network security system that monitors and controls incoming and outgoing network traffic. The different types include packet filtering firewalls, stateful inspection firewalls, and proxy firewalls. Limitations include their inability to protect against insider threats and encrypted attacks.
-
 2. **Write short notes on the following:**
-   - **Application Firewalls**: Firewalls that filter traffic based on application-level protocols such as HTTP, FTP, and DNS.
-   - **DMZ**: A demilitarized zone (DMZ) is a network area that sits between a trusted internal network and untrusted external networks, typically used to host publicly accessible servers.
-   - **Packet Filtering**: A type of firewall that inspects packets at the network layer and makes decisions based on predefined rules.
+   - **Application Firewalls**: 
+   - **DMZ**: 
+   - **Packet Filtering**: 
