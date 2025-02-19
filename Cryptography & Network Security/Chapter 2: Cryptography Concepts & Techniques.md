@@ -8,6 +8,27 @@ Here are easy-to-understand explanations of the topics you mentioned, along with
    - In linear cryptanalysis, you might find that for a certain key, half of the bits in the ciphertext are related to the bits in the plaintext using a linear equation.
    - In differential cryptanalysis, you may see that small changes in the plaintext result in a specific, predictable change in the ciphertext.
 
+Here are short examples to illustrate **linear cryptanalysis** and **differential cryptanalysis**:
+
+####  **Linear Cryptanalysis Example:**
+   - **Scenario:** You are trying to break a cipher by looking for a linear relationship between plaintext, ciphertext, and the key.
+   - **Example:** 
+     - **Plaintext:** `11001010`
+     - **Ciphertext:** `10101101`
+     - A linear relation is discovered where **half of the ciphertext bits** can be predicted from the plaintext bits (through XOR or a simple equation like `P1 ⊕ P2 = C1 ⊕ C2`).
+     - By analyzing these patterns, an attacker can deduce partial information about the secret key.
+
+#### **Differential Cryptanalysis Example:**
+   - **Scenario:** Differential cryptanalysis looks at how small changes in the plaintext lead to predictable changes in the ciphertext.
+   - **Example:**
+     - **Plaintext 1:** `11001010`
+     - **Plaintext 2:** `11001011` (change in 1 bit)
+     - **Ciphertext 1:** `10101101`
+     - **Ciphertext 2:** `11011010`
+     - The difference in the plaintext causes a **predictable change** in the ciphertext, allowing an attacker to discover key-related patterns by observing how these changes propagate through the encryption process.
+
+These examples show how each cryptanalysis technique exploits the relationships between plaintext, ciphertext, and key.
+
 ### 2. **How does digital envelope exploit the advantages of both symmetric and asymmetric key cryptography?**
    - A **digital envelope** uses **asymmetric encryption** to securely send a **symmetric key** over an insecure channel. 
      1. First, the sender generates a **random symmetric key**.
