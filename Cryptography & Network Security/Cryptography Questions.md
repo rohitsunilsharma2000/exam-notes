@@ -130,15 +130,7 @@
 # Chapter 2: Cryptography Concepts & Techniques
 
 ## Group A
-
-
 ## Group B
-
-
-## Group C
-# Cryptography Questions
-
-## Short Answer Type Questions
 
 1. **Distinguish between linear and differential cryptanalysis.**
 
@@ -191,7 +183,7 @@
 
 ---
 
-## Long Answer Type Questions
+## Group C
 
 1. **a) What is Algorithm mode? Describe Cipher Block Chaining (CBC) mode.**
    - **b) Explain the difference between asymmetric and symmetric key cryptographies.**
