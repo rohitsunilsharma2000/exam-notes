@@ -1,4 +1,3 @@
-Here are easy-to-understand explanations of the topics you mentioned, along with examples where needed:
 
 ### 1. **Distinguish between linear and differential cryptanalysis.**
    - **Linear Cryptanalysis:** This technique tries to find a linear relationship between the plaintext, ciphertext, and the secret key. By analyzing the output (ciphertext) and input (plaintext), cryptanalysts attempt to find patterns that can help in predicting the key.
