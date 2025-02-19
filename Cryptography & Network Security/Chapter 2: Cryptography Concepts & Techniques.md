@@ -1,33 +1,33 @@
+Here's the revised explanation with complex words followed by their Bengali meanings in brackets:
 
 ### 1. **Distinguish between linear and differential cryptanalysis.**
-   - **Linear Cryptanalysis:** This technique tries to find a linear relationship between the plaintext, ciphertext, and the secret key. By analyzing the output (ciphertext) and input (plaintext), cryptanalysts attempt to find patterns that can help in predicting the key.
-   - **Differential Cryptanalysis:** This method focuses on how differences in the input (plaintext) affect the differences in the output (ciphertext). By analyzing pairs of plaintexts and their corresponding ciphertexts, the attacker tries to find patterns to break the encryption.
+   - **Linear Cryptanalysis (রৈখিক ক্রিপ্টো বিশ্লেষণ):** This technique tries to find a linear (রৈখিক) relationship between the plaintext (সরাসরি পাঠ), ciphertext (গোপন টেক্সট), and the secret key (গোপন চাবি). By analyzing the output (ciphertext) and input (plaintext), cryptanalysts (ক্রিপ্টো বিশ্লেষকরা) attempt to find patterns that can help in predicting the key.
+   - **Differential Cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ):** This method focuses on how differences (পার্থক্য) in the input (plaintext) affect the differences (পার্থক্য) in the output (ciphertext). By analyzing pairs of plaintexts (সরাসরি পাঠ) and their corresponding ciphertexts (গোপন টেক্সট), the attacker (আক্রমণকারী) tries to find patterns to break the encryption (এনক্রিপশন) process.
 
    **Example:**  
-   - In linear cryptanalysis, you might find that for a certain key, half of the bits in the ciphertext are related to the bits in the plaintext using a linear equation.
-   - In differential cryptanalysis, you may see that small changes in the plaintext result in a specific, predictable change in the ciphertext.
+   - In linear cryptanalysis (রৈখিক ক্রিপ্টো বিশ্লেষণ), you might find that for a certain key (গোপন চাবি), half of the bits in the ciphertext (গোপন টেক্সট) are related to the bits in the plaintext (সরাসরি পাঠ) using a linear equation (রৈখিক সমীকরণ).
+   - In differential cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ), you may see that small changes (ছোট পরিবর্তন) in the plaintext (সরাসরি পাঠ) result in a specific, predictable change (পূর্বানুমানযোগ্য পরিবর্তন) in the ciphertext (গোপন টেক্সট).
 
-Here are short examples to illustrate **linear cryptanalysis** and **differential cryptanalysis**:
+Here are short examples to illustrate **linear cryptanalysis (রৈখিক ক্রিপ্টো বিশ্লেষণ)** and **differential cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ):**
 
-####  **Linear Cryptanalysis Example:**
-   - **Scenario:** You are trying to break a cipher by looking for a linear relationship between plaintext, ciphertext, and the key.
-   - **Example:** 
-     - **Plaintext:** `11001010`
-     - **Ciphertext:** `10101101`
-     - A linear relation is discovered where **half of the ciphertext bits** can be predicted from the plaintext bits (through XOR or a simple equation like `P1 ⊕ P2 = C1 ⊕ C2`).
-     - By analyzing these patterns, an attacker can deduce partial information about the secret key.
+#### **Linear Cryptanalysis (রৈখিক ক্রিপ্টো বিশ্লেষণ) Example:**
+   - **Scenario (পরিস্থিতি):** You are trying to break a cipher (গোপন কোড) by looking for a linear relationship (রৈখিক সম্পর্ক) between plaintext (সরাসরি পাঠ), ciphertext (গোপন টেক্সট), and the key (গোপন চাবি).
+   - **Example (উদাহরণ):** 
+     - **Plaintext (সরাসরি পাঠ):** `11001010`
+     - **Ciphertext (গোপন টেক্সট):** `10101101`
+     - A linear relation (রৈখিক সম্পর্ক) is discovered where **half of the ciphertext bits (গোপন টেক্সটের বিট)** can be predicted from the plaintext bits (সরাসরি পাঠের বিট) (through XOR or a simple equation like `P1 ⊕ P2 = C1 ⊕ C2`).
+     - By analyzing these patterns (প্যাটার্ন), an attacker (আক্রমণকারী) can deduce partial information (আংশিক তথ্য) about the secret key (গোপন চাবি).
 
-#### **Differential Cryptanalysis Example:**
-   - **Scenario:** Differential cryptanalysis looks at how small changes in the plaintext lead to predictable changes in the ciphertext.
-   - **Example:**
-     - **Plaintext 1:** `11001010`
-     - **Plaintext 2:** `11001011` (change in 1 bit)
-     - **Ciphertext 1:** `10101101`
-     - **Ciphertext 2:** `11011010`
-     - The difference in the plaintext causes a **predictable change** in the ciphertext, allowing an attacker to discover key-related patterns by observing how these changes propagate through the encryption process.
+#### **Differential Cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ) Example:**
+   - **Scenario (পরিস্থিতি):** Differential cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ) looks at how small changes (ছোট পরিবর্তন) in the plaintext (সরাসরি পাঠ) lead to predictable changes (পূর্বানুমানযোগ্য পরিবর্তন) in the ciphertext (গোপন টেক্সট).
+   - **Example (উদাহরণ):**
+     - **Plaintext 1 (সরাসরি পাঠ 1):** `11001010`
+     - **Plaintext 2 (সরাসরি পাঠ 2):** `11001011` (change in 1 bit – 1 বিট পরিবর্তন)
+     - **Ciphertext 1 (গোপন টেক্সট 1):** `10101101`
+     - **Ciphertext 2 (গোপন টেক্সট 2):** `11011010`
+     - The difference (পার্থক্য) in the plaintext (সরাসরি পাঠ) causes a predictable change (পূর্বানুমানযোগ্য পরিবর্তন) in the ciphertext (গোপন টেক্সট), allowing an attacker (আক্রমণকারী) to discover key-related patterns (গোপন চাবি সম্পর্কিত প্যাটার্ন) by observing how these changes propagate (প্রসারিত) through the encryption process (এনক্রিপশন প্রক্রিয়া).
 
-These examples show how each cryptanalysis technique exploits the relationships between plaintext, ciphertext, and key.
-
+These examples show how each cryptanalysis (ক্রিপ্টো বিশ্লেষণ) technique exploits the relationships (সম্পর্ক) between plaintext (সরাসরি পাঠ), ciphertext (গোপন টেক্সট), and key (গোপন চাবি).
 ### 2. **How does digital envelope exploit the advantages of both symmetric and asymmetric key cryptography?**
    - A **digital envelope** uses **asymmetric encryption** to securely send a **symmetric key** over an insecure channel. 
      1. First, the sender generates a **random symmetric key**.
