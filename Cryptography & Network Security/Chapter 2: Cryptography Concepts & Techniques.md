@@ -318,5 +318,4 @@ Example (উদাহরণ): In a communication network (যোগাযোগ 
 
 ---
 
-Let me know if you need any further changes!
 
