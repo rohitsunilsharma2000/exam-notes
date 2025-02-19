@@ -28,55 +28,58 @@ Here are short examples to illustrate **linear cryptanalysis (রৈখিক �
      - The difference (পার্থক্য) in the plaintext (সরাসরি পাঠ) causes a predictable change (পূর্বানুমানযোগ্য পরিবর্তন) in the ciphertext (গোপন টেক্সট), allowing an attacker (আক্রমণকারী) to discover key-related patterns (গোপন চাবি সম্পর্কিত প্যাটার্ন) by observing how these changes propagate (প্রসারিত) through the encryption process (এনক্রিপশন প্রক্রিয়া).
 
 These examples show how each cryptanalysis (ক্রিপ্টো বিশ্লেষণ) technique exploits the relationships (সম্পর্ক) between plaintext (সরাসরি পাঠ), ciphertext (গোপন টেক্সট), and key (গোপন চাবি).
-### 2. **How does digital envelope exploit the advantages of both symmetric and asymmetric key cryptography?**
-   - A **digital envelope** uses **asymmetric encryption** to securely send a **symmetric key** over an insecure channel. 
-     1. First, the sender generates a **random symmetric key**.
-     2. The symmetric key is then used to encrypt the actual message (fast and efficient).
-     3. The symmetric key is encrypted using the recipient's **public key** (asymmetric encryption), ensuring only the recipient can decrypt it with their private key.
-     4. The recipient uses the private key to decrypt the symmetric key and then uses it to decrypt the message.
 
-   This approach combines the efficiency of symmetric encryption (for the message) and the security of asymmetric encryption (for the key).
+Here's the revised explanation with complex words followed by their Bengali meanings in brackets:
+
+### 2. **How does digital envelope exploit the advantages of both symmetric and asymmetric key cryptography?**
+   - A **digital envelope (ডিজিটাল খাম)** uses **asymmetric encryption (অসিমেট্রিক এনক্রিপশন)** to securely send a **symmetric key (সিমেট্রিক চাবি)** over an insecure channel (অসুরক্ষিত চ্যানেল). 
+     1. First, the sender generates a **random symmetric key (যাদৃচ্ছিক সিমেট্রিক চাবি)**.
+     2. The symmetric key (সিমেট্রিক চাবি) is then used to encrypt (এনক্রিপ্ট) the actual message (বার্তা) (fast and efficient (দ্রুত এবং দক্ষ)).
+     3. The symmetric key (সিমেট্রিক চাবি) is encrypted (এনক্রিপ্ট) using the recipient's **public key (পাবলিক চাবি)** (asymmetric encryption (অসিমেট্রিক এনক্রিপশন)), ensuring only the recipient can decrypt (ডিক্রিপ্ট) it with their **private key (প্রাইভেট চাবি)**.
+     4. The recipient uses the **private key (প্রাইভেট চাবি)** to decrypt (ডিক্রিপ্ট) the symmetric key (সিমেট্রিক চাবি) and then uses it to decrypt (ডিক্রিপ্ট) the message (বার্তা).
+
+   This approach combines (একত্রিত করা) the efficiency (দক্ষতা) of symmetric encryption (সিমেট্রিক এনক্রিপশন) (for the message (বার্তা)) and the security (নিরাপত্তা) of asymmetric encryption (অসিমেট্রিক এনক্রিপশন) (for the key (চাবি)).
 
 ### 3. **Is it possible to combine symmetric key and asymmetric key cryptography so that the better of the two can be combined?**
-   - Yes! The combination of both is commonly seen in systems like **SSL/TLS** (used for secure internet communication). The hybrid approach ensures **security** (asymmetric encryption for key exchange) and **speed** (symmetric encryption for data transfer).
-     - **Asymmetric encryption** is slower but ideal for securely exchanging keys.
-     - **Symmetric encryption** is faster and used for encrypting large amounts of data after the key is securely exchanged.
+   - Yes! The combination (একত্রিতকরণ) of both is commonly seen in systems like **SSL/TLS** (used for secure internet communication (ইন্টারনেট যোগাযোগের জন্য নিরাপদ ব্যবহার)). The hybrid approach (হাইব্রিড পদ্ধতি) ensures **security (নিরাপত্তা)** (asymmetric encryption (অসিমেট্রিক এনক্রিপশন) for key exchange (চাবি আদান-প্রদান)) and **speed (গতি)** (symmetric encryption (সিমেট্রিক এনক্রিপশন) for data transfer (ডেটা স্থানান্তর)).
+     - **Asymmetric encryption (অসিমেট্রিক এনক্রিপশন)** is slower but ideal (আদর্শ) for securely exchanging keys (চাবি আদান-প্রদান).
+     - **Symmetric encryption (সিমেট্রিক এনক্রিপশন)** is faster and used for encrypting large amounts (বৃহত পরিমাণ) of data (ডেটা) after the key (চাবি) is securely exchanged (নিরাপদভাবে আদান-প্রদান করা).
 
 ### 4. **Explain Vernam cipher.**
-   - The **Vernam cipher** is a type of **symmetric key cipher** that uses a **one-time pad** to encrypt the message. Each character in the plaintext is XORed with a key character to produce the ciphertext.
-     - **Key Property:** The key used for encryption is the same length as the message and is used only once (hence, "one-time").
-     - **Example:**  
-       - Plaintext: **HELLO**
-       - Key: **XMCKL**  
-       - Ciphertext: XOR each letter in "HELLO" with the corresponding letter in "XMCKL".
+   - The **Vernam cipher (ভার্নাম সাইফার)** is a type of **symmetric key cipher (সিমেট্রিক চাবি সাইফার)** that uses a **one-time pad (এককালীন প্যাড)** to encrypt (এনক্রিপ্ট) the message (বার্তা). Each character (অক্ষর) in the plaintext (স্পষ্ট পাঠ) is XORed (এক্সঅর করা) with a key (চাবি) character (অক্ষর) to produce the ciphertext (গোপন টেক্সট).
+     - **Key Property (গুরুত্বপূর্ণ গুণ):** The key (চাবি) used for encryption (এনক্রিপশন) is the same length (একই দৈর্ঘ্য) as the message (বার্তা) and is used only once (এককালীন) (hence, "one-time" (এককালীন)).
+     - **Example (উদাহরণ):**  
+       - Plaintext (স্পষ্ট পাঠ): **HELLO**
+       - Key (চাবি): **XMCKL**  
+       - Ciphertext (গোপন টেক্সট): XOR each letter (অক্ষর) in "HELLO" with the corresponding letter (অক্ষর) in "XMCKL".
        - **H XOR X**, **E XOR M**, **L XOR C**, and so on.
 
-Let's break down the XOR operation for the given example.
+Let's break down (ভেঙে ব্যাখ্যা করা) the XOR operation (এক্সঅর অপারেশন) for the given example.
 
 ### Given:
-- **Plaintext:** "HELLO"
-- **Key:** "KEY123"
-- **Initialization Vector (IV):** Let's assume we use an IV like **"IVIVI"** (for this example).
+- **Plaintext (স্পষ্ট পাঠ):** "HELLO"
+- **Key (চাবি):** "KEY123"
+- **Initialization Vector (IV (প্রারম্ভিক ভেক্টর)) :** Let's assume (ধরা যাক) we use an IV like **"IVIVI"** (for this example).
 
-### XOR operation:
-The XOR (exclusive OR) operation compares corresponding bits from two values and outputs:
-- `1` if the bits are different.
-- `0` if the bits are the same.
+### XOR operation (এক্সঅর অপারেশন):
+The XOR (exclusive OR (বিশেষভাবে অথবা)) operation compares (তুলনা) corresponding bits (বিট) from two values (মান) and outputs (আউটপুট):
+- `1` if the bits are different (যদি বিটগুলি আলাদা হয়).
+- `0` if the bits are the same (যদি বিটগুলি এক থাকে).
 
-For simplicity, we will use the ASCII values of the characters and show the XOR operation step-by-step for the first block.
+For simplicity (সহজতার জন্য), we will use the ASCII values (এএসসিII মান) of the characters (অক্ষর) and show the XOR operation (এক্সঅর অপারেশন) step-by-step for the first block (প্রথম ব্লক).
 
-### Step-by-Step XOR Process:
+### Step-by-Step XOR Process (এক্সঅর প্রক্রিয়া):
 
-#### i. **Convert characters to ASCII values:**
+#### i. **Convert characters to ASCII values (অক্ষরকে এএসসিII মানে রূপান্তর করা):**
 
-- **Plaintext "HELLO":**
+- **Plaintext "HELLO" (স্পষ্ট পাঠ "HELLO"):**
   - 'H' → 72
   - 'E' → 69
   - 'L' → 76
   - 'L' → 76
   - 'O' → 79
 
-- **Key "KEY123":**
+- **Key "KEY123" (চাবি "KEY123"):**
   - 'K' → 75
   - 'E' → 69
   - 'Y' → 89
@@ -84,27 +87,27 @@ For simplicity, we will use the ASCII values of the characters and show the XOR 
   - '2' → 50
   - '3' → 51
 
-- **Initialization Vector (IV "IVIVI"):**
+- **Initialization Vector (IV "IVIVI" (প্রারম্ভিক ভেক্টর)):**
   - 'I' → 73
   - 'V' → 86
   - 'I' → 73
   - 'V' → 86
   - 'I' → 73
 
-#### ii. **Perform XOR operation between Plaintext and IV:**
+#### ii. **Perform XOR operation (এক্সঅর অপারেশন) between Plaintext and IV:**
 
-We will XOR each byte of the plaintext with the corresponding byte of the IV:
+We will XOR each byte (বাইট) of the plaintext (স্পষ্ট পাঠ) with the corresponding byte (বাইট) of the IV:
 
-| Character (Plaintext) | ASCII (Plaintext) | Character (IV) | ASCII (IV) | XOR Result |
-|-----------------------|-------------------|----------------|------------|------------|
-| 'H'                   | 72                | 'I'            | 73         | 72 ^ 73 = 1  |
-| 'E'                   | 69                | 'V'            | 86         | 69 ^ 86 = 23 |
-| 'L'                   | 76                | 'I'            | 73         | 76 ^ 73 = 3  |
-| 'L'                   | 76                | 'V'            | 86         | 76 ^ 86 = 10 |
-| 'O'                   | 79                | 'I'            | 73         | 79 ^ 73 = 6  |
+| Character (Plaintext) | ASCII (Plaintext) | Character (IV) | ASCII (IV) | XOR Result (ফলাফল) |
+|-----------------------|-------------------|----------------|------------|--------------------|
+| 'H'                   | 72                | 'I'            | 73         | 72 ^ 73 = 1         |
+| 'E'                   | 69                | 'V'            | 86         | 69 ^ 86 = 23        |
+| 'L'                   | 76                | 'I'            | 73         | 76 ^ 73 = 3         |
+| 'L'                   | 76                | 'V'            | 86         | 76 ^ 86 = 10        |
+| 'O'                   | 79                | 'I'            | 73         | 79 ^ 73 = 6         |
 
-#### iii. **Encrypted Block 1:**
-Now, we encrypt the XOR result using the Key "KEY123". We'll apply XOR between the result of the IV XOR operation and the Key:
+#### iii. **Encrypted Block 1 (এনক্রিপ্টেড ব্লক 1):**
+Now, we encrypt (এনক্রিপ্ট) the XOR result (ফলাফল) using the Key "KEY123" (চাবি "KEY123"). We'll apply XOR between the result (ফলাফল) of the IV XOR operation (IV XOR অপারেশন) and the Key:
 
 | XOR Result (From IV) | Key Character (Key) | ASCII (Key) | XOR Result (Final) |
 |----------------------|---------------------|-------------|--------------------|
@@ -114,12 +117,12 @@ Now, we encrypt the XOR result using the Key "KEY123". We'll apply XOR between t
 | 10                   | '1'                 | 49          | 10 ^ 49 = 59        |
 | 6                    | '2'                 | 50          | 6 ^ 50 = 56         |
 
-So the first block after encryption is:
+So the first block after encryption (এনক্রিপশন পরবর্তী প্রথম ব্লক) is:
 
 - **Encrypted Block 1 (ASCII values):** [76, 46, 86, 59, 56]
 - **Encrypted Block 1 (Characters):** **"L&V8X"**
 
-This shows how the XOR operation works for encryption with the IV and key. The process will continue for subsequent blocks in the same manner.
+This shows how the XOR operation (এক্সঅর অপারেশন) works for encryption (এনক্রিপশন) with the IV (প্রারম্ভিক ভেক্টর) and key (চাবি). The process (প্রক্রিয়া) will continue for subsequent blocks (পরবর্তী ব্লক) in the same manner (একইভাবে).
 
 ### 5. **What is the difference between block cipher and stream cipher? What are the different modes of block cipher operation? Explain any one of them.**
    - **Block Cipher:** Encrypts data in fixed-size blocks (e.g., 128 bits at a time). It is slower but more secure for large amounts of data. Examples: AES, DES.
