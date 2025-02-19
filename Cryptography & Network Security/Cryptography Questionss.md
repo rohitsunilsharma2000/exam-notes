@@ -29,8 +29,8 @@
 
  7. [Chapter 7: FIREWALL](#chapter-7-firewall)
    - [MCQ](#MCQ)
-   - [Short Answer Type Questions](#short-answer-type-questions-3)
-   - [Long Answer Type Questions](#long-answer-type-questions-3)
+   - [FIREWALL Short Answer Type Questions](#FIREWALL-short-answer-type-questions)
+   - [FIREWALL Long Answer Type Questions](#FIREWALL-long-answer-type-questions)
 
 
 
@@ -531,14 +531,16 @@
      - b) More secure than
      - c) Equally secure to
      - d) Slower
+     - 
+## FIREWALL Short Answer Type Questions
 
-- **Short Answer Type Questions**
-  1. Discuss different types of firewalls with neat diagrams.
+1. Discuss different types of firewalls with neat diagrams.
   2. What is the difference between an application and network layer firewall?
   3. What do you mean by trusted service and trusted devices in firewall configuration?
   4. Differentiate between Packet filters and Application Gateways.
 
-- **Long Answer Type Questions**
+## FIREWALL Long Answer Type Questions
+
   1. What is a firewall? What are the different types of firewalls? State the limitations of a firewall.
   2. Write short notes on the following:
      - a) Application firewalls
