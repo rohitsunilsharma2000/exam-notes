@@ -492,4 +492,36 @@ The **Knapsack algorithm** (ন্যাপক্যাক সাইফার) i
 The algorithm’s security (অ্যালগরিদমের নিরাপত্তা) relies on the fact (বিশ্বাস) that solving the knapsack problem (ন্যাপক্যাক সমস্যা সমাধান) is computationally hard (গণনামূলকভাবে কঠিন), making it difficult (কঠিন) for attackers (আক্রমণকারী) to decrypt (ডিক্রিপ্ট) the message (বার্তা) without the private key (প্রাইভেট চাবি). However (তবে), due to advancements (উন্নতি) in algorithms (অ্যালগরিদম), the knapsack cryptosystem (ন্যাপক্যাক ক্রিপ্টো সিস্টেম) is considered insecure (অসুরক্ষিত) and has been replaced (বদলানো হয়েছে) by more secure cryptographic systems (আরও নিরাপদ ক্রিপ্টো সিস্টেম).
 
 ---
+Here is the revised explanation for your 7th question with complex words followed by their Bengali meanings in brackets:
+
+### 7. Write short notes on the following:
+
+**i) Caesar Cipher (কিজার সাইফার):**
+The **Caesar cipher** (কিজার সাইফার) is one of the simplest (সবচেয়ে সহজ) and oldest (পুরনো) encryption (এনক্রিপশন) techniques. It is a substitution cipher (সাবস্টিটিউশন সাইফার) where each letter (অক্ষর) of the plaintext (স্পষ্ট পাঠ) is shifted (স্থানান্তরিত) by a fixed number (একটি নির্দিষ্ট সংখ্যা) of positions in the alphabet (অক্ষরমালা). For example, with a shift (স্থানান্তর) of 3, 'A' becomes 'D', 'B' becomes 'E', and so on.
+- **Strength (শক্তি):** Easy to implement (বাস্তবায়ন করা সহজ) but vulnerable (ঝুঁকিপূর্ণ) to frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ), as there are only 25 possible keys (সম্ভাব্য ২৫টি চাবি).
+- **Weakness (দুর্বলতা):** Very easy (খুব সহজ) to break (ভাঙা) through brute-force (ব্রুট-ফোর্স) or frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ) due to the limited (সীমিত) number of shifts (স্থানান্তর সংখ্যা).
+
+---
+
+**ii) Vigenère Cipher (ভিজেনের সাইফার):**
+The **Vigenère cipher** (ভিজেনের সাইফার) is a polyalphabetic substitution cipher (পলিআলফাবেটিক সাবস্টিটিউশন সাইফার) that uses a keyword (কীওয়ার্ড) to shift the letters (অক্ষর) of the plaintext (স্পষ্ট পাঠ). Each letter (অক্ষর) of the plaintext (স্পষ্ট পাঠ) is shifted (স্থানান্তরিত) by a value determined (নির্ধারিত) by the corresponding letter (অনুরূপ অক্ষর) in the keyword (কীওয়ার্ড). If the keyword (কীওয়ার্ড) is shorter (ছোট) than the plaintext (স্পষ্ট পাঠ), it is repeated (পুনরাবৃত্তি করা) to match the length (দৈর্ঘ্য) of the plaintext (স্পষ্ট পাঠ).
+- **Strength (শক্তি):** More secure (আরও নিরাপদ) than Caesar cipher (কিজার সাইফার) because it uses multiple shifts (বহু স্থানান্তর) and the key (চাবি) can be of arbitrary length (যেকোনো দৈর্ঘ্যের হতে পারে).
+- **Weakness (দুর্বলতা):** Vulnerable (ঝুঁকিপূর্ণ) to frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ) if the key (চাবি) is too short (অতি ছোট) and reused frequently (পুনরায় ব্যবহৃত হলে).
+
+---
+
+**iii) Playfair Cipher (প্লেফেয়ার সাইফার):**
+The **Playfair cipher** (প্লেফেয়ার সাইফার) is a digraph substitution cipher (ডিগ্রাফ সাবস্টিটিউশন সাইফার) that encrypts pairs (জোড়া) of letters (অক্ষর). It uses a 5x5 matrix (৫x৫ ম্যাট্রিক্স) of letters (অক্ষর) constructed (নির্মিত) from a keyword (কীওয়ার্ড). If the pair (জোড়া) contains the same letter (অক্ষর), one of the letters (অক্ষর) is replaced (বদলানো) by 'X'. The plaintext (স্পষ্ট পাঠ) is divided (বিভক্ত) into pairs of letters (অক্ষরের জোড়া), and for each pair (প্রতিটি জোড়া), the letters (অক্ষর) are substituted (সাবস্টিটিউট) based on their positions (অবস্থান) in the matrix (ম্যাট্রিক্স).
+- **Strength (শক্তি):** More secure (আরও নিরাপদ) than simple substitution ciphers (সহজ সাবস্টিটিউশন সাইফার) because it operates on pairs (জোড়া) of letters (অক্ষর), making frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ) more difficult (কঠিন).
+- **Weakness (দুর্বলতা):** Still vulnerable (ঝুঁকিপূর্ণ) to attacks like frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ) and known-plaintext attacks (জানা স্পষ্ট পাঠ আক্রমণ).
+
+---
+
+**iv) Steganography (স্টেগানোগ্রাফি):**
+**Steganography** (স্টেগানোগ্রাফি) is the practice (চর্চা) of hiding (গোপন রাখা) a secret message (গোপন বার্তা) within a non-suspicious carrier medium (অসন্দেহজনক পরিবহন মাধ্যম), such as an image (চিত্র), audio file (অডিও ফাইল), or text (টেক্সট). The goal (লক্ষ্য) is to make the secret message undetectable (অচিহ্নিত) to an observer (পর্যবেক্ষক). Unlike cryptography (ক্রিপ্টোগ্রাফি), which hides the content (সামগ্রী) of the message, steganography (স্টেগানোগ্রাফি) hides the very existence (অস্তিত্ব) of the message.
+- **Strength (শক্তি):** The hidden message (গোপন বার্তা) is not apparent (প্রকাশ্য) and it is difficult (কঠিন) to detect (সনাক্ত করা).
+- **Weakness (দুর্বলতা):** If the carrier medium (পরিবহন মাধ্যম) is detected (সনাক্ত করা) or analyzed (বিশ্লেষণ করা), the hidden message (গোপন বার্তা) can be uncovered (প্রকাশিত হতে পারে). The capacity (ক্ষমতা) to hide information (তথ্য লুকানোর ক্ষমতা) is also limited (সীমিত) by the carrier medium's size (পরিবহন মাধ্যমের আকার).
+
+---
+
 
