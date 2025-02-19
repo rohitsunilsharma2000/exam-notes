@@ -395,5 +395,161 @@ This document contains exam questions from three chapters covering topics in com
 3. **Question:** Describe the working principle of the DES algorithm for ensuring security.
 
 ---
+## Chapter 4: Asymmetric Key Algorithm, Digital Signature and RSA
+
+
+---
+
+## Multiple Choice Questions
+
+1. **To verify a digital signature, we need the:**
+   - a) Sender's private key
+   - b) Receiver's private key
+   - c) Sender's public key
+   - d) Receiver's public key  
+   *[WBUT 2014]*
+
+2. **RSA ______ be used for digital signatures.**
+   - a) Must not
+   - b) Cannot
+   - c) Can
+   - d) Should not  
+   *[WBUT 2014, 2015]*
+
+3. **____ is a message digest algorithm.**
+   - a) DES
+   - b) IDEA
+   - c) MD5
+   - d) RSA
+
+4. **In asymmetric-key cryptography, how many keys are required for each communicating party?**
+   - a) 2
+   - b) 3
+   - c) 4
+   - d) 1
+
+5. **Authentication service that can be used on the Windows platform is:**
+   - a) DES
+   - b) RSA
+   - c) KERBEROS
+   - d) MD5
+
+6. **We require ____ to verify a digital signature.**
+   - a) Receiver's public key
+   - b) Sender's private key
+   - c) Receiver's private key
+   - d) Sender's public key
+
+---
+
+## Short Answer Type Questions
+
+1. **RSA Key Calculation:**  
+   Given 2 prime numbers *p = 19* and *q = 31*, find out **N**, **E**, and **D** in the RSA encryption process.
+
+2. **Diffie-Hellman Scheme:**  
+   Consider the Diffie-Hellman scheme with a common prime *q = 11* and primitive root *a = 2*:  
+   - i) Show that 2 is indeed a generator.  
+   - ii) If user A has public key *Yₐ = 9*, what is A's private key?  
+   - iii) If user B has public key *Yᵦ = 3*, what is the secret key **K** between A and B?  
+   *[WBUT 2014]*
+
+3. **Diffie-Hellman Key Exchange:**  
+   What type of key is generated or exchanged by using the Diffie-Hellman key exchange algorithm? Justify your answer.  
+   *[WBUT 2015]*
+
+4. **Digital Signature Properties:**  
+   What are the properties that a digital signature should have?
+
+5. **Data Integrity Check:**  
+   How should one check that the data is untampered, error-free, and unread?
+
+6. **Definition of Asymmetric/Public Key Encryption:**  
+   What is meant by asymmetric or public key encryption?
+
+7. **Generic Public Key Algorithms:**  
+   What are the generic algorithms involved in public key cryptography?
+
+8. **Characteristics of Public Key Encryption:**  
+   What are the characteristics of public key encryption?
+
+9. **Examples of Public Key Algorithms:**  
+   Give two examples of public key encryption algorithms.
+
+10. **Key Management:**  
+    What do you mean by key management?
+
+11. **Hash Functions:**  
+    Name two popular hash functions.
+
+12. **Modes of Operation:**  
+    What are the modes of operation in public key encryption?
+
+13. **Hybrid Encryption:**  
+    What do you mean by using symmetric and asymmetric key cryptography together (i.e., hybrid encryption)?
+
+14. **Properties of Asymmetric Key Cryptography:**  
+    What are the properties of asymmetric key cryptography?
+
+15. **Security Mechanisms:**  
+    What are the security mechanisms used for detecting corrupted documents and messages, and for protection against unauthorized modification?
+
+16. **Data Integrity Algorithms:**  
+    What do you mean by data integrity? What are the algorithms involved in ensuring data integrity?
+
+17. **Authentication Methods:**  
+    What is authentication? What are the two methods of authentication?
+
+---
+
+## Long Answer Type Questions
+
+1. **RSA Algorithm:**  
+   a) Write down the RSA algorithm.  
+   b) In an RSA system, if the public key of a user is **17** and **N = 187**, what is the private key of this user?  
+   *[WBUT 2015]*
+
+2. **Digital Signatures and Hash Functions:**  
+   a) How can digital signatures be generated?  
+   b) Compare and contrast the MD5 and SHA-1 algorithms.
+
+3. **Short Notes:**  
+   Write short notes on the following:  
+   a) Digital Signature  
+      *[WBUT 2014]*  
+   b) Message Digest  
+      *[WBUT 2014, 2015]*  
+   c) Hash Function  
+      *[MODEL QUESTION]*
+
+4. **RSA Decryption and Key Calculation:**  
+   a) In a public-key system using RSA, you intercept the ciphertext **CT = 10** sent to a user whose public key is **E = 5, N = 35**. What is the plaintext **PT**?  
+   b) In an RSA system, if the public key of a user is **E = 31, N = 3599**, what is the private key of the user?  
+   *[MODEL QUESTION]*
+
+5. **Public Key Cryptography and Digital Signatures:**  
+   a) With the help of a diagram, briefly explain how public key cryptography works. Then explain, with a diagram, how the addition of a digital signature changes the process.  
+   b) Explain the concepts of Confusion and Diffusion.
+
+6. **RSA Calculation and Hash Comparison:**  
+   a) Given 2 prime numbers *P = 13* and *Q = 31*, find out **N**, **E**, and **D** in the RSA encryption process.  
+   b) Compare and contrast MD5 and SHA.  
+   *[MODEL QUESTION]*
+
+---
+
+## Additional Topics
+
+- **Internet Security Protocols & User Authentication**  
+- **Electronic Mail Security**  
+- **Firewalls**
+
+*These topics may include discussion questions, protocols, and design issues related to securing internet communications, authenticating users, securing email systems, and firewall configurations.*
+
+---
+
+*End of Document*
+
+
 
 *End of Exam Questions*
