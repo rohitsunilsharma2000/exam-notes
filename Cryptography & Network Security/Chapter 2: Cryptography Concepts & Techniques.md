@@ -319,3 +319,67 @@ Example (উদাহরণ): In a communication network (যোগাযোগ 
 ---
 
 
+#### Long Answer Type Questions
+
+
+### 1. a) **What is Algorithm mode? Describe Cipher Block Chaining (CBC) mode.**
+- **Algorithm Mode (অ্যালগরিদম মোড):** In the context of block ciphers (ব্লক সাইফার), the algorithm mode refers to the way the block cipher processes data (ডেটা) in blocks. A single block cipher can operate in different modes (মোড), each defining how each block of plaintext (স্পষ্ট পাঠ) interacts with others in the encryption (এনক্রিপশন) or decryption (ডিক্রিপ্ট) process. These modes include ECB (Electronic Codebook) (ইলেকট্রনিক কোডবুক), CBC (Cipher Block Chaining) (সাইফার ব্লক চেইনিং), CFB (Cipher Feedback), OFB (Output Feedback), and CTR (Counter mode) (কাউন্টার মোড), among others.
+- **Cipher Block Chaining (CBC) Mode (সাইফার ব্লক চেইনিং মোড):** CBC mode is one of the most commonly used block cipher modes (প্রচলিত ব্লক সাইফার মোড). In CBC, each plaintext block (স্পষ্ট পাঠ ব্লক) is XOR'd (এক্সঅর করা) with the previous ciphertext block (পূর্ববর্তী গোপন টেক্সট ব্লক) before being encrypted (এনক্রিপ্ট) with the block cipher algorithm (ব্লক সাইফার অ্যালগরিদম). This chaining (চেইনিং) process makes the encryption more secure (নিরাপদ), as identical plaintext blocks will encrypt (এনক্রিপ্ট) to different ciphertext blocks (গোপন টেক্সট ব্লক) based on their position (অবস্থান). The first plaintext block (প্রথম স্পষ্ট পাঠ ব্লক) is XOR'd with an Initialization Vector (IV) (প্রারম্ভিক ভেক্টর), which ensures that identical messages will produce different ciphertexts each time. The main advantage of CBC is that it hides patterns in the plaintext (স্পষ্ট পাঠ), providing better security (উন্নত নিরাপত্তা) compared to ECB mode.
+
+---
+
+### 1. b) **Explain the difference between asymmetric and symmetric key cryptographies.**
+- **Symmetric Key Cryptography (সিমেট্রিক চাবি ক্রিপ্টোগ্রাফি):**
+    - **Key Usage (চাবি ব্যবহার):** The same key (একই চাবি) is used for both encryption (এনক্রিপশন) and decryption (ডিক্রিপ্ট).
+    - **Speed (গতি):** Symmetric encryption is generally faster (সাধারণত দ্রুত) because it uses simpler (সহজ) mathematical operations (গণিতিক অপারেশন).
+    - **Key Distribution (চাবি বিতরণ):** A major challenge (বড় চ্যালেঞ্জ) is securely exchanging the key (গোপন চাবি) between sender (প্রেরক) and receiver (গ্রাহক). If the key is intercepted (আবদ্ধ করা হয়), the security (নিরাপত্তা) is compromised (আপস করা হয়).
+    - **Example Algorithms (উদাহরণ অ্যালগরিদম):** AES (Advanced Encryption Standard) (এডভান্সড এনক্রিপশন স্ট্যান্ডার্ড), DES (Data Encryption Standard) (ডেটা এনক্রিপশন স্ট্যান্ডার্ড).
+
+- **Asymmetric Key Cryptography (অসিমেট্রিক চাবি ক্রিপ্টোগ্রাফি):**
+    - **Key Usage (চাবি ব্যবহার):** A pair of keys (দুটি চাবি) is used: a public key (পাবলিক চাবি) for encryption (এনক্রিপশন) and a private key (প্রাইভেট চাবি) for decryption (ডিক্রিপ্ট). The public key can be shared openly (মুক্তভাবে শেয়ার করা), while the private key is kept secret (গোপন রাখা).
+    - **Speed (গতি):** Asymmetric encryption is slower (ধীর) than symmetric encryption (সিমেট্রিক এনক্রিপশন) due to more complex (আরও জটিল) mathematical operations (গণিতিক অপারেশন), like exponentiation (এক্সপোনেনশিয়েশন).
+    - **Key Distribution (চাবি বিতরণ):** It is more secure (নিরাপদ) for key distribution (চাবি বিতরণ) because the public key (পাবলিক চাবি) can be freely shared (মুক্তভাবে শেয়ার করা), and only the holder (ধারক) of the private key (প্রাইভেট চাবি) can decrypt (ডিক্রিপ্ট) the messages (বার্তা).
+    - **Example Algorithms (উদাহরণ অ্যালগরিদম):** RSA, ECC (Elliptic Curve Cryptography) (এলিপটিক কার্ভ ক্রিপ্টোগ্রাফি).
+
+---
+
+### 2. a) **Explain the diffusion property and confusion property for evaluation of a block cipher.**
+- **Diffusion Property (ডিফিউশন গুণ):** Diffusion refers to spreading (প্রসারণ) the influence (প্রভাব) of a single plaintext bit (স্পষ্ট পাঠ বিট) over many ciphertext bits (গোপন টেক্সট বিট). It ensures (নিশ্চিত করা) that the relationship (সম্পর্ক) between the plaintext and the ciphertext is complex (জটিল), making it difficult (কঠিন) for attackers (আক্রমণকারী) to discern (বোঝা) any patterns or correlations (প্যাটার্ন বা সম্পর্ক). The more diffusion (বেশি ডিফিউশন), the harder it is to reverse-engineer (রিভার্স-ইঞ্জিনিয়ার) the encryption process (এনক্রিপশন প্রক্রিয়া).
+    - **Example (উদাহরণ):** In DES and AES (এডভান্সড এনক্রিপশন স্ট্যান্ডার্ড), after a few rounds (কিছু রাউন্ড) of encryption, the output (আউটপুট) is significantly diffused (স্মরণীয়ভাবে ডিফিউজড), making it harder (কঠিন) to predict (পূর্বানুমান করা) the ciphertext from the plaintext.
+  
+- **Confusion Property (কনফিউশন গুণ):** Confusion is the property (গুণ) where the relationship (সম্পর্ক) between the plaintext (স্পষ্ট পাঠ) and the ciphertext (গোপন টেক্সট) is made as complex (জটিল) as possible. It makes it difficult (কঠিন) for an attacker (আক্রমণকারী) to derive (আধার) the key (চাবি) or any meaningful (অর্থপূর্ণ) relationship between the plaintext and ciphertext.
+    - **Example (উদাহরণ):** In AES (এডভান্সড এনক্রিপশন স্ট্যান্ডার্ড), confusion is achieved (অর্জিত) through the substitution (সাবস্টিটিউশন) step (ধাপ) (using S-boxes (এস-বক্স), where each input bit (ইনপুট বিট) is substituted (বদলানো) by a corresponding (অনুরূপ) output bit (আউটপুট বিট) according to a non-linear (অ-রৈখিক) transformation (রূপান্তর)).
+
+---
+
+### 2. b) **Explain the different modes of a block cipher and mention the merits and demerits of each one of them.**
+
+- **Electronic Codebook (ECB) Mode (ইলেকট্রনিক কোডবুক মোড):**
+    - **Description (বর্ণনা):** In ECB mode, the plaintext (স্পষ্ট পাঠ) is divided (বিভক্ত) into fixed-size blocks (নির্দিষ্ট আকারের ব্লক), and each block is encrypted (এনক্রিপ্ট) independently (স্বতন্ত্রভাবে) with the same key (একই চাবি).
+    - **Merits (সুবিধা):** Fast (দ্রুত) and simple to implement (বাস্তবায়ন করা).
+    - **Demerits (অসুবিধা):** Identical plaintext blocks (একই স্পষ্ট পাঠ ব্লক) encrypt (এনক্রিপ্ট) to identical ciphertext blocks (একই গোপন টেক্সট ব্লক), which can reveal (প্রকাশ করা) patterns (প্যাটার্ন) in the data (ডেটা), making it insecure (অসুরক্ষিত) for many applications (অনেক অ্যাপ্লিকেশন).
+
+- **Cipher Block Chaining (CBC) Mode (সাইফার ব্লক চেইনিং মোড):**
+    - **Description (বর্ণনা):** Each plaintext block (স্পষ্ট পাঠ ব্লক) is XOR'd (এক্সঅর করা) with the previous ciphertext block (পূর্ববর্তী গোপন টেক্সট ব্লক) before encryption (এনক্রিপশন). The first block (প্রথম ব্লক) is XOR'd with an Initialization Vector (IV) (প্রারম্ভিক ভেক্টর).
+    - **Merits (সুবিধা):** Provides stronger security (শক্তিশালী নিরাপত্তা) by preventing identical plaintext blocks (একই স্পষ্ট পাঠ ব্লক) from producing identical ciphertext blocks (একই গোপন টেক্সট ব্লক).
+    - **Demerits (অসুবিধা):** It requires an IV (এটি একটি IV প্রয়োজন) and is slower (ধীর) than ECB due to chaining (চেইনিং). Errors (ত্রুটি) in one block (একটি ব্লক) affect the entire decryption (সম্পূর্ণ ডিক্রিপ্ট) process.
+
+- **Cipher Feedback (CFB) Mode (সাইফার ফিডব্যাক মোড):**
+    - **Description (বর্ণনা):** This mode operates like a stream cipher (স্ট্রিম সাইফার) by feeding the previous ciphertext block (পূর্ববর্তী গোপন টেক্সট ব্লক) into the encryption algorithm (এনক্রিপশন অ্যালগরিদম) to generate a keystream (কীস্ট্রিম), which is then XOR'd (এক্সঅর করা) with the plaintext (স্পষ্ট পাঠ) to produce ciphertext (গোপন টেক্সট).
+    - **Merits (সুবিধা):** Provides error propagation (ত্রুটি বিস্তার) and can encrypt (এনক্রিপ্ট) data of any length (যেকোনো দৈর্ঘ্যের ডেটা).
+    - **Demerits (অসুবিধা):** More complex (আরও জটিল) to implement (বাস্তবায়ন করা) and less efficient (কম দক্ষ) compared to ECB or CBC.
+
+- **Output Feedback (OFB) Mode (আউটপুট ফিডব্যাক মোড):**
+    - **Description (বর্ণনা):** Similar to CFB (CFB-এর মতো), but instead of using the previous ciphertext block (পূর্ববর্তী গোপন টেক্সট ব্লক), it uses the output of the encryption algorithm (এনক্রিপশন অ্যালগরিদমের আউটপুট) to generate the keystream (কীস্ট্রিম).
+    - **Merits (সুবিধা):** Error propagation is minimized (ত্রুটি বিস্তার সর্বনিম্ন করা হয়), as errors in one block (একটি ব্লক) do not affect the rest of the data (অবশিষ্ট ডেটা).
+    - **Demerits (অসুবিধা):** The same keystream (একই কীস্ট্রিম) is generated repeatedly (পুনরাবৃত্তি করা হয়), which makes it vulnerable (ঝুঁকিপূর্ণ) to certain attacks (কিছু আক্রমণের জন্য).
+
+- **Counter (CTR) Mode (কাউন্টার মোড):**
+    - **Description (বর্ণনা):** Uses a counter (কাউন্টার) that is encrypted (এনক্রিপ্ট) and the resulting ciphertext (গোপন টেক্সট) is XOR'd (এক্সঅর করা) with the plaintext (স্পষ্ট পাঠ) to create the final ciphertext (গোপন টেক্সট).
+    - **Merits (সুবিধা):** Provides parallelism (প্যারালালিজম), making it fast (দ্রুত) and efficient (দক্ষ) for hardware implementation (হার্ডওয়্যার বাস্তবায়ন).
+    - **Demerits (অসুবিধা):** Requires a unique counter (বিশেষ কাউন্টার) for each block of data (প্রতিটি ডেটা ব্লক) to prevent keystream reuse (কীস্ট্রিম পুনঃব্যবহার প্রতিরোধ).
+
+---
+
+Let me know if you need further adjustments!
+
