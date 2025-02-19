@@ -191,4 +191,95 @@ Here’s the list with Roman numerals for each index:
 
 ---
 
+### 9. **Explain with example the relationship between key size and key range.**
+
+- **Key size (চাবির আকার)** refers to the number of bits (বিট) in the key (চাবি) used in cryptographic algorithms (ক্রিপ্টোগ্রাফিক অ্যালগরিদম). A larger key size (বড় চাবির আকার) generally increases the security level (নিরাপত্তার স্তর), as it makes brute-force attacks (ব্রুট-ফোর্স আক্রমণ) harder (কঠিন).
+- **Key range (চাবির পরিসর)** refers to the total number (মোট সংখ্যা) of possible keys (চাবি) that can be generated (উৎপন্ন) from a particular key size (নির্দিষ্ট চাবির আকার). For example, if you use a 3-bit key (৩-বিট চাবি), the key range (চাবির পরিসর) will have \(2^3 = 8\) possible keys (সম্ভাব্য চাবি) (ranging from 000 to 111 (000 থেকে 111 পর্যন্ত)).
+
+Example (উদাহরণ): A 128-bit AES key (128-বিট AES চাবি) has a key range (চাবির পরিসর) of \(2^{128}\), which is a very large number (খুব বড় সংখ্যা). Increasing the key size (চাবির আকার বৃদ্ধি করা) increases the number of potential keys (সম্ভাব্য চাবির সংখ্যা) exponentially (এক্সপোনেনশিয়ালি).
+
+---
+
+### 10. **What do you mean by encryption and decryption?**
+
+- **Encryption (এনক্রিপশন)** is the process (প্রক্রিয়া) of converting (রূপান্তর) plaintext (স্পষ্ট পাঠ) into ciphertext (গোপন টেক্সট) using an algorithm (এলগরিদম) and a key (চাবি). It ensures that the data (ডেটা) is unreadable (অপঠিত) by unauthorized users (অননুমোদিত ব্যবহারকারীদের জন্য).
+  
+  Example (উদাহরণ): If you encrypt (এনক্রিপ্ট) the word "hello" using a key (চাবি) and an encryption algorithm (এনক্রিপশন অ্যালগরিদম), it might result (ফলস্বরূপ হতে পারে) in something like "ifmmp" (এটা "ifmmp" হতে পারে, নির্ভর করে অ্যালগরিদমের উপর).
+
+- **Decryption (ডিক্রিপ্ট)** is the reverse (উল্টো) process, where ciphertext (গোপন টেক্সট) is converted (রূপান্তরিত) back into plaintext (স্পষ্ট পাঠ) using the appropriate key (সঠিক চাবি) and algorithm (অ্যালগরিদম).
+  
+  Example (উদাহরণ): Decrypting (ডিক্রিপ্ট করা) "ifmmp" with the correct key (সঠিক চাবি) will bring back (ফিরে আনা) the original word "hello" (মূল শব্দ "hello" ফিরে আসবে).
+
+---
+
+### 11. **What are the different cryptanalysis attacks?**
+
+Cryptanalysis (ক্রিপ্টো বিশ্লেষণ) refers to the methods (পদ্ধতি) used to break (ভাঙতে) cryptographic systems (ক্রিপ্টোগ্রাফিক সিস্টেম). Common attacks (সাধারণ আক্রমণ) include:
+
+1. **Brute-force attack (ব্রুট-ফোর্স আক্রমণ):** Trying all possible keys (সম্ভাব্য সমস্ত চাবি) until the correct one is found (সঠিক চাবি পাওয়া না হওয়া পর্যন্ত চেষ্টা করা).
+2. **Frequency analysis (ফ্রিকোয়েন্সি বিশ্লেষণ):** Analyzing the frequency (ফ্রিকোয়েন্সি বিশ্লেষণ) of characters (অক্ষর) or patterns (প্যাটার্ন) in ciphertext (গোপন টেক্সট) to deduce the key (চাবি) (common in substitution ciphers (সাবস্টিটিউশন সাইফার)).
+3. **Chosen plaintext attack (বাছাই করা স্পষ্ট পাঠ আক্রমণ):** The attacker (আক্রমণকারী) can choose arbitrary plaintexts (যেকোনো স্পষ্ট পাঠ) to be encrypted (এনক্রিপ্ট) and obtain (পাওয়া) the ciphertexts (গোপন টেক্সট), helping them learn (শেখা) about the encryption algorithm (এনক্রিপশন অ্যালগরিদম).
+4. **Chosen ciphertext attack (বাছাই করা গোপন টেক্সট আক্রমণ):** The attacker (আক্রমণকারী) has access (অ্যাক্সেস) to some ciphertexts (গোপন টেক্সট) and their corresponding (অনুরূপ) decrypted plaintexts (ডিক্রিপ্টেড স্পষ্ট পাঠ), aiming to deduce (অনুমান করা) the key (চাবি) or algorithm (অ্যালগরিদম).
+5. **Differential cryptanalysis (পার্থক্য ক্রিপ্টো বিশ্লেষণ):** It studies the effect (প্রভাব) of differences (পার্থক্য) in plaintext pairs (স্পষ্ট পাঠ জোড়া) on the differences (পার্থক্য) in corresponding ciphertexts (গোপন টেক্সট).
+
+---
+
+### 12. **What is the difference between unconditionally secure and computationally secure?**
+
+- **Unconditionally secure (অসীম নিরাপদ):** A cryptosystem (ক্রিপ্টোসিস্টেম) is unconditionally secure (অসীম নিরাপদ) if its security (নিরাপত্তা) doesn't depend (নির্ভর করে না) on the computational power (গণনামূলক শক্তি) of the attacker (আক্রমণকারী). Even with unlimited resources (অসীম সম্পদ), an attacker (আক্রমণকারী) can't break (ভাঙতে পারে না) the encryption (এনক্রিপশন). Example (উদাহরণ): The **One-Time Pad (এককালীন প্যাড)** is unconditionally secure (অসীম নিরাপদ).
+  
+- **Computationally secure (গণনামূলকভাবে নিরাপদ):** A cryptosystem (ক্রিপ্টোসিস্টেম) is computationally secure (গণনামূলকভাবে নিরাপদ) if it is secure against attacks (আক্রমণ) for all practical purposes (প্রায়োগিক উদ্দেশ্যে), but there might be theoretical methods (থিওরেটিক্যাল পদ্ধতি) to break (ভাঙতে) it given infinite time (অসীম সময়) and resources (সম্পদ). Example (উদাহরণ): **RSA** encryption (RSA এনক্রিপশন) is computationally secure (গণনামূলকভাবে নিরাপদ), meaning it’s hard (কঠিন) to break (ভাঙা) with current technology (বর্তমান প্রযুক্তি) but theoretically (থিওরেটিক্যালভাবে), with enough computing power (যথেষ্ট কম্পিউটিং শক্তি), it can be cracked (ভাঙা).
+
+---
+
+### 13. **Discuss the relative advantages and disadvantages of symmetric key cryptography vis-à-vis an asymmetric key cryptography.**
+
+- **Symmetric key cryptography (সিমেট্রিক চাবি ক্রিপ্টোগ্রাফি)** uses the same key (একই চাবি) for both encryption (এনক্রিপশন) and decryption (ডিক্রিপ্ট). 
+  
+  **Advantages (সুবিধা)**:
+  - Fast (দ্রুত) and efficient (দক্ষ) for large data (বৃহত ডেটা).
+  - Lower computational overhead (কম গণনামূলক অতিরিক্ত খরচ).
+
+  **Disadvantages (অসুবিধা)**:
+  - Key distribution problem (চাবি বিতরণ সমস্যা): The same key (একই চাবি) must be securely shared (নিরাপদভাবে শেয়ার) between the sender (প্রেরক) and receiver (গ্রাহক).
+  - If the key is compromised (যদি চাবি আপস করা হয়), all communications (সমস্ত যোগাযোগ) are at risk (ঝুঁকিতে).
+
+  **Example (উদাহরণ):** AES (Advanced Encryption Standard) (এডভান্সড এনক্রিপশন স্ট্যান্ডার্ড).
+
+- **Asymmetric key cryptography (অসিমেট্রিক চাবি ক্রিপ্টোগ্রাফি)** uses two keys (দুটি চাবি): a public key (পাবলিক চাবি) for encryption (এনক্রিপশন) and a private key (প্রাইভেট চাবি) for decryption (ডিক্রিপ্ট).
+  
+  **Advantages (সুবিধা)**:
+  - No need (প্রয়োজন নেই) to exchange (আদান-প্রদান) secret keys (গোপন চাবি); the public key (পাবলিক চাবি) can be freely shared (মুক্তভাবে শেয়ার করা যেতে পারে).
+  - Provides (প্রদান করে) a mechanism (একটি পদ্ধতি) for digital signatures (ডিজিটাল স্বাক্ষর) and authentication (প্রমাণীকরণ).
+
+  **Disadvantages (অসুবিধা)**:
+  - Slower (ধীর) than symmetric encryption (সিমেট্রিক এনক্রিপশন) for large data (বৃহত ডেটা).
+  - More computationally intensive (আরো গণনামূলক জটিল).
+
+  **Example (উদাহরণ):** RSA encryption (RSA এনক্রিপশন).
+
+---
+
+### 14. **What are symmetric cipher and asymmetric cipher?**
+
+- **Symmetric cipher (সিমেট্রিক সাইফার):** A cryptographic algorithm (ক্রিপ্টোগ্রাফিক অ্যালগরিদম) that uses the same key (একই চাবি) for both encryption (এনক্রিপশন) and decryption (ডিক্রিপ্ট). 
+  Example (উদাহরণ): AES, DES.
+
+- **Asymmetric cipher (অসিমেট্রিক সাইফার):** A cryptographic algorithm (ক্রিপ্টোগ্রাফিক অ্যালগরিদম) that uses two keys (দুটি চাবি): a public key (পাবলিক চাবি) for encryption (এনক্রিপশন) and a private key (প্রাইভেট চাবি) for decryption (ডিক্রিপ্ট). 
+  Example (উদাহরণ): RSA, ECC (Elliptic Curve Cryptography).
+
+---
+
+### 15. **What are the drawbacks of symmetric cipher?**
+
+1. **Key distribution problem (চাবি বিতরণ সমস্যা):** The same key (একই চাবি) must be securely shared (নিরাপদভাবে শেয়ার করা) between the sender (প্রেরক) and receiver (গ্রাহক), which can be difficult (কঠিন) and insecure (অনিরাপদ) over an untrusted network (অবিশ্বাসযোগ্য নেটওয়ার্ক).
+2. **Scalability (স্কেলেবিলিটি):** If there are many participants (অনেক অংশগ্রহণকারী), each pair (প্রতিটি জোড়া) needs a unique key (একটি অনন্য চাবি), which can result (ফলস্বরূপ হতে পারে) in a large number (বৃহত সংখ্যা) of keys (চাবি) to manage (পরিচালনা করা).
+3. **Key management (চাবি পরিচালনা):** If the key (চাবি) is compromised (আপস করা হয়), all data (ডেটা) encrypted (এনক্রিপ্ট) with that key (চাবি) is vulnerable (ঝুঁকিপূর্ণ).
+
+Example (উদাহরণ): In a communication network (যোগাযোগ নেটওয়ার্ক) with 100 users (ব্যবহারকারী), if each pair (প্রতিটি জোড়া) of users (ব্যবহারকারী) needs a unique key (একটি অনন্য চাবি), the total number (মোট সংখ্যা) of keys (চাবি) required (প্রয়োজনীয়) is \( \frac{100(100-1)}{2} = 4950 \) keys (চাবি). This makes key management challenging (এটি চাবি পরিচালনাকে চ্যালেঞ্জিং করে তোলে).
+
+---
+
+Let me know if you need any further adjustments!
+
 
