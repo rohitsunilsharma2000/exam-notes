@@ -28,7 +28,7 @@
    - [Long Answer Type Questions](#long-answer-type-questions-2)
 
  7. [Chapter 7: FIREWALL](#chapter-7-firewall)
-   - [Multiple Choice Questions](#multiple-choice-questions-1)
+   - [Multiple Choice Questions](#multiple-choice-questions-3)
    - [Short Answer Type Questions](#short-answer-type-questions-3)
    - [Long Answer Type Questions](#long-answer-type-questions-3)
 
@@ -519,7 +519,8 @@
 ---
 ## Chapter 7: FIREWALL
 
-- **Multiple Choice Questions**
+## Multiple Choice Questions
+
   1. A firewall is a specialized form of a _____
      - a) Bridge
      - b) Switch
