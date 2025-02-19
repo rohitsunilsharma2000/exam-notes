@@ -131,178 +131,94 @@
 
 ## Group A
 
-1. **Question:** The matrix theory is used in the _______ technique.
-   - **Options:**
-     - (a) Hill Cipher
-     - (b) Playfair Cipher
-     - (c) Mono-alphabetic Cipher
-     - (d) Vigenere Cipher
-
-2. **Question:** Homophonic Substitution Cipher is _______ to break as compared to Monoalphabetic Cipher.
-   - **Options:**
-     - (a) easier
-     - (b) the same
-     - (c) difficult
-     - (d) easier or same
-
-3. **Question:** Symmetric key cryptography is _______ than asymmetric key cryptography.
-   - **Options:**
-     - (a) always slower than
-     - (b) of the same speed as
-     - (c) faster than
-     - (d) usually slower than
-
-4. **Question:** If A and B want to communicate securely with each other, B must not know:
-   - **Options:**
-     - (a) A's private key
-     - (b) A's public key
-     - (c) B's private key
-     - (d) B's public key
-
-5. **Question:** Caesar Cipher is an example of:
-   - **Options:**
-     - (a) Substitution Cipher
-     - (b) Transposition Cipher
-     - (c) Substitution as well as Transposition Cipher
-     - (d) None of these
-
-6. **Question:** Name the concept that increases the redundancy of plain text.
-   - **Options:**
-     - (a) Confusion
-     - (b) Diffusion
-     - (c) Both (a) and (b)
-     - (d) None of these
-
-7. **Question:** Cryptanalyst is a person who:
-   - **Options:**
-     - (a) devises cryptographic solutions
-     - (b) attempts to break cryptographic solutions
-     - (c) both of these
-     - (d) none
-
-8. **Question:** The process of writing text as rows and reading it as columns is known as:
-   - **Options:**
-     - (a) Vernam Cipher
-     - (b) Caesar Cipher
-     - (c) Columnar Transposition Cipher
-     - (d) Homophonic Substitution Cipher
-
-9. **Question:** In public-key cryptography, _______ key is used for encryption.
-   - **Options:**
-     - (a) public
-     - (b) private
-     - (c) both (a) and (b)
-     - (d) shared
-
-10. **Question:** _______ is based on the idea of hiding the relationship between the ciphertext and the key.
-    - **Options:**
-      - (a) Diffusion
-      - (b) Confusion
-      - (c) Both (a) and (b)
-      - (d) None of these
-
-11. **Question:** Which of the following is a monoalphabetic cipher?
-    - **Options:**
-      - (a) Caesar cipher
-      - (b) Autokey cipher
-      - (c) Vigenere cipher
-      - (d) All of these
-
-12. **Question:** In polyalphabetic cipher, the characters in plaintext have a _______ relationship with the characters in ciphertext.
-    - **Options:**
-      - (a) one-to-one
-      - (b) one-to-many
-      - (c) many-to-one
-      - (d) many-to-many
-
-13. **Question:** Conversion of cipher text into plain text is called as:
-    - **Options:**
-      - (a) encryption
-      - (b) decryption
-      - (c) cryptography
-      - (d) cryptanalyst
-
-14. **Question:** In substitution cipher, which of the following happens?
-    - **Options:**
-      - (a) characters are replaced by other characters
-      - (b) rows are replaced by columns
-      - (c) columns are replaced by columns
-      - (d) none of these
-
-15. **Question:** Vernam cipher is also called:
-    - **Options:**
-      - (a) rail-fence technique
-      - (b) one-time pad
-      - (c) book cipher
-      - (d) running-key cipher
-
-16. **Question:** Book Cipher is also called as:
-    - **Options:**
-      - (a) Rail Fence Technique
-      - (b) One-time pad
-      - (c) Mono-alphabetic Cipher
-      - (d) Running Key Cipher
 
 ## Group B
 
-*These questions are identical to those in Chapter 1, Group B.*
-
-1. **Question:** What is Access Control? How is it different from Availability?  
-   *Repeated: 2008*
-
-2. **Question:** Write down the differences between Active attacks and Passive attacks. OR explain active attack and passive attack with example.  
-   *Repeated: 2014, 2017*
-
-3. **Question:** What is the idea behind the man-in-the-middle attack? OR discuss the man-in-the-middle attack.  
-   *Repeated: 2014, 2017*
-
-4. **Question:** Distinguish between phishing and pharming. Why is it easy to fall prey to pharming than phishing?  
-   *Repeated: 2014*
-
-5. **Question:** What are the different types of attacks on computer and network systems?  
-   *Repeated: 2016*
-
-6. **Question:** What is availability?  
-   *Repeated: 2016*
-
-7. **Question:** What do you mean by **Interruption**?
-
-8. **Question:** What do you mean by computer security and what are its goals?
-
-9. **Question:** What are the security approaches?
-
-10. **Question:** What are the basic components of computer security?
-
-11. **Question:** What is a threat and what are the categories of threat?
-
-12. **Question:** What is a Brute-force attack? Explain.
 
 ## Group C
+# Cryptography Questions
 
-*These questions are identical to those in Chapter 1, Group C.*
+## Short Answer Type Questions
 
-1. **Question:** What is the basic difference between a worm and a virus? OR what is a worm? What is the difference between a worm and a virus?  
-   *Repeated: 2008, 2017, 2016, 2014, 2015*
+1. **Distinguish between linear and differential cryptanalysis.**
 
-2. **Question:** (a) What are the key principles of security? OR discuss the basic principle of security OR discuss the four basic principles related to the security of a message.  
-   *Repeated: 2014, 2015*
+2. **How does digital envelope exploit the advantages of both symmetric and asymmetric key cryptography?**
 
-3. **Question:** (b) What are meant by IP sniffing and IP spoofing?  
-   *Repeated: 2016, 2017*
+3. **Is it possible to combine symmetric key and asymmetric key cryptography so that better of the two can be combined?**
 
-4. **Question:** What is a DOS (Denial-of-Service) attack?  
-   *Repeated: 2017*
+4. **Explain Vernam cipher.**
 
-5. **Question:**  
-   - (a) Write short notes on Sniffing and Spoofing.  
-     *Repeated: 2017*  
-   - (b) Write short notes on Malicious Programs.  
-     *Repeated: 2017*
+5. **What is the difference between block cipher and stream cipher? What are the different modes of block cipher operation? Explain any one of them.**  
+   [WBUT 2014]
 
-6. **Question:**  
-   - (c) Write short notes on IP Spoofing and DoS Attacks.  
-   - (d) Write short notes on Principles of Security with example.  
-   - (e) Write short notes on DNS Spoofing.
+6. **When is an encryption algorithm said to be computationally secure?**
+
+7. **Distinguish between substitution and transposition cipher.**
+
+8. **Define the following terms:**
+   - Cryptography
+   - Cryptanalysis
+   - Block cipher and stream cipher
+   - Transposition and substitution
+   - Product cipher
+   - Public and private key
+   - Symmetric and asymmetric cipher
+
+9. **Explain with an example the relationship between key size and key range.**
+
+10. **What do you mean by encryption and decryption?**
+
+11. **What are the different cryptanalysis attacks?**
+
+12. **What is the difference between unconditionally secure and computationally secure?**
+
+13. **Discuss the relative advantages and disadvantages of symmetric key cryptography vis-à-vis asymmetric key cryptography.**
+
+14. **What are symmetric cipher and asymmetric cipher?**
+
+15. **What are the drawbacks of symmetric cipher?**
+
+16. **What are the problems with exchanging public keys?**
+
+17. **"Symmetric key cryptography is faster than asymmetric key cryptography" – Justify.**
+
+18. **What are the roles of the public and private key?**
+
+19. **a) What are the problems associated with symmetric-key encryption?**
+   - **b) How can those problems be solved using asymmetric-key encryption?**
+
+20. **What is key wrapping? How is it useful?**
+
+---
+
+## Long Answer Type Questions
+
+1. **a) What is Algorithm mode? Describe Cipher Block Chaining (CBC) mode.**
+   - **b) Explain the difference between asymmetric and symmetric key cryptographies.**
+
+2. **a) Explain the diffusion property and confusion property for evaluation of a block cipher.**
+   - **b) Explain the different modes of a block cipher and mention the merits and demerits of each one of them.**  
+     (WBUT 2011)
+
+3. **a) What would be the transformation for a message "Happy birthday to you" using Rail Fence technique?**  
+   - **b) For a Vernam Cipher, do the following:**
+     - **i) Using pad "TZQ" encode "ARE".**
+     - **ii) Using pad "ARX" decode "YFR".**
+
+4. **Write short note on public key infrastructure.**
+
+5. **a) What is the principle behind One-Time Pads? Why are they highly secured?**  
+   - **b) What is the output of the following Plaintext:**  
+     - "I am a student of fourth year Information Technology department."
+
+6. **Briefly describe the Knapsack algorithm for public key encryption.**
+
+7. **Write short notes on the following:**
+   - **i) Caesar cipher**
+   - **ii) Vigenère cipher**
+   - **iii) Playfair or earlier block cipher**
+   - **iv) Steganography**
+
 
 ---
 
