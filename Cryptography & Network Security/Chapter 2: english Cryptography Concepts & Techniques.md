@@ -296,4 +296,32 @@ Cryptanalysis refers to the methods used to break cryptographic systems. Common 
 Example: In a communication network with 100 users, if each pair of users needs a unique key, the total number of keys required is \( \frac{100(100-1)}{2} = 4950 \) keys. This makes key management challenging.
 
 ---
+Here are explanations for each of your questions:
+
+**16. What are the problems with exchanging of public keys?**
+- **Man-in-the-Middle Attack**: If an attacker intercepts and alters the public key during exchange, they could gain unauthorized access to encrypted data. This is a significant risk if the public key is exchanged over an insecure channel.
+- **Trust**: Public keys need to be verified to ensure they belong to the correct party. Without a trusted method for verification, there's a risk of using an incorrect key.
+- **Key Authenticity**: If an attacker can impersonate a party, they could substitute their own public key, leading to the exposure of sensitive data.
+
+**17. "Symmetric key cryptography is faster than Asymmetric key cryptography"- Justify.**
+- **Efficiency**: Symmetric key cryptography uses the same key for both encryption and decryption, which is computationally less intensive. The algorithms, such as AES (Advanced Encryption Standard), are designed for fast execution on modern hardware.
+- **Asymmetric encryption** (e.g., RSA) uses two keys (public and private), and the mathematical operations involved (like exponentiation) are much more computationally expensive than those in symmetric cryptography. This makes asymmetric encryption slower, especially as the key size increases.
+
+**18. What are the roles of the public and private key?**
+- **Public Key**: This is used for encryption and can be shared openly with anyone. It allows others to encrypt data that only the owner of the corresponding private key can decrypt.
+- **Private Key**: This is kept secret and is used for decryption. The private key must never be shared, as it is the key to unlocking the encrypted data. Additionally, it can be used for signing data to ensure authenticity and integrity.
+
+**19. a) What are the problems associated with symmetric-key encryption?**
+- **Key Distribution**: The biggest problem is securely exchanging and managing the symmetric key between communicating parties. If someone intercepts the key, they can decrypt all data.
+- **Scalability**: In a large network, each pair of users would require a unique key, leading to a large number of keys to manage.
+- **Key Compromise**: If the key is compromised, all communication encrypted with that key is exposed.
+
+**b) How those problems can be solved using asymmetric-key encryption?**
+- **Key Distribution**: Asymmetric cryptography eliminates the need to share the secret key directly. The public key can be freely distributed, and the private key remains securely with the user.
+- **Scalability**: Instead of managing multiple keys for each pair of users, each user only needs a single key pair (public and private), reducing the complexity.
+- **Key Compromise**: Since the private key is never shared, the chances of compromise are minimized. Even if a public key is intercepted, it cannot be used to decrypt messages without the private key.
+
+**20. What is key wrapping? How is it useful?**
+- **Key Wrapping**: This is the process of encrypting a symmetric key with another key (typically an asymmetric key or another symmetric key) to ensure the secure exchange of the symmetric key. 
+- **Usefulness**: Key wrapping is useful because it allows a symmetric key to be safely transmitted over an insecure channel. For example, in a hybrid cryptosystem, a symmetric key is used to encrypt the data, but that symmetric key is itself encrypted using asymmetric encryption to securely transfer it between parties.
 
