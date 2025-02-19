@@ -1,44 +1,60 @@
-# PEC-CS801B - Cryptography & Network Security
+# Table of Contents
 
-This document contains exam questions from three chapters covering topics in computer security and cryptography.
+1. [Chapter 1: Attacks on Computers & Computer Security](#chapter-1-attacks-on-computers--computer-security)
+   - [Group A](#group-a)
+   - [Group B](#group-b)
+   - [Group C](#group-c)
+2. [Chapter 2: Cryptography Concepts & Techniques](#chapter-2-cryptography-concepts--techniques)
+   - [Group A](#group-a-1)
+   - [Group B](#group-b-1)
+   - [Group C](#group-c-1)
+3. [Chapter 3: Symmetric Key Algorithm](#chapter-3-symmetric-key-algorithm)
+   - [Group A](#group-a-2)
+   - [Group B](#group-b-2)
+   - [Group C](#group-c-2)
+4. [Chapter 4: Asymmetric Key Algorithm, Digital Signature and RSA](#chapter-4-asymmetric-key-algorithm-digital-signature-and-rsa)
+5. [Multiple Choice Questions](#multiple-choice-questions)
+6. [Short Answer Type Questions](#short-answer-type-questions)
+7. [Long Answer Type Questions](#long-answer-type-questions)
+8. [Additional Topics](#additional-topics)
 
 ---
 
-## Chapter 1: Attacks on Computers & Computer Security
+# Chapter 1: Attacks on Computers & Computer Security
 
-### Group A
+## Group A
 
 1. **Question:** If the principle of _______ is to be ensured, the contents of a message must not be modified while in transit.
    - **Options:**
      - (a) Confidentiality
      - (b) Authentication
      - (c) Integrity
-     - (d) Access control
-   - *Repeated: 2009*
+     - (d) Access control  
+   *Repeated: 2009*
 
 2. **Question:** The _______ attack is related to confidentiality.
    - **Options:**
      - (a) Interception
      - (b) Fabrication
      - (c) Modification
-     - (d) Interruption
-   - *Repeated: 2014*
+     - (d) Interruption  
+   *Repeated: 2014*
 
 3. **Question:** The principle of _______ ensures that only the sender and the intended recipients have access to the contents of a message.
    - **Options:**
      - (a) Confidentiality
      - (b) Authentication
      - (c) Integrity
-     - (d) Access control
-   - *Repeated: 2014*
+     - (d) Access control  
+   *Repeated: 2014*
 
 4. **Question:** The _______ attack is related to authentication.
    - **Options:**
      - (a) Interception
      - (b) Fabrication
      - (c) Modification
-     - (d) Interruption
-   - *Repeated: 2015*
+     - (d) Interruption  
+   *Repeated: 2015*
 
 5. **Question:** _______ ensures that a message was received by the receiver from the actual sender and not from an attacker.
    - **Options:**
@@ -47,9 +63,7 @@ This document contains exam questions from three chapters covering topics in com
      - (c) Integration
      - (d) None of these
 
----
-
-### Group B
+## Group B
 
 1. **Question:** What is Access Control? How is it different from Availability?  
    *Repeated: 2008*
@@ -81,9 +95,7 @@ This document contains exam questions from three chapters covering topics in com
 
 12. **Question:** What is a Brute-force attack? Explain.
 
----
-
-### Group C
+## Group C
 
 1. **Question:** What is the basic difference between a worm and a virus? OR what is a worm? What is the difference between a worm and a virus?  
    *Repeated: 2008, 2017, 2016, 2014, 2015*
@@ -110,9 +122,9 @@ This document contains exam questions from three chapters covering topics in com
 
 ---
 
-## Chapter 2: Cryptography Concepts & Techniques
+# Chapter 2: Cryptography Concepts & Techniques
 
-### Group A
+## Group A
 
 1. **Question:** The matrix theory is used in the _______ technique.
    - **Options:**
@@ -226,9 +238,7 @@ This document contains exam questions from three chapters covering topics in com
       - (c) Mono-alphabetic Cipher
       - (d) Running Key Cipher
 
----
-
-### Group B
+## Group B
 
 *These questions are identical to those in Chapter 1, Group B.*
 
@@ -262,9 +272,7 @@ This document contains exam questions from three chapters covering topics in com
 
 12. **Question:** What is a Brute-force attack? Explain.
 
----
-
-### Group C
+## Group C
 
 *These questions are identical to those in Chapter 1, Group C.*
 
@@ -293,33 +301,33 @@ This document contains exam questions from three chapters covering topics in com
 
 ---
 
-## Chapter 3: Symmetric Key Algorithm
+# Chapter 3: Symmetric Key Algorithm
 
-### Group A
+## Group A
 
 1. **Question:** In IDEA, the key size is:
    - **Options:**
      - (a) 128
      - (b) 64
      - (c) 256
-     - (d) 512 bits
-   - *Repeated: 2014*
+     - (d) 512 bits  
+   *Repeated: 2014*
 
 2. **Question:** There are ______ encryption rounds in IDEA.
    - **Options:**
      - (a) 5
      - (b) 16
      - (c) 10
-     - (d) 8
-   - *Repeated: 2015*
+     - (d) 8  
+   *Repeated: 2015*
 
 3. **Question:** There are ______.
    - **Options:**
      - (a) 8
      - (b) 10
      - (c) 14
-     - (d) 16
-   - *Repeated: 2016, 2017*
+     - (d) 16  
+   *Repeated: 2016, 2017*
 
 4. **Question:** ______ bits are contained in DES encryption blocks.
    - **Options:**
@@ -335,11 +343,9 @@ This document contains exam questions from three chapters covering topics in com
      - (c) Substitution
      - (d) Key scheduling
 
----
+## Group B
 
-### Group B
-
-1. **Question:** What is the initializing Vector (IV)? What is its significance?  
+1. **Question:** What is the Initializing Vector (IV)? What is its significance?  
    *Repeated: 2014, 2015*
 
 2. **Question:** Describe briefly the DES algorithm.  
@@ -381,9 +387,7 @@ This document contains exam questions from three chapters covering topics in com
 
 17. **Question:** What are the applications of IDEA?
 
----
-
-### Group C
+## Group C
 
 1. **Question:** State and explain how IDEA works.  
    *Repeated: 2015, 2017, 2016, 2017*
@@ -395,12 +399,14 @@ This document contains exam questions from three chapters covering topics in com
 3. **Question:** Describe the working principle of the DES algorithm for ensuring security.
 
 ---
-## Chapter 4: Asymmetric Key Algorithm, Digital Signature and RSA
 
+# Chapter 4: Asymmetric Key Algorithm, Digital Signature and RSA
+
+*Content for Chapter 4 can be added here following a similar structure.*
 
 ---
 
-## Multiple Choice Questions
+# Multiple Choice Questions
 
 1. **To verify a digital signature, we need the:**
    - a) Sender's private key
@@ -442,7 +448,7 @@ This document contains exam questions from three chapters covering topics in com
 
 ---
 
-## Short Answer Type Questions
+# Short Answer Type Questions
 
 1. **RSA Key Calculation:**  
    Given 2 prime numbers *p = 19* and *q = 31*, find out **N**, **E**, and **D** in the RSA encryption process.
@@ -502,7 +508,7 @@ This document contains exam questions from three chapters covering topics in com
 
 ---
 
-## Long Answer Type Questions
+# Long Answer Type Questions
 
 1. **RSA Algorithm:**  
    a) Write down the RSA algorithm.  
@@ -538,7 +544,7 @@ This document contains exam questions from three chapters covering topics in com
 
 ---
 
-## Additional Topics
+# Additional Topics
 
 - **Internet Security Protocols & User Authentication**  
 - **Electronic Mail Security**  
@@ -549,7 +555,3 @@ This document contains exam questions from three chapters covering topics in com
 ---
 
 *End of Document*
-
-
-
-*End of Exam Questions*
