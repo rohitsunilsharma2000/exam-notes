@@ -19,12 +19,11 @@
    - [Long Answer Type Questions](#long-answer-type-questions)
    - [Additional Topics](#additional-topics)
 
-  
-5. [Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION](#chapter-5-internet-security-protocols-user-authentication)
+ 5. [Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION](#chapter-5-internet-security-protocols-user-authentication)
    - [Short Answer Type Questions](#short-answer-type-questions-1)
    - [Long Answer Type Questions](#long-answer-type-questions-1)
 
-6. [Chapter 6: ELECTRONIC MAIL SECURITY](#chapter-6-electronic-mail-security)
+ 6. [Chapter 6: ELECTRONIC MAIL SECURITY](#chapter-6-electronic-mail-security)
    - [Short Answer Type Questions](#short-answer-type-questions-2)
    - [Long Answer Type Questions](#long-answer-type-questions-2)
 
@@ -32,6 +31,7 @@
    - [Multiple Choice Questions](#multiple-choice-questions-1)
    - [Short Answer Type Questions](#short-answer-type-questions-3)
    - [Long Answer Type Questions](#long-answer-type-questions-3)
+
 
 
 ---
