@@ -18,17 +18,21 @@
    - [Short Answer Type Questions](#short-answer-type-questions)
    - [Long Answer Type Questions](#long-answer-type-questions)
    - [Additional Topics](#additional-topics)
-5. [Chapter 5: Internet Security Protocols & User Authentication](#chapter-3-symmetric-key-algorithm)
-   - [Multiple Choice Questions](#multiple-choice-questions-1)
+
+  
+5. [Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION](#chapter-5-internet-security-protocols-user-authentication)
    - [Short Answer Type Questions](#short-answer-type-questions-1)
    - [Long Answer Type Questions](#long-answer-type-questions-1)
-6. [Chapter 6: Electronic Mail Security](#chapter-3-symmetric-key-algorithm)
+
+6. [Chapter 6: ELECTRONIC MAIL SECURITY](#chapter-6-electronic-mail-security)
    - [Short Answer Type Questions](#short-answer-type-questions-2)
    - [Long Answer Type Questions](#long-answer-type-questions-2)
-7. [Chapter 7: Firewalls](#chapter-3-symmetric-key-algorithm)
-   - [Multiple Choice Questions](#multiple-choice-questions-2)
+
+ 7. [Chapter 7: FIREWALL](#chapter-7-firewall)
+   - [Multiple Choice Questions](#multiple-choice-questions-1)
    - [Short Answer Type Questions](#short-answer-type-questions-3)
    - [Long Answer Type Questions](#long-answer-type-questions-3)
+
 
 ---
 
