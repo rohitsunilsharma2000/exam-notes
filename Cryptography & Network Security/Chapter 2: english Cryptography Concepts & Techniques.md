@@ -325,3 +325,195 @@ Here are explanations for each of your questions:
 - **Key Wrapping**: This is the process of encrypting a symmetric key with another key (typically an asymmetric key or another symmetric key) to ensure the secure exchange of the symmetric key. 
 - **Usefulness**: Key wrapping is useful because it allows a symmetric key to be safely transmitted over an insecure channel. For example, in a hybrid cryptosystem, a symmetric key is used to encrypt the data, but that symmetric key is itself encrypted using asymmetric encryption to securely transfer it between parties.
 
+### ***Long Answer Type Questions***
+
+**1. a) What is Algorithm mode? Describe Cipher Block Chaining (CBC) mode.**
+
+- **Algorithm Mode**: In the context of block ciphers, the algorithm mode refers to the way the block cipher processes data (plaintext or ciphertext) in blocks. A single block cipher can operate in different modes, each defining how each block of plaintext interacts with others in the encryption or decryption process. These modes include ECB (Electronic Codebook), CBC (Cipher Block Chaining), CFB (Cipher Feedback), OFB (Output Feedback), and CTR (Counter mode), among others.
+
+- **Cipher Block Chaining (CBC) Mode**: CBC mode is one of the most commonly used block cipher modes. In CBC, each plaintext block is XOR'd (exclusive OR) with the previous ciphertext block before being encrypted with the block cipher algorithm. This chaining process makes the encryption more secure, as identical plaintext blocks will encrypt to different ciphertext blocks based on their position. The first plaintext block is XOR'd with an Initialization Vector (IV), which ensures that identical messages will produce different ciphertexts each time. The main advantage of CBC is that it hides patterns in the plaintext, providing better security compared to ECB mode.
+
+**1. b) Explain the difference between asymmetric and symmetric key cryptographies.**
+
+- **Symmetric Key Cryptography**:
+    - **Key Usage**: The same key is used for both encryption and decryption.
+    - **Speed**: Symmetric encryption is generally faster because it uses simpler mathematical operations.
+    - **Key Distribution**: A major challenge is securely exchanging the key between sender and receiver. If the key is intercepted, the security is compromised.
+    - **Example Algorithms**: AES (Advanced Encryption Standard), DES (Data Encryption Standard).
+
+- **Asymmetric Key Cryptography**:
+    - **Key Usage**: A pair of keys is used: a public key for encryption and a private key for decryption. The public key can be shared openly, while the private key is kept secret.
+    - **Speed**: Asymmetric encryption is slower than symmetric encryption due to more complex mathematical operations, like exponentiation.
+    - **Key Distribution**: It is more secure for key distribution because the public key can be freely shared, and only the holder of the private key can decrypt the messages.
+    - **Example Algorithms**: RSA, ECC (Elliptic Curve Cryptography).
+
+---
+
+**2. a) Explain the diffusion property and confusion property for evaluation of a block cipher.**
+
+- **Diffusion Property**: Diffusion refers to spreading the influence of a single plaintext bit over many ciphertext bits. It ensures that the relationship between the plaintext and the ciphertext is complex, making it difficult for attackers to discern any patterns or correlations. The more diffusion, the harder it is to reverse-engineer the encryption process.
+    - **Example**: In DES and AES, after a few rounds of encryption, the output is significantly diffused, making it harder to predict the ciphertext from the plaintext.
+
+- **Confusion Property**: Confusion is the property where the relationship between the plaintext and the ciphertext is made as complex as possible. It makes it difficult for an attacker to derive the key or any meaningful relationship between the plaintext and ciphertext.
+    - **Example**: In AES, confusion is achieved through the substitution step (using S-boxes), where each input bit is substituted by a corresponding output bit according to a non-linear transformation.
+
+**2. b) Explain the different modes of a block cipher and mention the merits and demerits of each one of them.**
+
+- **Electronic Codebook (ECB) Mode**:
+    - **Description**: In ECB mode, the plaintext is divided into fixed-size blocks, and each block is encrypted independently with the same key.
+    - **Merits**: Fast and simple to implement.
+    - **Demerits**: Identical plaintext blocks encrypt to identical ciphertext blocks, which can reveal patterns in the data, making it insecure for many applications.
+
+- **Cipher Block Chaining (CBC) Mode**:
+    - **Description**: Each plaintext block is XOR'd with the previous ciphertext block before encryption. The first block is XOR'd with an Initialization Vector (IV).
+    - **Merits**: Provides stronger security by preventing identical plaintext blocks from producing identical ciphertext blocks.
+    - **Demerits**: It requires an IV and is slower than ECB due to chaining. Errors in one block affect the entire decryption.
+
+- **Cipher Feedback (CFB) Mode**:
+    - **Description**: This mode operates like a stream cipher by feeding the previous ciphertext block into the encryption algorithm to generate a keystream, which is then XOR'd with the plaintext to produce ciphertext.
+    - **Merits**: Provides a form of error propagation and can encrypt data of any length.
+    - **Demerits**: More complex to implement and less efficient compared to ECB or CBC.
+
+- **Output Feedback (OFB) Mode**:
+    - **Description**: Similar to CFB, but instead of using the previous ciphertext block, it uses the output of the encryption algorithm to generate the keystream.
+    - **Merits**: Error propagation is minimized, as errors in one block do not affect the rest of the data.
+    - **Demerits**: The same keystream is generated repeatedly, which makes it vulnerable to certain attacks if the keystream is not properly managed.
+
+- **Counter (CTR) Mode**:
+    - **Description**: Uses a counter that is encrypted, and the resulting ciphertext is XOR'd with the plaintext to create the final ciphertext. The counter is incremented after each block.
+    - **Merits**: Provides parallelism, making it fast and efficient for hardware implementation.
+    - **Demerits**: Requires a unique counter for each block of data to prevent keystream reuse.
+
+---
+
+**3. a) What would be the transformation for a message "Happy birthday to you" using Rail Fence technique?**
+
+To encrypt the message "Happy birthday to you" using the Rail Fence technique, we'll use a 3-rail cipher (you can choose any number of rails).
+
+- Write the message in a zigzag pattern:
+  
+  ```
+  H . . . y . . . b . . . t . . . o . . . y
+  . a . p . . i . . r . h . . a . t . . t . o
+  . . p . . . y . . . d . . . o . . . y . . .
+  ```
+
+- The ciphertext is obtained by reading the zigzag pattern row by row:
+  - **Ciphertext**: "Hybtoyaihtrpyoa pt dy"
+
+---
+
+**3. b) For a Vernam Cipher do the following:**
+
+**i) Using pad "TZQ" encode "ARE"**
+
+The Vernam cipher uses a bitwise XOR operation between the plaintext and the key (pad). Each letter is converted to its binary form, and then XOR is applied.
+
+- "A" = 01000001
+- "R" = 01010010
+- "E" = 01000101
+
+Pad: "TZQ"  
+- "T" = 01010100  
+- "Z" = 01011010  
+- "Q" = 01010001
+
+Now, XOR the corresponding bits:
+- A (01000001) XOR T (01010100) = 00010101 = "U"
+- R (01010010) XOR Z (01011010) = 00001000 = "H"
+- E (01000101) XOR Q (01010001) = 00010100 = "T"
+
+**Encoded message**: "UHT"
+
+**ii) Using pad "ARX" decode "YFR"**
+
+Now to decode, we apply the same Vernam cipher operation by XORing the ciphertext with the same pad.
+
+- "Y" = 01011001
+- "F" = 01000110
+- "R" = 01010010
+
+Pad: "A" = 01000001, "R" = 01010010, "X" = 01011000
+
+Now XOR the ciphertext with the pad:
+- Y (01011001) XOR A (01000001) = 00011000 = "H"
+- F (01000110) XOR R (01010010) = 00010100 = "E"
+- R (01010010) XOR X (01011000) = 00001010 = "A"
+
+**Decoded message**: "HEA"
+
+**4. Write a short note on public key infrastructure.**
+
+**Public Key Infrastructure (PKI)** is a framework for managing digital keys and certificates, providing secure communication over networks such as the internet. PKI is essential for implementing cryptography-based systems, like SSL/TLS for securing websites. It uses asymmetric encryption to ensure data confidentiality, integrity, and authentication.
+
+Key components of PKI include:
+- **Public and Private Keys**: Public keys can be shared openly, while private keys are kept secret.
+- **Certificate Authority (CA)**: A trusted entity that issues digital certificates to authenticate the identity of users, servers, or devices.
+- **Registration Authority (RA)**: It verifies the identity of users or devices before certificates are issued.
+- **Digital Certificates**: These are used to bind public keys to identities, ensuring authenticity and integrity.
+- **Certificate Revocation List (CRL)**: A list of certificates that have been revoked before their expiration date.
+
+PKI is crucial for secure email, SSL/TLS for web security, digital signatures, and more.
+
+---
+
+**5. a) What is the principle behind One-Time Pads? Why are they highly secured?**
+
+**One-Time Pad (OTP)** is a cryptographic system where each bit or character of the plaintext is XOR'd with a random key (pad) of the same length as the plaintext. The key is used only once and then discarded. 
+
+**Principle**:
+- The key is truly random, as long as the message itself, and it is used only once.
+- Each character of the plaintext is combined with a corresponding character from the key using an XOR operation.
+  
+**Why highly secured**:
+- **Unbreakable Security**: If the key is truly random, at least as long as the plaintext, and never reused, OTP provides perfect secrecy. The ciphertext is indistinguishable from random data.
+- **No patterns**: Since the key is random and used only once, there are no patterns in the ciphertext that can be exploited by attackers.
+
+However, the challenge of OTP is the secure distribution and management of the key, as it must be as long as the message and used only once.
+
+---
+
+**5. b) What is the output of the following Plaintext:**
+- "I am a student of fourth year Information Technology department."
+
+This question seems to be missing the context of which cipher or encryption method is being used for the plaintext. Could you clarify the encryption method (e.g., Caesar cipher, Vigenère cipher, etc.) or provide the key or pad used for encryption?
+
+---
+
+**6. Briefly describe the Knapsack algorithm for public key encryption.**
+
+The **Knapsack algorithm** is an early public-key cryptosystem based on the concept of the "knapsack problem," a well-known NP-complete problem. The algorithm was developed by Ralph Merkle and is based on the difficulty of solving the knapsack problem in polynomial time.
+
+**Principle**:
+- The public key is a sequence of numbers derived from a superincreasing knapsack (a set of numbers where each element is larger than the sum of all previous elements).
+- The private key is used to convert the superincreasing sequence back into a more complex set of numbers.
+- Encryption is done by mapping the plaintext into binary form and using the public key to compute a new set of numbers representing the ciphertext.
+- Decryption requires the private key to reverse the process and recover the original message.
+
+**Security**:
+The algorithm's security relies on the fact that solving the knapsack problem is computationally hard, making it difficult for attackers to decrypt the message without the private key. However, due to advancements in algorithms, the knapsack cryptosystem is considered insecure and has been replaced by more secure cryptographic systems.
+
+---
+
+**7. Write short notes on the following:**
+
+**i) Caesar Cipher**:
+The **Caesar cipher** is one of the simplest and oldest encryption techniques. It is a substitution cipher where each letter of the plaintext is shifted by a fixed number of positions in the alphabet. For example, with a shift of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. 
+- **Strength**: Easy to implement but vulnerable to frequency analysis, as there are only 25 possible keys.
+- **Weakness**: Very easy to break through brute-force or frequency analysis due to the limited number of shifts.
+
+**ii) Vigenère Cipher**:
+The **Vigenère cipher** is a polyalphabetic substitution cipher that uses a keyword to shift the letters of the plaintext. Each letter of the plaintext is shifted by a value determined by the corresponding letter in the keyword. If the keyword is shorter than the plaintext, it is repeated to match the length of the plaintext.
+- **Strength**: More secure than Caesar cipher because it uses multiple shifts and the key can be of arbitrary length.
+- **Weakness**: Vulnerable to frequency analysis if the key is too short and reused frequently.
+
+**iii) Playfair Cipher**:
+The **Playfair cipher** is a digraph substitution cipher that encrypts pairs of letters. It uses a 5x5 matrix of letters constructed from a keyword. If the pair contains the same letter twice, one of the letters is replaced by 'X'. The plaintext is divided into pairs of letters, and for each pair, the letters are substituted based on their positions in the matrix.
+- **Strength**: More secure than simple substitution ciphers because it operates on pairs of letters, making frequency analysis more difficult.
+- **Weakness**: Still vulnerable to attacks like frequency analysis and known-plaintext attacks.
+
+**iv) Steganography**:
+**Steganography** is the practice of hiding a secret message within a non-suspicious carrier medium, such as an image, audio file, or text. The goal is to make the secret message undetectable to an observer. Unlike cryptography, which hides the content of the message, steganography hides the very existence of the message.
+- **Strength**: The hidden message is not apparent, and it is difficult to detect.
+- **Weakness**: If the carrier medium is detected or analyzed, the hidden message can be uncovered. The capacity to hide information is also limited by the carrier medium's size.
+
