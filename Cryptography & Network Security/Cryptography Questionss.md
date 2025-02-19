@@ -462,9 +462,8 @@
    
 --- 
 
-# Index
 
-## Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION
+#  Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION
 - **Short Answer Type Questions**
   1. What do you mean by 2-factor authentication?
   2. Describe the functioning of a MAC?
