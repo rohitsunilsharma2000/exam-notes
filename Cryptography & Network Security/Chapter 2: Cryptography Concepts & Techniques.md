@@ -280,6 +280,43 @@ Example (উদাহরণ): In a communication network (যোগাযোগ 
 
 ---
 
-Let me know if you need any further adjustments!
 
+### 16. What are the problems with exchanging public keys?
+- **Man-in-the-Middle Attack (ম্যান-ইন-দ্য-মিডল আক্রমণ):** If an attacker (আক্রমণকারী) intercepts (আবদ্ধ করা) and alters (পরিবর্তন করা) the public key (পাবলিক চাবি) during exchange (আদান-প্রদান), they could gain unauthorized (অননুমোদিত) access to encrypted data (এনক্রিপ্টেড ডেটা). This is a significant risk (গুরুতর ঝুঁকি) if the public key (পাবলিক চাবি) is exchanged over an insecure channel (অসুরক্ষিত চ্যানেল).
+- **Trust (বিশ্বাস):** Public keys (পাবলিক চাবি) need to be verified (যাচাই করা) to ensure (নিশ্চিত করা) they belong to the correct party (সঠিক পক্ষ). Without a trusted method (বিশ্বাসযোগ্য পদ্ধতি) for verification (যাচাই), there's a risk of using an incorrect key (ভুল চাবি ব্যবহার করার ঝুঁকি).
+- **Key Authenticity (চাবির প্রামাণিকতা):** If an attacker (আক্রমণকারী) can impersonate (ভান করা) a party, they could substitute (বদলানো) their own public key (পাবলিক চাবি), leading to the exposure (প্রকাশ) of sensitive data (সংবেদনশীল ডেটা).
+
+---
+
+### 17. "Symmetric key cryptography is faster than Asymmetric key cryptography" - Justify.
+- **Efficiency (দক্ষতা):** Symmetric key cryptography (সিমেট্রিক চাবি ক্রিপ্টোগ্রাফি) uses the same key (একই চাবি) for both encryption (এনক্রিপশন) and decryption (ডিক্রিপ্ট), which is computationally (গণনামূলকভাবে) less intensive (কম জটিল). The algorithms (অ্যালগরিদম) such as AES (Advanced Encryption Standard) (এডভান্সড এনক্রিপশন স্ট্যান্ডার্ড) are designed (ডিজাইন করা) for fast execution (দ্রুত কার্যকরী) on modern hardware (আধুনিক হার্ডওয়্যার).
+- **Asymmetric encryption (অসিমেট্রিক এনক্রিপশন)** (e.g., RSA (RSA)): Asymmetric encryption uses two keys (দুটি চাবি) (public and private (পাবলিক এবং প্রাইভেট)), and the mathematical operations (গণিতিক অপারেশন) involved (জড়িত) (like exponentiation (এক্সপোনেনশিয়েশন)) are much more computationally expensive (গণনামূলকভাবে ব্যয়বহুল) than those in symmetric cryptography (সিমেট্রিক ক্রিপ্টোগ্রাফি). This makes asymmetric encryption slower (ধীর), especially as the key size increases (চাবির আকার বাড়ানোর সাথে সাথে).
+
+---
+
+### 18. What are the roles of the public and private key?
+- **Public Key (পাবলিক চাবি):** This is used for encryption (এনক্রিপশন) and can be shared openly (মুক্তভাবে শেয়ার করা) with anyone (যেকেউ). It allows others (অন্যরা) to encrypt (এনক্রিপ্ট) data (ডেটা) that only the owner (মালিক) of the corresponding private key (প্রাইভেট চাবি) can decrypt (ডিক্রিপ্ট).
+- **Private Key (প্রাইভেট চাবি):** This is kept secret (গোপন রাখা) and is used for decryption (ডিক্রিপ্ট). The private key (প্রাইভেট চাবি) must never be shared (কখনো শেয়ার করা উচিত নয়), as it is the key (চাবি) to unlocking (খোলার চাবি) the encrypted data (এনক্রিপ্টেড ডেটা). Additionally (অতিরিক্তভাবে), it can be used for signing (স্বাক্ষর করা) data (ডেটা) to ensure authenticity (প্রামাণিকতা) and integrity (অখণ্ডতা).
+
+---
+
+### 19. a) What are the problems associated with symmetric-key encryption?
+- **Key Distribution (চাবি বিতরণ):** The biggest problem (সবচেয়ে বড় সমস্যা) is securely exchanging (নিরাপদভাবে আদান-প্রদান) and managing (পরিচালনা) the symmetric key (সিমেট্রিক চাবি) between communicating parties (যোগাযোগকারী পক্ষ). If someone intercepts (আবদ্ধ) the key (চাবি), they can decrypt (ডিক্রিপ্ট) all data (সমস্ত ডেটা).
+- **Scalability (স্কেলেবিলিটি):** In a large network (বৃহত নেটওয়ার্ক), each pair of users (প্রতিটি ব্যবহারকারী জোড়া) would require a unique key (একটি অনন্য চাবি), leading to a large number (বৃহত সংখ্যা) of keys (চাবি) to manage (পরিচালনা করা).
+- **Key Compromise (চাবি আপস):** If the key (চাবি) is compromised (আপস করা হয়), all communication (সমস্ত যোগাযোগ) encrypted with that key (চাবি) is exposed (প্রকাশিত).
+
+### b) How those problems can be solved using asymmetric-key encryption?
+- **Key Distribution (চাবি বিতরণ):** Asymmetric cryptography (অসিমেট্রিক ক্রিপ্টোগ্রাফি) eliminates (অপসারণ) the need (প্রয়োজন) to share (আদান-প্রদান) the secret key (গোপন চাবি) directly. The public key (পাবলিক চাবি) can be freely distributed (মুক্তভাবে বিতরণ), and the private key (প্রাইভেট চাবি) remains securely (নিরাপদভাবে) with the user (ব্যবহারকারী).
+- **Scalability (স্কেলেবিলিটি):** Instead of managing multiple keys (বহু চাবি পরিচালনা করার পরিবর্তে) for each pair of users (প্রতিটি ব্যবহারকারী জোড়া), each user (প্রতিটি ব্যবহারকারী) only needs a single key pair (একটি একক চাবি জোড়া) (public and private (পাবলিক এবং প্রাইভেট)), reducing the complexity (জটিলতা হ্রাস করা).
+- **Key Compromise (চাবি আপস):** Since the private key (প্রাইভেট চাবি) is never shared (কখনো শেয়ার করা হয় না), the chances of compromise (আপস হওয়ার সম্ভাবনা) are minimized (সর্বনিম্ন করা হয়). Even if a public key (পাবলিক চাবি) is intercepted (আবদ্ধ করা হয়), it cannot be used to decrypt (ডিক্রিপ্ট) messages (বার্তা) without the private key (প্রাইভেট চাবি).
+
+---
+
+### 20. What is key wrapping? How is it useful?
+- **Key Wrapping (চাবি মোড়ানো):** This is the process (প্রক্রিয়া) of encrypting (এনক্রিপ্ট) a symmetric key (সিমেট্রিক চাবি) with another key (অন্য চাবি) (typically an asymmetric key (অসিমেট্রিক চাবি) or another symmetric key (আরেকটি সিমেট্রিক চাবি)) to ensure the secure exchange (নিরাপদ আদান-প্রদান) of the symmetric key (সিমেট্রিক চাবি). 
+- **Usefulness (প্রয়োজনে):** Key wrapping (চাবি মোড়ানো) is useful (প্রয়োজনীয়) because it allows (অনুমতি দেয়) a symmetric key (সিমেট্রিক চাবি) to be safely transmitted (নিরাপদে স্থানান্তরিত করা) over an insecure channel (অসুরক্ষিত চ্যানেল). For example (উদাহরণস্বরূপ), in a hybrid cryptosystem (হাইব্রিড ক্রিপ্টোসিস্টেম), a symmetric key (সিমেট্রিক চাবি) is used to encrypt (এনক্রিপ্ট) the data (ডেটা), but that symmetric key (সিমেট্রিক চাবি) is itself encrypted (এনক্রিপ্ট) using asymmetric encryption (অসিমেট্রিক এনক্রিপশন) to securely transfer (নিরাপদে স্থানান্তরিত) it between parties (পক্ষগুলির মধ্যে).
+
+---
+
+Let me know if you need any further changes!
 
