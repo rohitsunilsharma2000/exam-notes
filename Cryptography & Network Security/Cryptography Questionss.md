@@ -462,15 +462,82 @@
    
 --- 
 
-# Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION
+# Index
 
-## Multiple Choice Questions
+## Chapter 5: INTERNET SECURITY PROTOCOLS, USER AUTHENTICATION
+- **Short Answer Type Questions**
+  1. What do you mean by 2-factor authentication?
+  2. Describe the functioning of a MAC?
+  3. Explain how NAT works with an example.
+  4. Differentiate between transport and tunnel modes of operation of IPsec.
+  5. How is S-HTTP different from SSL?
+  6. a) Why is the SSL layer positioned between the application layer and transport?
+     b) What are the problems associated with clear text passwords?
+  7. What are authentication tokens?
+  8. Name the different Internet security protocols.
+  9. What is the purpose of the challenge-response method in authentication?
+  10. What is the common way to ensure authentication?
+  11. What are the requirements of authentication?
+  12. What are the goals of a password-protected authentication system?
 
-1. **What do you mean by 2-factor authentication?**
-   - a) Confidentiality
-   - b) Authentication
-   - c) Integrity
-   - d) Access control  
+- **Long Answer Type Questions**
+  1. Write a short note on Biometric Authentication.
+  2. What do you mean by network security? Explain with a suitable model.
+  3. a) Why is the SSL layer positioned between the Application layer and Transport layer?
+     b) Name the four key steps in the creation of a Digital Certificate. How is S-HTTP different from SSL?
+     c) What are the problems associated with clear text passwords?
+  4. a) What are the different sub-protocols defined by SSL? Explain one of them.
+     b) How can a Digital Certificate be verified?
+  5. Write short notes on the following:
+     - a) Kerberos
+     - b) Secure Electronic Transaction (SET)
+     - c) IPsec
+
 ---
+## Chapter 6: ELECTRONIC MAIL SECURITY
 
-## 
+- **Short Answer Type Questions**
+  1. What is RFC 822?
+  2. What are the problems with normal SMTP?
+  3. What is MIME?
+  4. What is the RFC for MIME?
+  5. What is S/MIME?
+  6. What are the S/MIME functionalities?
+  7. What are the cryptographic algorithms used in S/MIME?
+  8. What is the user role in S/MIME?
+  9. What are the key requirements of message digest?
+  10. Taking g=11, n=19 and assuming values for A and B, find the value of K (symmetric key) by Diffie-Hellman Algorithm and prove that the algorithm maintains security.
+
+- **Long Answer Type Questions**
+  1. Write short notes on the following:
+     - a) PGP
+     - b) S/MIME
+
+---
+## Chapter 7: FIREWALL
+
+- **Multiple Choice Questions**
+  1. A firewall is a specialized form of a _____
+     - a) Bridge
+     - b) Switch
+     - c) Network
+     - d) Router
+  2. Application gateways are packet filters that are:
+     - a) Less secure than
+     - b) More secure than
+     - c) Equally secure to
+     - d) Slower
+
+- **Short Answer Type Questions**
+  1. Discuss different types of firewalls with neat diagrams.
+  2. What is the difference between an application and network layer firewall?
+  3. What do you mean by trusted service and trusted devices in firewall configuration?
+  4. Differentiate between Packet filters and Application Gateways.
+
+- **Long Answer Type Questions**
+  1. What is a firewall? What are the different types of firewalls? State the limitations of a firewall.
+  2. Write short notes on the following:
+     - a) Application firewalls
+     - b) DMZ
+     - c) Packet filtering
+
