@@ -67,7 +67,7 @@
 ### 4. **DES Key Generation:**  
 **Explain the key generation process in DES.**
 
-- **English:** In DES, the key generation process starts with a 64-bit key, from which 8 parity bits are removed to produce a 56-bit key.
+- **English:** In Data Encryption Standard, the key generation process starts with a 64-bit key, from which 8 parity bits are removed to produce a 56-bit key.
 - **Translation:** DES-এ কী জেনারেশন শুরু হয় 64-বিট কী দিয়ে, যার মধ্যে 8টা প্যারিটি বিট বাদ দিয়ে 56-বিট কী তৈরি করা হয়।
 
 - **English:** This 56-bit key is then permuted and split, with shifting operations applied to generate 16 unique round keys used in each of the 16 encryption rounds.
