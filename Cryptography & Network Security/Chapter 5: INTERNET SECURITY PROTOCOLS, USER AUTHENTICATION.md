@@ -262,5 +262,35 @@ Assume (ধরা) that (যে) a (একটি) customer (গ্রাহক) 
 10.The (দ্য) bank (ব্যাংক) digitally (ডিজিটালি) signs (স্বাক্ষর) and (এবং) sends (পাঠায়) authorization (অনুমোদন) to (থেকে) the (দ্য) merchant (বণিক), who (যিনি) can (পারে) then (তাহলে) fill (পূর্ণ) the (দ্য) order (অর্ডার).
 
 ---
-### IPSec (আইপি সিকিউরিটি) Simplified (সরলীকৃত):
+### **IPSec (আইপিএসেক) Simplified (সরলীকৃত):**
+
+
+IPSec (আইপিএসেক) is (হচ্ছে) a (একটি) system (সিস্টেম) (framework) (ঢাঁচা) of (এর) rules (নিয়ম) (standards) (মানদণ্ড) that (যা) help (সাহায্য) make (করা) sure (সুনিশ্চিত) communication (যোগাযোগ) in (ভিতরে) a (একটি) network (নেটওয়ার্ক) is (হচ্ছে) secure (সুরক্ষিত). It (এটি) is (হচ্ছে) used (ব্যবহারিত) to (যাতে) protect (রক্ষা) data (ডেটা) in (এতে) transit (যাতায়াত) (data being (ডেটা হওয়া) sent (প্রেরিত) between (মধ্যে) computers (কম্পিউটার)). IPSec (আইপিএসেক) works (কাজ) by (দ্বারা) providing (প্রদান) security (সুরক্ষা) services (সেবা) like (যেমন) privacy (গোপনীয়তা), data (ডেটা) integrity (অখণ্ডতা), and (এবং) authentication (প্রমাণীকরণ) (proving (প্রমাণিত) that (যে) the (এটা) data (ডেটা) comes (আসে) from (থেকে) the (এটি) right (সঠিক) source (উৎস)) for (জন্য) data (ডেটা) sent (প্রেরিত) over (উপরে) the (এটি) internet (ইন্টারনেট).
+
+It (এটি) works (কাজ) at (এতে) the (এটি) network (নেটওয়ার্ক) layer (স্তর) (Layer 3 (স্তর ৩) of (এর) the (এটি) OSI (ওএসআই) model (মডেল)), which (যা) is (হচ্ছে) responsible (দায়িত্বশীল) for (জন্য) routing (রাউটিং) data (ডেটা) between (মধ্যে) devices (ডিভাইস) on (উপর) a (একটি) network (নেটওয়ার্ক). IPSec (আইপিএসেক) is (হচ্ছে) important (গুরুত্বপূর্ণ) for (জন্য) secure (সুরক্ষিত) communication (যোগাযোগ) between (মধ্যে) different (ভিন্ন) networks (নেটওয়ার্ক), and (এবং) it (এটি) ensures (সুনিশ্চিত) the (এটি) data (ডেটা) sent (প্রেরিত) is (হচ্ছে) safe (সুরক্ষিত).
+
+Here (এখানে) are (আছে) the (এটি) main (মূল) ideas (ধারণা) about (সম্পর্কে) IPSec (আইপিএসেক):
+
+1. **Data (ডেটা) Protection (রক্ষা):** IPSec (আইপিএসেক) makes (করে) sure (সুনিশ্চিত) data (ডেটা) remains (থাকে) confidential (গোপনীয়) and (এবং) hasn’t (না) been (হয়ে) altered (বদলানো) while (যতক্ষণ) it’s (এটি) being (হচ্ছে) transferred (প্রেরিত) across (অতিক্রম) networks (নেটওয়ার্ক).  
+
+2. **Two (দুই) Modes (মোড):**  
+   - **Transport (পরিবহন) Mode (মোড):** In (এতে) this (এই) mode (মোড), only (শুধুমাত্র) the (এটি) actual (বাস্তব) data (ডেটা) is (হচ্ছে) encrypted (এনক্রিপ্টেড). The (এটি) header (শিরোনাম) (information (তথ্য) about (সম্পর্কে) where (কোথায়) the (এটি) data (ডেটা) is (হচ্ছে) going (যাচ্ছে)) remains (থাকে) unchanged (অপরিবর্তিত). It’s (এটি) like (যেমন) putting (পড়া) a (একটি) letter (চিঠি) in (এতে) an (একটি) envelope (খাম) (data (ডেটা) gets (পায়) encrypted (এনক্রিপ্টেড), but (কিন্তু) the (এটি) address (ঠিকানা) on (উপর) the (এটি) envelope (খাম) stays (থাকে) visible (দৃশ্যমান)).
+   - **Tunnel (টানেল) Mode (মোড):** In (এতে) this (এই) mode (মোড), the (এটি) entire (সম্পূর্ণ) message (বার্তা), including (সহিত) the (এটি) address (ঠিকানা), is (হচ্ছে) encrypted (এনক্রিপ্টেড). It’s (এটি) like (যেমন) sealing (মুছে) the (এটি) whole (পুরো) letter (চিঠি) inside (ভিতরে) another (আরেকটি) envelope (খাম) for (জন্য) added (অতিরিক্ত) security (সুরক্ষা).
+
+3. **Security (সুরক্ষা) Services (সেবা):**
+   - **Access (অ্যাক্সেস) Control (নিয়ন্ত্রণ):** Only (শুধুমাত্র) authorized (অনুমোদিত) people (লোকেরা) can (পারবে) access (অ্যাক্সেস) the (এটি) data (ডেটা).
+   - **Connectionless (সংযোগহীন) Integrity (অখণ্ডতা):** Ensures (সুনিশ্চিত) data (ডেটা) has (থাকে) not (না) been (হয়ে) tampered (বাজেয়াপ্ত) with (সাথে) during (মধ্যে) transmission (প্রেরণ).
+   - **Data (ডেটা) Authentication (প্রমাণীকরণ):** Confirms (নিশ্চিত) that (যে) the (এটি) data (ডেটা) came (আসে) from (থেকে) a (একটি) valid (বৈধ) source (উৎস).
+   - **Replay (পুনরায়) Protection (রক্ষা):** Prevents (রোধ) old (পুরানো) messages (বার্তা) from (থেকে) being (হওয়া) resent (পুনরায়) maliciously (অশুভভাবে).
+   - **Confidentiality (গোপনীয়তা) (Encryption (এনক্রিপশন)):** Keeps (রাখে) the (এটি) data (ডেটা) secret (গোপন) by (দ্বারা) making (করা) it (এটি) unreadable (অপাঠযোগ্য).
+   - **Traffic (ট্রাফিক) Flow (প্রবাহ) Confidentiality (গোপনীয়তা):** Limits (সীমিত) information (তথ্য) about (সম্পর্কে) the (এটি) data (ডেটা) flow (প্রবাহ).
+
+4. **Important (গুরুত্বপূর্ণ) Features (বৈশিষ্ট্য):**
+   - **AH (Authentication (প্রমাণীকরণ) Header (শিরোনাম)):** Guarantees (গ্যারান্টি) that (যে) the (এটি) data (ডেটা) hasn’t (না) been (হয়ে) tampered (বাজেয়াপ্ত) with (সাথে).
+   - **IKE (Internet (ইন্টারনেট) Key (কী) Exchange (বিনিময়)):** A (একটি) system (সিস্টেম) to (যাতে) securely (নিরাপদে) agree (একরকম) on (এতে) keys (কী) used (ব্যবহৃত) for (জন্য) encryption (এনক্রিপশন).
+
+In (এটি) simple (সাধারণ) terms (শব্দ), IPSec (আইপিএসেক) is (হচ্ছে) a (একটি) set (সেট) of (এর) rules (নিয়ম) and (এবং) tools (টুলস) that (যা) help (সাহায্য) keep (রাখে) your (আপনার) data (ডেটা) safe (সুরক্ষিত) when (যখন) sending (প্রেরণ) it (এটি) over (উপরে) networks (নেটওয়ার্ক) by (দ্বারা) making (করা) it (এটি) hard (কঠিন) for (জন্য) anyone (কেউ) to (যাতে) tamper (বাজেয়াপ্ত) with (সাথে) or (অথবা) eavesdrop (গোপনে শোনা) on (উপর) it (এটি). It (এটি) can (পারবে) work (কাজ) in (এতে) different (ভিন্ন) modes (মোড) depending (নির্ভরশীল) on (উপর) how (কিভাবে) much (কত) protection (রক্ষা) you (আপনি) need (প্রয়োজন).
+
+---
+
 
