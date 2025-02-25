@@ -144,5 +144,49 @@ Biometric (জৈবিক) authentication (প্রমাণীকরণ) syst
   - Keystroke (কীস্ট্রোক) dynamics (গতি) requires (প্রয়োজন) a (একটি) signature (স্বাক্ষর) based (ভিত্তিক) on (এতে) keystroke (কীস্ট্রোক) intervals (অন্তরাল), keystroke (কীস্ট্রোক) pressure (চাপ), keystroke (কীস্ট্রোক) duration (স্থায়িত্ব) and (এবং) the (এটি) position (অবস্থান) of (এর) the (এটি) stroke (স্ট্রোক) in (এতে) the (এটি) key (কী). This (এটি) signature (স্বাক্ষর) is (হয়) believed (বিশ্বাস) to (থেকে) be (হতে) unique (অদ্বিতীয়).  
 
 ---
+Sure! Below is the answer in easy language with each word annotated in Bengali in the format you requested:
+
+---
+
+**2. What (কি) do (করতে) you (আপনি) mean (অর্থ) by (দ্বারা) network (নেটওয়ার্ক) security (সুরক্ষা) explain (ব্যাখ্যা) with (সাথে) a (একটি) suitable (উপযুক্ত) model (মডেল).**
+
+[MODEL (মডেল) QUESTION (প্রশ্ন)]
+
+**Answer (উত্তর):**
+
+Each (প্রতিটি) layer (স্তর) of (এর) the (এটি) NSM (এনএসএম) is (হয়) built (নির্মিত) upon (উপর) the (এটি) layer (স্তর) below (নিচে) it (এটি), much (খুব) like (মত) the (এটি) OSI (ওএসআই) model (মডেল), if (যদি) one (একটি) layer (স্তর) fails (ব্যর্থ) all (সব) layers (স্তর) above (উপর) it (এটি) will (হবে) fail (ব্যর্থ) as (যেমন) well (এছাড়াও). We (আমরা) will (হবে) look (দেখা) at (এতে) the (এটি) NSM (এনএসএম) versus (বিপরীতে) an (একটি) inverted (উলটানো) OSI (ওএসআই) model (মডেল) as (যেমন) shown (দেখানো) in (এতে) figure (চিত্র) below (নীচে) to (থেকে) show (দেখানো) how (কিভাবে) each (প্রতিটি) model (মডেল) relates (সম্পর্কিত) and (এবং) differs (ভিন্ন).
+
+The (এটি) first (প্রথম) layer (স্তর) is (হয়) the (এটি) physical (শারীরিক) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) physical (শারীরিক) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) work (কাজ) with (সঙ্গে) the (এটি) physical (শারীরিক) aspects (দৃশ্য) of (এর) the (এটি) network (নেটওয়ার্ক). The (এটি) physical (শারীরিক) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) deals (ব্যবস্থা) with (সঙ্গে) physical (শারীরিক) securities (সুরক্ষা) where (যেখানে) the (এটি) physical (শারীরিক) layer (স্তর) from (থেকে) OSt (ওএসটি) deals (ব্যবস্থা) with (সঙ্গে) physical (শারীরিক) network (নেটওয়ার্ক) connections (সংযোগ). Both (উভয়) layers (স্তর) are (হয়) very (খুব) self-explanatory (স্বতঃস্ফূর্ত) and (এবং) very (খুব) easy (সহজ) to (থেকে) deal (ব্যবস্থা) with (সঙ্গে).
+
+The (এটি) second (দ্বিতীয়) layer (স্তর) is (হয়) the (এটি) VLAN (ভিএলএএন) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) data (তথ্য) link (লিংক) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) work (কাজ) similarly (একইভাবে) by (দ্বারা) dealing (ব্যবস্থা) with (সঙ্গে) MAC (ম্যাক) addressing (ঠিকানা) and (এবং) VLANs (ভিএলএএন). The (এটি) VLAN (ভিএলএএন) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) deals (ব্যবস্থা) with (সঙ্গে) VLAN (ভিএলএএন) segmentation (ভাগ). This (এটি) splits (ভাঙে) LAN's (এলএএন) across (অতিক্রম) switches (সুইচ) and (এবং) segments (সেগমেন্ট) based (ভিত্তি) on (এতে) the (এটি) data (তথ্য) link (লিংক) layer (স্তর) from (থেকে) OSI (ওএসআই) model (মডেল) which (যা) covers (আবরণ) MAC (ম্যাক) addressing (ঠিকানা).
+
+The (এটি) third (তৃতীয়) layer (স্তর) is (হয়) the (এটি) ACL (এসি এল) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) network (নেটওয়ার্ক) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) work (কাজ) similarly (একইভাবে) by (দ্বারা) dealing (ব্যবস্থা) with (সঙ্গে) IP (আইপি) addressing (ঠিকানা) and (এবং) LAN's (এলএএন). The (এটি) ACL (এসি এল) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) deals (ব্যবস্থা) with (সঙ্গে) ACL (এসি এল) implementation (বাস্তবায়ন) which (যা) is (হয়) used (ব্যবহৃত) to (থেকে) allow (অনুমতি) or (অথবা) deny (অস্বীকার) access (অ্যাক্সেস) based (ভিত্তি) on (এতে) the (এটি) network (নেটওয়ার্ক) layer (স্তর) from (থেকে) OS (ওএস) model (মডেল) which (যা) covers (আবরণ) IP (আইপি) addressing (ঠিকানা).
+
+The (এটি) fourth (চতুর্থ) layer (স্তর) is (হয়) the (এটি) software (সফটওয়্যার) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) transport (পরিবহন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) deal (কাজ) with (সাথে) the (এটি) actual (বাস্তব) connection (সংযোগ) on (এতে) the (এটি) network (নেটওয়ার্ক) from (থেকে) host (হোস্ট) to (থেকে) host (হোস্ট). The (এটি) software (সফটওয়্যার) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) deals (ব্যবস্থা) with (সঙ্গে) the (এটি) software (সফটওয়্যার) and (এবং) the (এটি) patches (প্যাচ) that (যা) allow (অনুমতি) the (এটি) software (সফটওয়্যার) to (থেকে) not (না) be (হতে) exploited (শোষণ) while (যখন) the (এটি) transport (পরিবহন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল) describes (বর্ণনা) the (এটি) connection (সংযোগ) between (মধ্যে) both (উভয়) ends (শেষ) of (এর) the (এটি) software (সফটওয়্যার) connection (সংযোগ).
+
+The (এটি) fifth (পঞ্চম) layer (স্তর) is (হয়) the (এটি) user (ব্যবহারকারী) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) session (সেশন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) deal (কাজ) directly (সরাসরি) with (সাথে) the (এটি) local (স্থানীয়) host (হোস্ট) where (যেখানে) the (এটি) user (ব্যবহারকারী) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) deals (ব্যবস্থা) directly (সরাসরি) with (সাথে) the (এটি) user (ব্যবহারকারী) who (যিনি) is (হয়) able (সমর্থ) to (থেকে) utilize (ব্যবহার) that (সেটি) local (স্থানীয়) machine (মেশিন). The (এটি) session (সেশন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল) deals (ব্যবস্থা) directly (সরাসরি) with (সাথে) communication (যোগাযোগ) on (এতে) that (সেটি) local (স্থানীয়) machine (মেশিন).
+
+The (এটি) sixth (ষষ্ঠ) layer (স্তর) is (হয়) the (এটি) administrative (প্রশাসনিক) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) presentation (প্রদর্শন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). Both (উভয়) deal (কাজ) with (সাথে) administrative (প্রশাসনিক) functions (কার্য). The (এটি) administrative (প্রশাসনিক) layer (স্তর) deals (ব্যবস্থা) with (সাথে) the (এটি) administrative (প্রশাসনিক) users (ব্যবহারকারী) who (যারা) have (রাখে) the (এটি) ability (সক্ষমতা) to (থেকে) direct (নির্দেশ) users (ব্যবহারকারী) and (এবং) the (এটি) presentation (প্রদর্শন) layer (স্তর) deals (ব্যবস্থা) with (সাথে) how (কিভাবে) the (এটি) data (তথ্য) is (হয়) directed (নির্দেশিত).
+
+The (এটি) seventh (সপ্তম) and (এবং) final (চূড়ান্ত) layer (স্তর) is (হয়) the (এটি) IT (আইটি) department (বিভাগ) layer (স্তর) from (থেকে) the (এটি) NSM (এনএসএম) and (এবং) the (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল). The (এটি) IT (আইটি) department (বিভাগ) layer (স্তর) deals (ব্যবস্থা) directly (সরাসরি) with (সাথে) the (এটি) maintenance (রক্ষণাবেক্ষণ) of (এর) all (সব) layers (স্তর) and (এবং) making (তৈরি) sure (নিশ্চিত) that (যে) the (এটি) entire (সম্পূর্ণ) network (নেটওয়ার্ক) works (কাজ) correctly (সঠিকভাবে) from (থেকে) NSM (এনএসএম) model (মডেল) and (এবং) all (সব) layers (স্তর) of (এর) the (এটি) OSI (ওএসআই) model (মডেল). The (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) from (থেকে) the (এটি) OSI (ওএসআই) model (মডেল) deals (ব্যবস্থা) with (সাথে) the (এটি) actual (বাস্তব) display (প্রদর্শন) of (এর) the (এটি) data (তথ্য).
+
+---
+
+**3. a) Why (কেন) is (হয়) the (এটি) SSL (এসএসএল) layer (স্তর) positioned (অবস্থান) between (মধ্যে) Application (অ্যাপ্লিকেশন) layer (স্তর) and (এবং) Transport (পরিবহন) layer (স্তর)?**
+
+* Name (নাম) the (এটি) four (চার) key (মূল) steps (ধাপ) in (এতে) the (এটি) creation (সৃষ্টি) of (এর) a (একটি) Digital (ডিজিটাল) certificate (সার্টিফিকেট). How (কিভাবে) is (হয়) SHTTP (এসএইচটিটিপি) different (ভিন্ন) from (থেকে) SSL (এসএসএল)?
+* What (কি) are (হয়) the (এটি) problems (সমস্যা) associated (সম্পর্কিত) with (সাথে) clear (স্পষ্ট) text (পাঠ্য) passwords (পাসওয়ার্ড)?
+
+[MODEL (মডেল) QUESTION (প্রশ্ন)]
+
+**Answer (উত্তর):**
+
+a) At (এটি) the (এটি) receiver's (প্রাপক এর) end (শেষ), the (এটি) process (প্রক্রিয়া) happens (ঘটছে) pretty (খুব) similar (অনুরূপ) to (থেকে) how (কিভাবে) it (এটি) happens (ঘটছে) in (এতে) the (এটি) case (কেস) of (এর) a (একটি) normal (স্বাভাবিক) TCP/IP (টিসিপি/আইপি) connection (সংযোগ), until (যতক্ষণ না) it (এটি) reaches (পৌঁছায়) the (এটি) new (নতুন) SSL (এসএসএল) layer (স্তর). The (এটি) SSL (এসএসএল) layer (স্তর) at (এটি) the (এটি) receiver's (প্রাপক এর) end (শেষ) removes (অপসারণ) the (এটি) SSL (এসএসএল) Header (শিরোনাম), decrypts (ডিক্রিপ্ট) the (এটি) encrypted (এনক্রিপ্ট) data (তথ্য) and (এবং) gives (দেয়) the (এটি) plain (সাদাসিধে) text (পাঠ্য) data (তথ্য) back (পুনরায়) to (থেকে) the (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) of (এর) the (এটি) receiving (প্রাপ্ত) computer (কম্পিউটার).
+
+Thus (অতএব), only (শুধুমাত্র) the (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) data (তথ্য) is (হয়) encrypted (এনক্রিপ্ট), by (দ্বারা) SSL (এসএসএল). The (এটি) lower (নিম্ন) layer (স্তর) headers (শিরোনাম) are (হয়) not (না) encrypted (এনক্রিপ্ট). This (এটি) is (হয়) quite (অনেক) obvious (স্পষ্ট); if (যদি) SSL (এসএসএল) has (রাখে) to (থেকে) encrypt (এনক্রিপ্ট) all (সব) the (এটি) headers (শিরোনাম), it (এটি) must (অবশ্যই) be (হতে) positioned (অবস্থান) below (নিচে) this (এটি) data (তথ্য) link (লিংক) layer (স্তর). That (এটি) would (হবে) serve (পরিসেবা) no (কোন) purpose (উদ্দেশ্য) at (এতে) all (সব). In (এতে) fact (বাস্তবতা), it (এটি) would (হবে) lead (অগ্রসর) to (থেকে) problems (সমস্যা). If (যদি) SSL (এসএসএল) encrypted (এনক্রিপ্ট) all (সব) the (এটি) lower (নিম্ন) layer (স্তর) headers (শিরোনাম), even (এমনকি) the (এটি) IP (আইপি) and (এবং) physical (শারীরিক) address (ঠিকানা) of (এর) the (এটি) computers (কম্পিউটার) (sender (প্রেরক), receiver (প্রাপক) and (এবং) intermediate (মধ্যবর্তী) nodes (নোড)) would (হবে) be (হতে) encrypted (এনক্রিপ্ট), and (এবং) become (হয়ে যাবে) unreadable (অপাঠ্য). Thus (অতএব), what (কি) to (থেকে) deliver (পৌঁছানো) the (এটি) pair (জোড়া), we (আমরা) put (রাখি
+
+) it (এটি) below (নিচে).  
+
+---
 
 
