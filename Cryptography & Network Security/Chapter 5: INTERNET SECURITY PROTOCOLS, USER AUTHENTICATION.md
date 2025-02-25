@@ -48,5 +48,36 @@ Here’s (এখানে) how (কীভাবে) NAT (NAT) works (কাজ) 
    - Clients (ক্লায়েন্ট) in (এটি) your (আপনার) private (গোপন) network (নেটওয়ার্ক) (with (সাথে) private (গোপন) IP (আইপি) addresses (ঠিকানা)) need (প্রয়োজন) to (যাতে) access (এক্সেস) the (এটি) web (ওয়েব) server (সার্ভার).
    - The (এটি) router (রাউটার) has (রাখে) a (একটি) public (সার্বজনীন) IP (আইপি) address (ঠিকানা) and (এবং) connects (সংযুক্ত) the (এটি) private (গোপন) network (নেটওয়ার্ক) to (থেকে) the (এটি) web (ওয়েব) server (সার্ভার) on (এ) the (এটি) internet (ইন্টারনেট) using (ব্যবহার) NAT (NAT).
 
+
 ---
+
+### **4. Differentiate (ভেদ) between (মধ্যে) transport (পরিবহন) and (এবং) tunnel (সুরঙ্গ) modes (মোড) of (এর) operation (অপারেশন) of (এর) IPsec (IPsec).**
+
+Answer:
+- **Tunnel (সুরঙ্গ) mode (মোড)** encapsulates (এনক্যাপসুলেট) the (এটি) whole (পূর্ণ) IP (আইপি) packet (প্যাকেট) by (দ্বারা) either (অথবা) encrypting (এনক্রিপ্টিং), authenticating (প্রমাণীকরণ), or (অথবা) most (অধিকাংশ) likely (সম্ভবত) doing (করছে) both (উভয়). Tunnel (সুরঙ্গ) mode (মোড) will (হবে) encapsulate (এনক্যাপসুলেট) our (আমাদের) packets (প্যাকেট) with (সাথে) IPSec (IPSec) headers (হেডার) and (এবং) trailers (ট্রেইলার).
+- **Transport (পরিবহন) mode (মোড)** can (পারবে) be (হয়ে) used (ব্যবহার করা) to (যাতে) protect (সুরক্ষিত) IPsec (IPsec) peers (সহযোগী) traffic (ট্রাফিক) that (যে) they (তারা) exchange (বিনিময়) and (এবং) generate (তৈরি) by (দ্বারা) themselves (নিজেদের). This (এটি) means (অর্থ) that (যে) if (যদি) we (আমরা) configure (কনফিগার) transport (পরিবহন) mode (মোড) on (এতে) some (কিছু) tunnel (সুরঙ্গ) interface (ইন্টারফেস), it (এটি) will (হবে) only (শুধুমাত্র) be (হয়ে) used (ব্যবহার) when (যখন) the (এটি) traffic (ট্রাফিক) to (যাতে) be (হয়ে) protected (সুরক্ষিত) has (রাখে) the (এটি) same (একই) IP (আইপি) addresses (ঠিকানা) as (যেমন) the (এটি) IPSec (IPSec) peers (সহযোগী). Though (তবে) it (এটি) could (পারবে) also (এছাড়াও) be (হয়ে) encapsulated (এনক্যাপসুলেট) in (এতে) tunnel (সুরঙ্গ) mode (মোড).
+- Transport (পরিবহন) mode (মোড) having (ধারণ) larger (বড়) MTU (MTU) than (এর চেয়ে) tunnel (সুরঙ্গ) mode (মোড).
+- Transport (পরিবহন) mode (মোড) requires (প্রয়োজন) IPsec (IPsec) to (যাতে) be (হয়ে) implemented (বাস্তবায়িত) on (এতে) the (এটি) IPS (IPSec) entities (এন্টিটি) whereas (যেখানে) tunnel (সুরঙ্গ) mode (মোড) doesn’t (না) have (রাখে) to (যাতে) implement (বাস্তবায়ন) IPsec (IPsec) on (এতে) the (এটি) IPS (IPSec) entity (এন্টিটি).
+- Traversing (পার হওয়া) NATs (NATs) is (হয়) easier (সহজ) in (এতে) tunnel (সুরঙ্গ) mode (মোড) than (এর চেয়ে) transport (পরিবহন) mode (মোড).
+
+---
+
+### **5. How (কীভাবে) is (হয়) S-HTTP (S-HTTP) different (ভিন্ন) from (থেকে) SSL (SSL)?**
+
+Answer:
+Secure (সুরক্ষিত) Sockets (সকেট) Layer (স্তর) (SSL) and (এবং) Secure (সুরক্ষিত) Hypertext (হাইপারটেক্সট) Transport (পরিবহন) Protocol (প্রোটোকল) (S-HTTP) allow (অনুমতি) for (জন্য) the (এটি) exchange (বিনিময়) of (এর) multiple (বহু) messages (বার্তা) between (মধ্যে) two (দুই) processes (প্রক্রিয়া).
+The (এটি) main (প্রধান) difference (ভিন্নতা) between (মধ্যে) these (এই) protocols (প্রোটোকল) and (এবং) PGP (PGP) and (এবং) PEM (PEM) is (হয়) that (যে) SSL (SSL) and (এবং) S-HTTP (S-HTTP) use (ব্যবহার) a (একটি) session (সেশন) model (মডেল), and (এবং) thus (অতএব) the (এটি) security (সুরক্ষা) mechanisms (যন্ত্র) and (এবং) parameters (প্যারামিটার) used (ব্যবহার) during (সময়) a (একটি) session (সেশন) can (পারবে) be (হয়ে) negotiated (আলোচনা) . This (এটি) allows (অনুমতি) the (এটি) degree (ডিগ্রি) and (এবং) kind (ধরন) of (এর) security (সুরক্ষা) to (যাতে) be (হয়ে) varied (পরিবর্তিত) according (অনুসারে) to (থেকে) such (এই) factors (কারণ) as (যেমন) the (এটি) nature (প্রকৃতি) of (এর) the (এটি) data (ডেটা) being (হচ্ছে) exchanged (বিনিময়) and (এবং) the (এটি) vulnerabilities (ঝুঁকি) of (এর) the (এটি) underlying (মৌলিক) communication (যোগাযোগ) media (মিডিয়া). SSL (SSL) and (এবং) S-HTTP (S-HTTP) were (ছিল) designed (ডিজাইন) primarily (প্রাথমিকভাবে) for (জন্য) WWW-based (WWW-ভিত্তিক) commerce (বাণিজ্য).
+In (এটি) terms (শর্ত) of (এর) implementation (বাস্তবায়ন), SSL (SSL) fits (ফিটস) between (মধ্যে) the (এটি) session (সেশন) and (এবং) transport (পরিবহন) layers (স্তর), and (এবং) is (হয়) implemented (বাস্তবায়িত) as (হিসাবে) a (একটি) replacement (বদল) for (জন্য) the (এটি) sockets (সকেট) API (API) to (যাতে) be (হয়ে) used (ব্যবহার) by (দ্বারা) applications (অ্যাপ্লিকেশন) requiring (প্রয়োজনীয়) secure (সুরক্ষিত) communications (যোগাযোগ). S-HTTP (S-HTTP), on (এটি) the (এটি) other (অন্য) hand (পাশে), is (হয়) similar (সদৃশ) to (থেকে) PEM (PEM) in (এটি) terms (শর্ত) of (এর) implementation (বাস্তবায়ন) - its (এর) data (ডেটা) are (হয়) passed (পাস) in (এতে) named (নামকরা) text (টেক্সট) fields (ফিল্ড) in (এটি) the (এটি) HTTP (HTTP) header (হেডার).
+
+---
+
+### **6. a) Why (কেন) is (হয়) the (এটি) SSL (SSL) layer (স্তর) positioned (স্থিত) between (মধ্যে) the (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) and (এবং) transport (পরিবহন) layer (স্তর)?**
+
+Answer:
+a) Because (কারণ) of (এর) its (এর) position (অবস্থান), SSL (SSL) gives (দেয়) the (এটি) client (ক্লায়েন্ট) machines (যন্ত্র) the (এটি) ability (ক্ষমতা) to (যাতে) selectively (বাছাই) apply (প্রয়োগ) security (সুরক্ষা) protection (সুরক্ষা) on (এতে) individual (ব্যক্তিগত) applications (অ্যাপ্লিকেশন), rather (বদলে) than (থেকে) set (নির্ধারণ) forth (আগে) encryption (এনক্রিপশন) on (এতে) an (একটি) entire (সম্পূর্ণ) group (গ্রুপ) of (এর) applications (অ্যাপ্লিকেশন). The (এটি) procedure (প্রক্রিয়া) can (পারবে) be (হয়ে) done (করা) without (ছাড়া) concerning (চিন্তা) Layer (স্তর) 3 (3), the (এটি) network (নেটওয়ার্ক) layer (স্তর). For (জন্য) these (এই) reasons (কারণ), when (যখন) SSL (SSL) is (হয়) used (ব্যবহার) for (জন্য) encrypting (এনক্রিপ্টিং) network (নেটওয়ার্ক) traffic (ট্রাফিক), only (শুধুমাত্র) the (এটি) application (অ্যাপ্লিকেশন) layer (স্তর) data (ডেটা) is (হয়) actually (বাস্তব) encrypted (এনক্রিপ্টেড). This (এটি) differs (ভিন্ন) from (থেকে),
+
+ say (ধরি), the (এটি) IPsec (IPsec) protocol (প্রোটোকল), which (যা) operates (চালিত) at (এ) the (এটি) network (নেটওয়ার্ক) layer (স্তর) and (এবং) encrypts (এনক্রিপ্টস) all (সব) traffic (ট্রাফিক) data (ডেটা) right (সোজা) down (নিচে) to (থেকে) the (এটি) IP (আইপি) layer (স্তর).
+
+--- 
+
 
