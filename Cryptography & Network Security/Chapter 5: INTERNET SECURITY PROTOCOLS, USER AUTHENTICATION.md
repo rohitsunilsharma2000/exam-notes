@@ -262,4 +262,5 @@ Assume (ধরা) that (যে) a (একটি) customer (গ্রাহক) 
 10.The (দ্য) bank (ব্যাংক) digitally (ডিজিটালি) signs (স্বাক্ষর) and (এবং) sends (পাঠায়) authorization (অনুমোদন) to (থেকে) the (দ্য) merchant (বণিক), who (যিনি) can (পারে) then (তাহলে) fill (পূর্ণ) the (দ্য) order (অর্ডার).
 
 ---
+### IPSec (আইপি সিকিউরিটি) Simplified (সরলীকৃত):
 
