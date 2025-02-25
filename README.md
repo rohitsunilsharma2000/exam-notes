@@ -12,7 +12,7 @@ https://chatgpt.com/c/67b1dec3-aa68-8009-a592-2424a1c62522
 - [ ] [Cryptography: Concepts & Techniques](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20&%20Network%20Security/Chapter%202:%20Cryptography%20Concepts%20&%20Techniques.md)
 - [ ] [Symmetric Key Algorithm](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/Symmetric%20Key%20Algorithm.md)
 - [ ] [Asymmetric Key Algorithm, Digital Signature and RSA Internet Security Protocols, User Authentication](./Asymmetric-Key-Algorithm-Digital-Signature-and-RSA-Internet-Security-Protocols-User-Authentication.md)
-- [ ] [Electronic Mail Security](./Electronic-Mail-Security.md)
+- [ ] [Electronic Mail Security](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20&%20Network%20Security/Chapter%205:%20INTERNET%20SECURITY%20PROTOCOLS,%20USER%20AUTHENTICATION.md)
 - [ ] [Firewall](./Firewall.md)
 - [ ] [Last Year Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/Cryptography%20Questionss.md)
 
