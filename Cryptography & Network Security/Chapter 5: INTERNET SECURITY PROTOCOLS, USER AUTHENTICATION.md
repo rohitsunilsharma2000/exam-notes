@@ -115,3 +115,34 @@ Passwords (পাসওয়ার্ড) have (হয়) the (এটি) fund
 ---
 
 
+**Long (দীর্ঘ) Answer (উত্তর) Type (প্রকার) Questions (প্রশ্ন)**
+
+**1. Write (লিখুন) short (সংক্ষিপ্ত) note (নোট) Biometric (জৈবিক) Authentication (প্রমাণীকরণ).**
+
+[WBUT 2015]
+
+**Answer (উত্তর):**  
+Biometric (জৈবিক) authentication (প্রমাণীকরণ) systems (সিস্টেম) compare (তুলনা) the (এটি) current (বর্তমান) biometric (জৈবিক) data (ডেটা) capture (গ্রহণ) to (থেকে) stored (সংরক্ষিত), confirmed (নিশ্চিত) authentic (প্রামাণিক) data (ডেটা) in (এতে) a (একটি) database (ডাটাবেস). If (যদি) both (উভয়) samples (নমুনা) of (এর) the (এটি) biometric (জৈবিক) data (ডেটা) match (মিল), authentication (প্রমাণীকরণ) is (হয়) confirmed (নিশ্চিত) and (এবং) access (অ্যাক্সেস) is (হয়) granted (প্রদান). The (এটি) process (প্রক্রিয়া) is (হয়) sometimes (কখনও কখনও) part (অংশ) of (এর) a (একটি) multifactor (একাধিক) authentication (প্রমাণীকরণ) system (সিস্টেম). For (উদাহরণস্বরূপ) example (উদাহরণস্বরূপ), a (একটি) smartphone (স্মার্টফোন) user (ব্যবহারকারী) might (শক্তি) log (লগ) on (এতে) with (সঙ্গে) his (তার) personal (ব্যক্তিগত) identification (চিহ্নিতকরণ) number (সংখ্যা) (PIN) and (এবং) then (তাহলে) provide (প্রদান) an (একটি) iris (আইরিস) scan (স্ক্যান) to (থেকে) complete (সম্পূর্ণ) the (এটি) authentication (প্রমাণীকরণ) process (প্রক্রিয়া). Different (বিভিন্ন) mechanisms (যন্ত্রপাতি) by (দ্বারা) which (যে) biometric (জৈবিক) can (করতে পারে) be (হতে) included (অন্তর্ভুক্ত) in (এতে) cryptography (ক্রিপ্টোগ্রাফি):  
+* ﻿﻿Fingerprints (আঙুলের ছাপ)  
+  - ﻿﻿May (হতে পারে) be (হতে) scanned (স্ক্যান করা) optically (অপটিক্যালি)  
+  - ﻿A (একটি) capacitative (ধাতব) technique (প্রযুক্তি) uses (ব্যবহার) the (এটি) differences (পার্থক্য) in (এতে) electrical (বৈদ্যুতিক) charges (চার্জ) of (এর) the (এটি) whorls (ঘুর্ণন) on (এতে) the (এটি) finger (আঙুল). The (এটি) data (ডেটা) is (হয়) converted (রূপান্তরিত) into (এতে) a (একটি) graph (গ্রাফ). The (এটি) problem (সমস্যা) of (এর) determining (নির্ধারণ) matches (মিল) is (হয়) basically (মূলত) similar (সাদৃশ্য) to (থেকে) the (এটি) classical (ক্লাসিক্যাল) graph (গ্রাফ) isomorphism (ইসোমরফিজম).  
+
+**C&NS-CS-67**  
+**POPULAR (জনপ্রিয়) PUBLICATIONS (প্রকাশনা)**  
+
+• Voices (কণ্ঠস্বর)  
+  - ﻿﻿Authentication (প্রমাণীকরণ) by (দ্বারা) voice (কণ্ঠ) involves (সংশ্লিষ্ট) recognition (চিহ্নিতকরণ) of (এর) a (একটি) speaker's (স্পীকারের) voice (কণ্ঠ) characteristics (গুণাবলী) or (অথবা) verbal (মৌখিক) information (তথ্য) verification (যাচাইকরণ). The (এটি) first (প্রথম) one (একটি) uses (ব্যবহার) statistical (গণনামূলক) techniques (প্রযুক্তি) to (থেকে) test (পরীক্ষা) the (এটি) hypothesis (ধারণা) that (যে) the (এটি) speaker's (স্পীকারের) identity (পরিচয়) is (হয়) as (যথাযথ) claimed (দাবি করা). The (এটি) other (অন্য) one (একটি) deals (সম্পর্কিত) with (সঙ্গে) the (এটি) contents (বিষয়বস্তু) of (এর) utterances (উচ্চারণ).  
+  - ﻿﻿The (এটি) difference (পার্থক্য) is (হয়) that (যে) the (এটি) speaker (স্পীকার) verification (যাচাইকরণ) techniques (প্রযুক্তি) are (হয়) speaker (স্পীকার) dependent (নির্ভর) whereas (যেখানে) verbal (মৌখিক) information (তথ্য) verification (যাচাইকরণ) techniques (প্রযুক্তি) are (হয়) speaker-independent (স্পীকার-স্বতন্ত্র).  
+
+* ﻿﻿Eyes (চোখ)  
+  - ﻿﻿Authentication (প্রমাণীকরণ) by (দ্বারা) eye (চোখ) characteristics (গুণাবলী) uses (ব্যবহার) the (এটি) iris (আইরিস) and (এবং) the (এটি) retina (রেটিনা). Patterns (মডেল) within (ভিতরে) the (এটি) iris (আইরিস) are (হয়) unique (অদ্বিতীয়) with (সাথে) each (প্রতিটি) person (ব্যক্তি). Retinal (রেটিনাল) scans (স্ক্যান) rely (নির্ভর) on (এতে) the (এটি) uniqueness (অদ্বিতীয়তা) of (এর) the (এটি) patterns (মডেল) made (তৈরি) by (দ্বারা) blood (রক্ত) vessels (যন্ত্রপাতি) at (এতে) the (এটি) back (পিছনে) of (এর) the (এটি) eye (চোখ).  
+
+* ﻿﻿Faces (মুখমণ্ডল)  
+  - Face (মুখ) recognition (চিহ্নিতকরণ) consists (গঠিত) of (এর) various (বিভিন্ন) steps (ধাপ) starting (শুরু) with (সাথে) the (এটি) location (অবস্থান) of (এর) the (এটি) face (মুখ). This (এটি) requires (প্রয়োজন) placing (স্থাপন) the (এটি) face (মুখ) in (এতে) a (একটি) predetermined (পূর্বনির্ধারিত) position (অবস্থান). Techniques (প্রযুক্তি) include (অন্তর্ভুক্ত) neural (স্নায়ুবিক) networks (নেটওয়ার্ক) and (এবং) templates (টেমপ্লেট).  
+
+* ﻿﻿Keystrokes (কীস্ট্রোক)  
+  - Keystroke (কীস্ট্রোক) dynamics (গতি) requires (প্রয়োজন) a (একটি) signature (স্বাক্ষর) based (ভিত্তিক) on (এতে) keystroke (কীস্ট্রোক) intervals (অন্তরাল), keystroke (কীস্ট্রোক) pressure (চাপ), keystroke (কীস্ট্রোক) duration (স্থায়িত্ব) and (এবং) the (এটি) position (অবস্থান) of (এর) the (এটি) stroke (স্ট্রোক) in (এতে) the (এটি) key (কী). This (এটি) signature (স্বাক্ষর) is (হয়) believed (বিশ্বাস) to (থেকে) be (হতে) unique (অদ্বিতীয়).  
+
+---
+
+
