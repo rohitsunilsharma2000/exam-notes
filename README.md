@@ -14,7 +14,7 @@ https://chatgpt.com/c/67b1dec3-aa68-8009-a592-2424a1c62522
 - [ ] [Asymmetric Key Algorithm, Digital Signature and RSA Internet Security Protocols, User Authentication](./Asymmetric-Key-Algorithm-Digital-Signature-and-RSA-Internet-Security-Protocols-User-Authentication.md)
 - [ ] [Electronic Mail Security](./Electronic-Mail-Security.md)
 - [ ] [Firewall](./Firewall.md)
-- [ ] [Last Year Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20&%20Network%20Security/Cryptography%20Questions.md)
+- [ ] [Last Year Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/Cryptography%20Questionss.md)
 
 
 ---
