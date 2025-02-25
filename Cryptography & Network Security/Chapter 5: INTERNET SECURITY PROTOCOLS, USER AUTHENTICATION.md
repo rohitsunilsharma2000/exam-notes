@@ -100,10 +100,11 @@ Example (উদাহরণ) of (এর) a (একটি) physical (শারী
 ---
 
 **8. Name (নাম) are (হয়) the (এটি) different (বিভিন্ন) Internet (ইন্টারনেট) security (সুরক্ষা) protocols (প্রোটোকল)?**  
+
 **Answer:**  
-- **Transport (পরিবহন) Layer (স্তর) Security (TLS) and (এবং) its (এটি) predecessor (পূর্বসূরি), Secure (সুরক্ষিত) Sockets (Socket) Layer (SSL), are (হয়) cryptographic (ক্রিপ্টোগ্রাফিক) protocols (প্রোটোকল) that (যা) provide (প্রদান) security (সুরক্ষা) for (জন্য) communications (যোগাযোগ). TLS (TLS) and (এবং) SSL (SSL) encrypt (এনক্রিপ্ট) the (এটি) segments (খণ্ড) of (এর) network (নেটওয়ার্ক) connections (সংযোগ) at (এটি) the (এটি) Transport (পরিবহন) Layer (স্তর) end-to-end (শেষ-থেকে-শেষ).**
-- **TLS (TLS) allows (অনুমতি দেয়) client/server (ক্লায়েন্ট/সার্ভার) applications (অ্যাপ্লিকেশন) to (থেকে) communicate (যোগাযোগ) in (এতে) a (একটি) way (পথ) designed (নকশা করা) to (থেকে) prevent (বিরোধ) eavesdropping (গোপনে শোনা) and (এবং) tampering (অপব্যবহার).**
-- **TLS (TLS) provides (প্রদান) endpoint (এন্ডপয়েন্ট) authentication (প্রমাণীকরণ) and (এবং) communications (যোগাযোগ) confidentiality (গোপনীয়তা) using (ব্যবহার) cryptography (ক্রিপ্টোগ্রাফি).**
+- Transport (পরিবহন) Layer (স্তর) Security (TLS) and (এবং) its (এটি) predecessor (পূর্বসূরি), Secure (সুরক্ষিত) Sockets (Socket) Layer (SSL), are (হয়) cryptographic (ক্রিপ্টোগ্রাফিক) protocols (প্রোটোকল) that (যা) provide (প্রদান) security (সুরক্ষা) for (জন্য) communications (যোগাযোগ). TLS (TLS) and (এবং) SSL (SSL) encrypt (এনক্রিপ্ট) the (এটি) segments (খণ্ড) of (এর) network (নেটওয়ার্ক) connections (সংযোগ) at (এটি) the (এটি) Transport (পরিবহন) Layer (স্তর) end-to-end (শেষ-থেকে-শেষ).
+- TLS (TLS) allows (অনুমতি দেয়) client/server (ক্লায়েন্ট/সার্ভার) applications (অ্যাপ্লিকেশন) to (থেকে) communicate (যোগাযোগ) in (এতে) a (একটি) way (পথ) designed (নকশা করা) to (থেকে) prevent (বিরোধ) eavesdropping (গোপনে শোনা) and (এবং) tampering (অপব্যবহার).
+- TLS (TLS) provides (প্রদান) endpoint (এন্ডপয়েন্ট) authentication (প্রমাণীকরণ) and (এবং) communications (যোগাযোগ) confidentiality (গোপনীয়তা) using (ব্যবহার) cryptography (ক্রিপ্টোগ্রাফি).
 
 ---
 
