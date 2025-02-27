@@ -1,26 +1,94 @@
 ### **1. What (কি) is (হয়) 2-factor (২-ফ্যাক্টর) authentication (প্রমাণীকরণ)?**
+2-factor authentication (2FA) or প্রমাণীকরণ (প্রমাণীকরণ) is a security process that requires two forms of verification to access an account or system. Instead of relying only on a password, 2FA adds an extra layer of protection by asking for a second piece of information. This second factor could be:
 
+1. **Something you know** (like a password or PIN).
+2. **Something you have** (like a smartphone, hardware token, or a code sent to your phone via SMS or an app like Google Authenticator).
+3. **Something you are** (like a fingerprint or facial recognition).
 
-2-factor (২-ফ্যাক্টর) authentication (প্রমাণীকরণ) is (হয়) a (একটি) way (পদ্ধতি) to (যাতে) protect (রক্ষা) your (আপনার) online (অনলাইন) accounts (অ্যাকাউন্ট) by (দ্বারা) using (ব্যবহার) two (দুই) different (ভিন্ন) methods (পদ্ধতি) to (যাতে) confirm (নিশ্চিত) your (আপনার) identity (পরিচয়). One (একটি) method (পদ্ধতি) is (হয়) usually (সাধারণত) something (কিছু) physical (শারীরিক), like (যেমন) a (একটি) card (কার্ড) or (অথবা) device (যন্ত্র), and (এবং) the (এটি) other (অন্যান্য) is (হয়) something (কিছু) you (আপনি) know (জানেন), like (যেমন) a (একটি) password (পাসওয়ার্ড) or (অথবা) PIN (পিন).
-
-For (জন্য) example (উদাহরণ), a (একটি) bank (ব্যাংক) card (কার্ড): the (এটি) card (কার্ড) itself (নিজেই) is (হয়) the (এটি) physical (শারীরিক) item (আইটেম) (something (কিছু) you (আপনি) have (ধরেন)), and (এবং) the (এটি) PIN (পিন) number (নম্বর) you (আপনি) enter (এন্টার) is (হয়) the (এটি) thing (কিছু) you (আপনি) know (জানেন).
-
-The (এটি) idea (ধারণা) behind (পেছনে) it (এটি) is (হয়) that (যে) even (এমনকি) if (যদি) someone (কেউ) steals (চুরি) your (আপনার) password (পাসওয়ার্ড), they (তারা) still (এখনও) can’t (পারবে না) access (এক্সেস) your (আপনার) account (অ্যাকাউন্ট) without (ছাড়া) the (এটি) second (দ্বিতীয়) factor (ফ্যাক্টর) (like (যেমন) the (এটি) card (কার্ড) or (অথবা) device (যন্ত্র)). This (এটি) can (পারবে) help (সাহায্য) prevent (প্রতিরোধ) online (অনলাইন) fraud (প্রতারণা) and (এবং) identity (পরিচয়) theft (চুরি).
-
-However (তবে), some (কিছু) people (লোক) argue (দ্বিমত) that (যে), if (যদি) a (একটি) thief (চোর) can (পারবে) access (প্রবেশ) your (আপনার) computer (কম্পিউটার), they (তারা) might (হতে পারে) be (হয়ে) able (ক্ষম) to (যাতে) bypass (বাইপাস) these (এই) security (সুরক্ষা) steps (পদক্ষেপ) and (এবং) still (এখনও) steal (চুরি) your (আপনার) information (তথ্য), which (যেটি) would (হতো) make (বানানো) 2-factor (২-ফ্যাক্টর) authentication (প্রমাণীকরণ) no (না) safer (আরো নিরাপদ) than (থেকে) just (শুধু) using (ব্যবহার) a (একটি) password (পাসওয়ার্ড).
-
-Here is the annotated version of the article, with each word followed by its Bengali meaning in brackets:
+By requiring both of these factors, 2FA significantly reduces the risk of unauthorized access, even if someone knows your password.
 
 ---
 
 ### **2. Describe (বর্ণনা) the (এটি) functioning (কার্যক্ষমতা) of (এর) an (একটি) MAC (MAC)?**
+### **Functioning of a MAC (Message Authentication Code)**
 
-A (একটি) Message (বার্তা) Authentication (প্রমাণীকরণ) Code (কোড) (MAC) is (হয়) similar (সদৃশ) to (থেকে) a (একটি) cryptographic (ক্রিপ্টোগ্রাফিক) hash (হ্যাশ) function (ফাংশন), but (কিন্তু) it (এটি) has (রাখে) specific (নির্দিষ্ট) security (সুরক্ষা) features (বৈশিষ্ট্য). It (এটি) is (হয়) designed (ডিজাইন করা) to (যাতে) verify (যাচাই) both (উভয়) the (এটি) integrity (অখণ্ডতা) and (এবং) authenticity (প্রামাণিকতা) of (এর) a (একটি) message (বার্তা). To (যাতে) be (হয়ে) considered (গণ্য) secure (নিরাপদ), a (একটি) MAC (MAC) must (চাহিদা) resist (প্রতিরোধ) attacks (আক্রমণ) where (যেখানে) an (একটি) attacker (আক্রমণকারী) tries (চেষ্টা) to (যাতে) create (তৈরি) a (একটি) fake (ভুল) message (বার্তা) with (সাথে) a (একটি) valid (বৈধ) MAC (MAC).
+A **Message Authentication Code (MAC)** is a cryptographic tool used to ensure both the **integrity** (অখণ্ডতা) and **authenticity** (প্রামাণিকতা) of a message. It helps detect any tampering (অশুদ্ধতা) with the message and verifies that the message was sent by an authenticated source. Here's how a MAC works, explained for a BTech student studying cryptography:
+
+### **How a MAC Works:**
+
+1. **Input Components**:
+   - **Message**: This is the data or information that is being sent (বার্তা).
+   - **Secret Key**: A shared secret key (গোপন কী) between the sender and the receiver. This key is used to generate the MAC and should remain confidential (গোপন) during transmission.
+
+2. **MAC Generation Process**:
+   - The sender applies a **MAC algorithm** (যেমন HMAC, CMAC) to the **message** and the **secret key**. This algorithm combines the message and the key in a secure way to generate a **fixed-length code** called the **MAC**.
+   - The MAC is like a **digital fingerprint** (ডিজিটাল আঙ্গুলের ছাপ) for the message, ensuring that even a small change in the message will produce a completely different MAC.
+
+3. **Transmission**:
+   - The sender sends both the **message** and the **MAC** to the receiver. The MAC acts as a tag (ট্যাগ) attached to the message, ensuring that any changes in the message will be detectable.
+
+4. **Verification by the Receiver**:
+   - The receiver, who also knows the secret key, can recompute the MAC using the same algorithm, message, and secret key.
+   - If the **calculated MAC** matches the received MAC, the message is considered **authentic** (প্রামাণিক) and **untampered** (অপরিবর্তিত). If they don't match, the receiver knows that either the message has been altered or the sender is not who they claim to be.
+
+### **Example of MAC Functioning (with HMAC)**:
+
+Let’s take an example of how **HMAC** (Hash-based Message Authentication Code) works. HMAC uses a cryptographic hash function (e.g., SHA-256) along with a secret key to generate the MAC.
+
+1. **Message**: "Hello, BTech Students!"
+2. **Secret Key**: "MySecretKey123"
+
+#### **Step-by-Step Example**:
+
+1. **Sender’s Side**:
+   - The sender knows both the message ("Hello, BTech Students!") and the secret key ("MySecretKey123").
+   - The HMAC algorithm is applied using the message and the secret key, producing a **MAC**. The HMAC function (using SHA-256) would generate something like:
+   
+     ```
+     MAC = HMAC("MySecretKey123", "Hello, BTech Students!")
+     MAC = "4b56b6fcb2c8c5f0a3bdb4317280c319"
+     ```
+
+2. **Transmission**:
+   - The sender transmits both the message and the MAC: 
+     - Message: "Hello, BTech Students!"
+     - MAC: "4b56b6fcb2c8c5f0a3bdb4317280c319"
+
+3. **Receiver’s Side**:
+   - The receiver also knows the secret key "MySecretKey123".
+   - The receiver receives the message and the MAC. They then apply the **HMAC** algorithm to the message using the same secret key.
+   
+     ```
+     MAC' = HMAC("MySecretKey123", "Hello, BTech Students!")
+     ```
+
+4. **Verification**:
+   - If the calculated MAC (`MAC'`) matches the received MAC (`"4b56b6fcb2c8c5f0a3bdb4317280c319"`), the receiver knows that the message is intact (not altered) and it is authentic.
+   - If the MACs don't match, the receiver detects that either the message has been tampered with or the sender is not who they claim to be.
+
+### **Key Concepts**:
+
+1. **Integrity**: The MAC ensures that the message hasn’t been modified during transmission. If the message is altered in any way, the MAC will no longer match, alerting the receiver.
+   
+2. **Authenticity**: The MAC proves that the message was sent by the expected sender (someone who knows the secret key). Without the secret key, an attacker can't generate a valid MAC, preventing unauthorized parties from creating authentic-looking messages.
+
+3. **Secrecy of the Key**: The security of the MAC depends on the secrecy of the shared secret key. If the key is compromised (leaked), an attacker could generate valid MACs for forged messages.
+
+### **Applications of MAC**:
+
+1. **Secure Communication**: MACs are widely used in protocols like **SSL/TLS** for secure web communication, ensuring that the transmitted data hasn’t been altered.
+   
+2. **File Integrity**: MACs are used to verify the integrity of files, ensuring that the files have not been tampered with. For example, in **software distribution**, a MAC can be used to check that the downloaded software hasn’t been altered.
+
+3. **Banking and Financial Systems**: In **online transactions**, MACs ensure that the transaction details haven’t been changed and are authentic.
+
+4. **Digital Signatures**: Although **digital signatures** provide non-repudiation (proof of sending), MACs are simpler and used for ensuring data integrity and authenticity in situations that don't require non-repudiation.
+
+### **Conclusion**:
+
+The **MAC** (Message Authentication Code) is a crucial cryptographic technique for ensuring the **integrity** and **authenticity** of a message. It relies on the use of a **secret key** and a cryptographic algorithm to generate a **fixed-size code** that accompanies the message. By using a MAC, both the sender and receiver can be confident that the message has not been altered and that it came from a trusted source.
 
 
-1. **How (কীভাবে) a (একটি) MAC (MAC) works (কাজ) :** A (একটি) MAC (MAC) uses (ব্যবহার করে) a (একটি) secret (গোপন) key (কী), and (এবং) the (এটি) sender (প্রেরক) creates (তৈরি) a (একটি) MAC (MAC) for (জন্য) the (এটি) message (বার্তা) using (ব্যবহার) that (ঐ) key (কী). The (এটি) receiver (গ্রহণকারী) also (এছাড়াও) has (রাখে) the (এটি) same (একই) secret (গোপন) key (কী) and (এবং) can (পারবে) use (ব্যবহার) it (এটি) to (যাতে) verify (যাচাই) the (এটি) message’s (বার্তার) MAC (MAC).
-
-2. **Security (সুরক্ষা) :** A (একটি) good (ভাল) MAC (MAC) function (ফাংশন) ensures (সুনিশ্চিত) that (যে) even (এমনকি) if (যদি) an (একটি) attacker (আক্রমণকারী) can (পারবে) see (দেখতে) some (কিছু) messages (বার্তা) and (এবং) their (তাদের) MACs (MAC), they (তারা) can't (পারবে না) guess (অনুমান) the (এটি) MAC (MAC) for (জন্য) other (অন্যান্য) messages (বার্তা) unless (যদি না) they (তারা) perform (সম্পাদন) a (একটি) lot (অনেক) of (এর) complicated (জটিল) calculations (হিসাব) (which (যেটি) should (চাহিদা) be (হয়ে) impossible (অসাধ্য) with (সাথে) the (এটি) right (সঠিক) key (কী)).
 
 3. **Difference (ভিন্নতা) from (থেকে) digital (ডিজিটাল) signatures (স্বাক্ষর) :**
 
