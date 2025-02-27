@@ -93,12 +93,83 @@ The **MAC** (Message Authentication Code) is a crucial cryptographic technique f
 3. **Difference (ভিন্নতা) from (থেকে) digital (ডিজিটাল) signatures (স্বাক্ষর) :**
 
    <img src ="https://oneflow.com/app/uploads/2023/11/231106_Electronic-signature-1-1440x810.png" />
-   - MACs (MACs) are (হয়) **symmetric (সামঞ্জস্যপূর্ণ)**: Both (উভয়) the (এটি) sender (প্রেরক) and (এবং) the (এটি) receiver (গ্রহণকারী) use (ব্যবহার) the (এটি) same (একই) key (কী) to (যাতে) generate (তৈরি) and (এবং) verify (যাচাই) the (এটি) MAC (MAC).
-   - Digital (ডিজিটাল) signatures (স্বাক্ষর) are (হয়) **asymmetric (অসামঞ্জস্যপূর্ণ)**: They (তারা) use (ব্যবহার) a (একটি) private (ব্যক্তিগত) key (কী) for (জন্য) signing (স্বাক্ষর) and (এবং) a (একটি) public (সার্বজনীন) key (কী) for (জন্য) verification (যাচাই). Digital (ডিজিটাল) signatures (স্বাক্ষর) also (এছাড়াও) offer (প্রস্তাব) **non-repudiation (অস্বীকারযোগ্যতা)**, meaning (অর্থাৎ) the (এটি) sender (প্রেরক) can’t (পারবে না) deny (অস্বীকার) sending (পাঠানো) the (এটি) message (বার্তা).
+### **Difference (ভিন্নতা) between Digital Signatures (ডিজিটাল স্বাক্ষর) and MAC (Message Authentication Code)**
 
-5. **Example (উদাহরণ) :** In (এটি) a (একটি) system (সিস্টেম) where (যেখানে) two (দুই) people (ব্যক্তি) share (ভাগ) a (একটি) secret (গোপন) key (কী) for (জন্য) MAC (MAC), one (একটি) person (ব্যক্তি) can (পারবে) generate (তৈরি) the (এটি) MAC (MAC) for (জন্য) a (একটি) message (বার্তা), and (এবং) the (এটি) other (অন্য) can (পারবে) verify (যাচাই) it (এটি). But (কিন্তু) if (যদি) they (তারা) have (রাখে) the (এটি) same (একই) key (কী), both (উভয়) can (পারবে) generate (তৈরি) MACs (MAC) for (জন্য) any (কোন) messages (বার্তা).
+Both **Digital Signatures (ডিজিটাল স্বাক্ষর)** and **MAC (Message Authentication Code)** are used to verify the **authenticity** (প্রামাণিকতা) and **integrity** (অখণ্ডতা) of a message, but they differ significantly in terms of their cryptographic principles and use cases. Let’s look at the **key differences** between them:
 
-6. **Non-repudiation (অস্বীকারযোগ্যতা) :** This (এটি) feature (বৈশিষ্ট্য) is (হয়) not (না) available (উপলব্ধ) in (এটি) MACs (MAC) because (কারণ) anyone (কেউ) with (সাথে) the (এটি) shared (ভাগ করা) key (কী) can (পারবে) verify (যাচাই) and (এবং) generate (তৈরি) MACs (MAC). However (তবে), in (এটি) systems (সিস্টেম) where (যেখানে) one (একটি) person (ব্যক্তি) has (রাখে) the (এটি) key (কী) for (জন্য) verification (যাচাই) and (এবং) another (অন্য) has (রাখে) the (এটি) key (কী) for (জন্য) generation (তৈরি) (such (এমনকি) as (যেমন) in (এটি) the (এটি) finance (আর্থিক) industry (শিল্প)), non-repudiation (অস্বীকারযোগ্যতা) can (পারবে) be (হয়ে) ensured (নিশ্চিত) .
+---
+
+# **. Purpose (উদ্দেশ্য)**:
+- **Digital Signatures**: Primarily used for **non-repudiation** (অস্বীকারের সম্ভাবনা) — ensuring that the sender cannot deny sending the message. It provides proof that a message came from a specific individual (a signer).
+- **MAC**: Used to ensure **message integrity** (বার্তার অখণ্ডতা) and **authenticity** (প্রামাণিকতা), but does not guarantee **non-repudiation**. Both the sender and receiver share the same secret key.
+
+---
+
+# **. Key Usage (কী ব্যবহার)**:
+- **Digital Signatures**: Based on **public-key cryptography** (পাবলিক কী ক্রিপ্টোগ্রাফি). The sender uses a **private key** (গোপন কী) to sign the message, and the receiver verifies it using the sender's **public key** (সাধারণ কী).
+- **MAC**: Based on **symmetric-key cryptography** (সীমিত কী ক্রিপ্টোগ্রাফি). Both the sender and receiver use the **same secret key** to generate and verify the MAC.
+
+---
+
+# **. Security Model (সুরক্ষা মডেল)**:
+- **Digital Signatures**: Provide **asymmetric security** (অসামাজিক সুরক্ষা). Only the holder of the private key can sign, and anyone with the public key can verify the signature, ensuring **authentication** and **non-repudiation**.
+- **MAC**: Provide **symmetric security** (সামঞ্জস্যপূর্ণ সুরক্ষা). Since the secret key is shared, if an attacker obtains the key, they can forge valid MACs.
+
+---
+
+# **. Trust Model (বিশ্বাস মডেল)**:
+- **Digital Signatures**: Depend on a **trusted third party** (বিশ্বাসযোগ্য তৃতীয় পক্ষ), such as a **Certificate Authority (CA)**, to verify the authenticity of the public key. This is crucial for ensuring the **trustworthiness** of the public key in the signature.
+- **MAC**: No trusted third party is needed. The trust is based on the shared secret key between the sender and the receiver.
+
+---
+
+# **. Non-repudiation (অস্বীকারযোগ্যতা)**:
+- **Digital Signatures**: Provide **non-repudiation**, meaning the sender cannot deny having sent the message. Since the signature is created with the private key, it serves as proof of the sender's identity.
+- **MAC**: **No non-repudiation**. Since both the sender and receiver know the secret key, either party could have generated the MAC, making it impossible to prove who exactly sent the message.
+
+---
+
+# **. Computational Cost (গণনাগত খরচ)**:
+- **Digital Signatures**: Typically more **computationally expensive** (গণনাগতভাবে ব্যয়বহুল) because they use **asymmetric cryptography**, which requires more processing power, especially when using large keys or strong hashing algorithms.
+- **MAC**: Generally **less computationally intensive** (কম গণনাগত খরচ) since it uses symmetric-key cryptography, which is faster and requires less processing power.
+
+---
+
+# **. Example Use Cases (ব্যবহারের উদাহরণ)**:
+- **Digital Signatures**: 
+  - **Email signing** (ইমেইল স্বাক্ষর করা) to verify the identity of the sender.
+  - **Software distribution** (সফটওয়্যার বিতরণ) to ensure that the software hasn’t been tampered with during transmission.
+  - **Legal documents** (আইনগত দলিল) requiring proof that a document was signed by a specific individual.
+  
+- **MAC**: 
+  - **Message integrity verification** (বার্তার অখণ্ডতা যাচাইকরণ) in secure communication protocols (e.g., TLS/SSL).
+  - **File verification** (ফাইল যাচাইকরণ) to check if the file has been altered.
+  - **Banking transactions** (ব্যাংক লেনদেন) to ensure that the transaction data hasn’t been modified.
+
+---
+
+# **. Example of Algorithms (অ্যালগরিদমের উদাহরণ)**:
+- **Digital Signatures**: Common algorithms include **RSA** (আরএসএ), **DSA** (ডিএসএ), and **ECDSA** (ইসিডিএসএ).
+- **MAC**: Common algorithms include **HMAC** (এইচএমএসি), **CMAC** (সিএমএসি), and **GMAC** (জিএমএসি).
+
+---
+
+### **Summary of Key Differences:**
+
+| Feature                     | **Digital Signatures**                        | **MAC (Message Authentication Code)**             |
+|-----------------------------|-----------------------------------------------|--------------------------------------------------|
+| **Purpose**                  | Non-repudiation, message authenticity         | Integrity and authenticity                       |
+| **Key Usage**                | Asymmetric (public/private keys)              | Symmetric (shared secret key)                    |
+| **Security Model**           | Asymmetric cryptography                       | Symmetric cryptography                           |
+| **Trust Model**              | Requires a trusted third party (CA)           | No trusted third party needed                    |
+| **Non-repudiation**          | Yes, ensures the sender cannot deny           | No, either party can generate the MAC            |
+| **Computational Cost**       | Higher, due to asymmetric cryptography        | Lower, due to symmetric cryptography             |
+| **Use Cases**                | Legal, email signing, software distribution   | Secure communication, file verification, banking |
+
+---
+
+# **Conclusion (উপসংহার)**:
+Both **digital signatures** and **MACs** serve to verify the **integrity** and **authenticity** of messages, but their **security models**, **use cases**, and **cryptographic principles** differ. **Digital signatures** offer higher security, **non-repudiation**, and use **asymmetric cryptography**, while **MACs** are simpler, faster, and rely on **symmetric cryptography** but lack **non-repudiation**. Each is useful depending on the specific requirements of the application, such as whether non-repudiation is needed or if a faster, more efficient solution is preferred.
 
 ---
 
