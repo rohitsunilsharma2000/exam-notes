@@ -91,8 +91,10 @@ The **MAC** (Message Authentication Code) is a crucial cryptographic technique f
 
 
 
-   <img src ="https://oneflow.com/app/uploads/2023/11/231106_Electronic-signature-1-1440x810.png" />
+ 
 ### *3. Difference (ভিন্নতা) between Digital Signatures (ডিজিটাল স্বাক্ষর) and MAC (Message Authentication Code)**
+
+  <img src ="https://oneflow.com/app/uploads/2023/11/231106_Electronic-signature-1-1440x810.png" />
 
 Both **Digital Signatures (ডিজিটাল স্বাক্ষর)** and **MAC (Message Authentication Code)** are used to verify the **authenticity** (প্রামাণিকতা) and **integrity** (অখণ্ডতা) of a message, but they differ significantly in terms of their cryptographic principles and use cases. Let’s look at the **key differences** between them:
 
