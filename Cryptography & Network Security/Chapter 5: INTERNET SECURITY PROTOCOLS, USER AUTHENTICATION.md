@@ -1,5 +1,10 @@
 #  5. Electronic Mail Security
 
+[MCQ Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/5.%20Electronic%20Mail%20Security-MCQ.md)
+
+
+
+
 ### **1. What (কি) is (হয়) 2-factor (২-ফ্যাক্টর) authentication (প্রমাণীকরণ)?**
 2-factor authentication (2FA) or প্রমাণীকরণ (প্রমাণীকরণ) is a security process that requires two forms of verification to access an account or system. Instead of relying only on a password, 2FA adds an extra layer of protection by asking for a second piece of information. This second factor could be:
 
