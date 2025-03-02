@@ -1,6 +1,6 @@
 # 2: Cryptography Concepts & Techniques
 
-[MCQ Questions]()
+[MCQ Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20&%20Network%20Security/2:%20Cryptography%20Concepts%20&%20Techniques-MCQ.md)
 
 
 ### 1. **Distinguish between linear and differential cryptanalysis.**
