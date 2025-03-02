@@ -1,4 +1,7 @@
-Here's the revised explanation with complex words followed by their Bengali meanings in brackets:
+# 2: Cryptography Concepts & Techniques
+
+[MCQ Questions]()
+
 
 ### 1. **Distinguish between linear and differential cryptanalysis.**
    - **Linear Cryptanalysis (রৈখিক ক্রিপ্টো বিশ্লেষণ):** This technique tries to find a linear (রৈখিক) relationship between the plaintext (সরাসরি পাঠ), ciphertext (গোপন টেক্সট), and the secret key (গোপন চাবি). By analyzing the output (ciphertext) and input (plaintext), cryptanalysts (ক্রিপ্টো বিশ্লেষকরা) attempt to find patterns that can help in predicting the key.
