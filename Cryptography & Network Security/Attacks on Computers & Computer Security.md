@@ -1,6 +1,6 @@
 #  1. Attacks on Computers & Computer Security
 
-[MCQ Questions]()
+[MCQ Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/1.%20Attacks%20on%20Computers%20%26%20Computer%20Security-MCQ.md)
 
 ### 1. What is DNS spoofing?
 
