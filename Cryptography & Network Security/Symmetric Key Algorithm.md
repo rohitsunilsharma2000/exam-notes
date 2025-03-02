@@ -1,3 +1,7 @@
+# 3. Symmetric Key Algorithm
+
+[MCQ Questions](https://github.com/rohitsunilsharma2000/exam-notes/blob/main/Cryptography%20%26%20Network%20Security/1.%20Attacks%20on%20Computers%20%26%20Computer%20Security-MCQ.md)
+
 
 ### 1. **Initializing Vector (IV):**  
 **What is an Initializing Vector (IV) and what is its significance?**
