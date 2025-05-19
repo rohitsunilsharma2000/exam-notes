@@ -1,0 +1,33 @@
+Question,Options,Answer,Chapter
+GSM uses,"['a) CDMA', 'b) TDMA', 'c) FDMA', 'd) both (b) and (c)']",d,Introduction to PCS
+A single frame in GSM comprises time slots,"['a) 10', 'b) 7', 'c) 8', 'd) 4']",c,Introduction to PCS
+Which of the following is a computerized center responsible for connecting & recording call information and billing?,"['a) Base station', 'b) Cell', 'c) MSC', 'd) Mobile station']",c,Introduction to PCS
+Frequency reuse can help which of the following systems?,"['a) Cellular system', 'b) Conventional mobile telephony', 'c) Paging system', 'd) Cordless telephony']",a,Introduction to PCS
+"If N is the number of cells per cluster, then frequency reuse factor of the cellular system is","['a) N', 'b) 1/N', 'c) N²', 'd) None of these']",b,Introduction to PCS
+GSM operates at,"['a) 860-960 MHz', 'b) Less than 500 MHz', 'c) Greater than 500 MHz', 'd) None']",a,Introduction to PCS
+Network signalling in GSM is,"['a) SS7', 'b) SS5', 'c) Cipher', 'd) None']",a,Introduction to PCS
+Which of the following is a mobile/wireless simulator?,"['a) NS2', 'b) NS3', 'c) Qualnet', 'd) All of these']",d,Introduction to PCS
+True or False: GSM's transmission bandwidth is larger than that of GPRS.,"['a) True', 'b) False', 'c) Equal', 'd) None of these']",b,Introduction to PCS
+The core concept used in cellular technology is,"['a) Frequency reuse', 'b) Code reuse', 'c) None of these']",a,Introduction to PCS
+The terminal is undisclosed at the time of interaction with the network for the possible operations. Under which list will this belong in EIR?,"['a) White list', 'b) Grey list', 'c) Black list', 'd) None of these']",b,Introduction to PCS
+Which of these cells are used for densely populated areas?,"['a) Macro cells', 'b) Micro cells', 'c) Selective cells', 'd) Umbrella cells']",b,Introduction to PCS
+Cell A uses the same frequency as Cell B. Cell A is a,"['a) Adjacent cell', 'b) Co-channel cell', 'c) Macro cell', 'd) Selective cell']",b,Introduction to PCS
+CSM uses two bands of 25 MHz in width for,"['a) Half duplex communication', 'b) Simplex communication', 'c) Full duplex communication', 'd) None of these']",c,Introduction to PCS
+GPS (Global Positioning System) is an example of,"['a) MEO', 'b) LEO', 'c) GEO', 'd) None of these']",a,Introduction to PCS
+GSM system has,"['a) 120 pair of channels', 'b) 128 pair of channels', 'c) 124 pair of channels', 'd) 100 pair of channels']",c,Introduction to PCS
+GSM mobile stations and transceivers transmit and receive,"['a) Full-duplex or half-duplex synchronous, asynchronous, or synchronous packet data by circuit switching', 'b) Full-duplex or half-duplex synchronous or asynchronous circuit-switched data', 'c) Full-duplex synchronous, asynchronous, or synchronous circuit-switched', 'd) Full or half-duplex synchronous voice-data and synchronous packet SMS data']",d,Introduction to PCS
+A GSM service visiting location registers information of the currently associated mobile stations.,"['a) The information is about their TMSI, IMSI, and MSISDN', 'b) The information is about their HLR and IMSI', 'c) The information is about their HLR, IMSI, and MSISDN', 'd) The information is about their HLR and TMSI']",b,Introduction to PCS
+CDMA systems exhibit soft handover due to,"['a) Autocorrelation codes used in each cell transceiver', 'b) Each cell using the same spread frequency spectrum', 'c) Narrow band interference and co-channel interference', 'd) Each cell having a distinct pseudo-noise code offset']",d,Introduction to PCS
+Mobile computing differs from other distributed computing by limitations in,"['a) Battery, memory, network issues', 'b) Use of RF cellular communication', 'c) Use of RF in 100-2000 MHz', 'd) Web access']",b,Introduction to PCS
+Full form of HSCSD is,"['a) High Spectrum Circuit Switched Data', 'b) High Speed Channel Switched Data', 'c) High Speed Circuit Switched Data', 'd) High Speed Circuit Switched Devices']",c,GPRS
+GPRS is,"['a) General Packet Radio Service', 'b) Global Packet Radio Service', 'c) General Police Radio Service', 'd) None']",a,GPRS
+IEEE 802.11b has a data transfer rate of,"['a) 11 Mbps', 'b) 13 Mbps', 'c) 10 Mbps', 'd) None of these']",a,Data Communication
+WLAN is,"['a) Infrastructure network', 'b) Ad hoc network', 'c) May be either infrastructure or ad hoc network', 'd) None of these']",c,Data Communication
+"With IPv4 addressing, the problem for physical mobility is","['a) No QoS support', 'b) Fixed IP routing/forwarding', 'c) Security issues']",c,Data Communication
+Which one is used in WLAN?,"['a) Access point', 'b) Router', 'c) Both', 'd) None']",c,Data Communication
+Which multiple access technique is used by IEEE 802.11 standard for wireless LAN?,"['a) CDMA', 'b) CSMA/CA', 'c) ALOHA', 'd) None of these']",b,Data Communication
+WAP protocol stack has similarity to,"['a) OS model', 'b) TCP/IP', 'c) Both', 'd) None']",c,WAP
+WAP 2.0 runs at,"['a) 384 Kbps', 'b) 364 Kbps', 'c) 54 Mbps', 'd) 11 Mbps']",a,WAP
+Class 0 transaction service with no WTP is,"['a) Reliable no result', 'b) Unreliable no result', 'c) Unreliable + 1 reliable result', 'd) None']",b,WAP
+WTLS is used between,"['a) Client and Server', 'b) Gateway and Server', 'c) Client and Gateway', 'd) None']",c,WAP
+WAP security layer is,"['a) WTLS', 'b) WSP', 'c) WCMP', 'd) WAE']",a,WAP
