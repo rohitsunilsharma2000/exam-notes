@@ -4,12 +4,12 @@
 **Full Marks**: 70
 **Chapters Covered**:
 
-* Data Communication
-* Wireless Application Protocol (WAP)
-* Wireless Local Loop (WLL)
-* 3G Mobile Services
-* Global Mobile Satellite Systems (GMSS)
-* Wireless Enterprise Networks
+* 3.Data Communication
+* 4.Wireless Application Protocol (WAP)
+* 5.Wireless Local Loop (WLL)
+* 6.3G Mobile Services
+* 7.Global Mobile Satellite Systems (GMSS)
+* 8.Wireless Enterprise Networks
 
 ---
 
