@@ -2,14 +2,18 @@
 **Subject**: *Mobile Computing*
 **Time**: 3 Hours
 **Full Marks**: 70
-**Chapters Covered**:
 
-* 3.Data Communication
-* 4.Wireless Application Protocol (WAP)
-* 5.Wireless Local Loop (WLL)
-* 6.3G Mobile Services
-* 7.Global Mobile Satellite Systems (GMSS)
-* 8.Wireless Enterprise Networks
+### 📚 Chapters Covered:
+
+1. ~~**Introduction to Personal Communications Services (PCS)**~~
+2. ~~**General Packet Radio Services (GPRS)**~~
+3. **Data Communication**
+4. **Wireless Application Protocol (WAP)**
+5. **Wireless Local Loop (WLL)**
+6. **3G Mobile Services**
+7. **Global Mobile Satellite Systems (GMSS)**
+8. **Wireless Enterprise Networks**
+
 
 ---
 
