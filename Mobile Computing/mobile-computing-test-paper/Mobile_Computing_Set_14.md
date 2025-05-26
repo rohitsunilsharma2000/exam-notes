@@ -1,4 +1,4 @@
-📘 **Model Test Paper – Set 71**
+📘 **Model Test Paper – Set 13**
 **Subject**: *Mobile Computing*
 **Time**: 3 Hours
 **Full Marks**: 70
