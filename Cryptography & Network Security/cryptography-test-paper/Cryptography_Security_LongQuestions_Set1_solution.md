@@ -1,7 +1,7 @@
 
 ---
 
-## 🔐 **What are the different types of computer security attacks with diagram**
+## 🔐{A} **What are the different types of computer security attacks with diagram**
 
 Computer security attacks are deliberate actions aimed at compromising the confidentiality, integrity, or availability of computer systems and data. They are broadly classified into two main categories:
 
@@ -115,5 +115,95 @@ Types of malware include:
 
 ---
 ![image](https://github.com/user-attachments/assets/f3255b51-6d93-4cfc-9864-0dee5f3c291e)
+
+
+Certainly! Here's your complete answer with a **diagram** and detailed explanation of **two types of computer security attacks**:
+
+---
+
+## 🔐 **a) Diagram: Types of Computer Security Attacks**
+
+Here's a **simplified classification diagram**:
+
+```
+Computer Security Attacks
+│
+├── 1. Passive Attacks (No modification)
+│   ├── Eavesdropping
+│   └── Traffic Analysis
+│
+├── 2. Active Attacks (Modifies/Disrupts Data)
+│   ├── Masquerade Attack
+│   ├── Replay Attack
+│   ├── Modification Attack
+│   ├── DoS / DDoS
+│   ├── Man-in-the-Middle (MitM)
+│   └── Malware (Virus, Worm, Trojan, Spyware, Ransomware)
+│
+├── 3. Insider Attacks
+│   └── Misuse or data leaks by employees
+│
+└── 4. Social Engineering
+    ├── Phishing
+    ├── Spear Phishing
+    └── Pretexting / Baiting
+```
+
+---
+
+## 🔍 **b) Explanation of Any Two Attacks in Detail**
+
+---
+
+### **1. Denial of Service (DoS) Attack**
+
+#### 📌 Definition:
+
+A DoS attack attempts to **make a computer system or network unavailable** to its intended users by **flooding it with traffic** or sending it information that causes it to crash.
+
+#### 📉 Goal:
+
+Disrupt services like websites, email, or servers so legitimate users **cannot access them**.
+
+#### ⚙️ How it works:
+
+* The attacker sends a **huge number of requests** to a server or website.
+* The server gets overwhelmed and **stops responding** to legitimate traffic.
+
+#### 🔄 DDoS (Distributed DoS):
+
+* Involves **multiple systems** (often infected devices or botnets) attacking simultaneously.
+
+#### ✅ Example:
+
+A popular e-commerce site becomes **unreachable** during a product launch due to a DDoS attack.
+
+---
+
+### **2. Phishing Attack**
+
+#### 📌 Definition:
+
+Phishing is a type of **social engineering attack** where attackers trick users into revealing **sensitive information** such as usernames, passwords, or credit card numbers.
+
+#### 📉 Goal:
+
+Gain unauthorized access or steal financial and personal data.
+
+#### ⚙️ How it works:
+
+* The attacker sends a **fake email** or creates a **fake website** that mimics a trusted organization.
+* The user enters login credentials or sensitive info, thinking it’s legitimate.
+* That info is sent to the attacker.
+
+#### ✅ Example:
+
+An email from "your bank" asks you to click a link and verify your account — but the link goes to a **fake site**.
+
+---
+
+
+
+
 
 
