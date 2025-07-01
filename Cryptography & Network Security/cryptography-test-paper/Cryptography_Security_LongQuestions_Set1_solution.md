@@ -177,6 +177,7 @@ Disrupt services like websites, email, or servers so legitimate users **cannot a
 #### ✅ Example:
 
 A popular e-commerce site becomes **unreachable** during a product launch due to a DDoS attack.
+![image](https://github.com/user-attachments/assets/2facf629-ad5d-48e5-8604-287ebe20076f)
 
 ---
 
@@ -201,6 +202,129 @@ Gain unauthorized access or steal financial and personal data.
 An email from "your bank" asks you to click a link and verify your account — but the link goes to a **fake site**.
 
 ---
+---
+
+## 🛡️ **a) What are the Principles of Security?**
+
+The core **principles of information security** are often referred to as the **CIA triad**, and can be expanded into **five key principles**:
+
+### 1. **Confidentiality**
+
+> Ensures that sensitive information is accessed **only by authorized individuals**.
+
+* **Goal:** Prevent unauthorized disclosure of information.
+* **Example:** Password protection, data encryption.
+
+---
+
+### 2. **Integrity**
+
+> Ensures that data is **accurate and unaltered** during storage, transmission, and use.
+
+* **Goal:** Detect unauthorized modifications.
+* **Example:** Hashing, digital signatures.
+
+---
+
+### 3. **Availability**
+
+> Ensures that systems, applications, and data are **available when needed**.
+
+* **Goal:** Prevent downtime due to attacks or system failures.
+* **Example:** Redundant systems, anti-DDoS protections.
+
+---
+
+### 4. **Authentication**
+
+> Verifies the **identity** of users or systems.
+
+* **Goal:** Ensure that entities are who they claim to be.
+* **Example:** Usernames/passwords, biometrics, certificates.
+
+---
+
+### 5. **Non-Repudiation**
+
+> Ensures that a sender **cannot deny** having sent a message or performed an action.
+
+* **Goal:** Provide proof of origin and delivery.
+* **Example:** Digital signatures, audit logs.
+
+---
+
+## 📊 Summary Table:
+
+| Principle       | Purpose                                        | Example Mechanisms                     |
+| --------------- | ---------------------------------------------- | -------------------------------------- |
+| Confidentiality | Protect data from unauthorized access          | Encryption, Access Controls            |
+| Integrity       | Prevent unauthorized data modification         | Hashing, Checksums, Digital Signatures |
+| Availability    | Ensure systems/data are accessible when needed | Load Balancing, Backups, Redundancy    |
+| Authentication  | Verify identity of user/system                 | Passwords, Biometrics, 2FA             |
+| Non-Repudiation | Prevent denial of actions                      | Digital Signatures, Audit Trails       |
+
+![image](https://github.com/user-attachments/assets/a83b8531-33ad-4cde-9b9b-6ebeb7e47c50)
+
+---
+
+## 🌐 **b) How Are They Implemented in Real-World Systems?**
+
+---
+
+### 🔐 **1. Confidentiality Implementation**
+
+* **Data Encryption** (e.g., AES, TLS for secure web traffic)
+* **Access Control Lists (ACLs)** to restrict user permissions
+* **VPNs** for secure remote access
+
+---
+
+### ✅ **2. Integrity Implementation**
+
+* **Hash Functions** (e.g., SHA-256) to verify data integrity
+* **Digital Signatures** to authenticate sender and data
+* **Version Control Systems** to track changes (e.g., Git)
+
+---
+
+### 🖥️ **3. Availability Implementation**
+
+* **Redundant Servers** and **failover clusters**
+* **Load Balancers** to distribute traffic
+* **Backup Systems** to recover data
+* **DDoS Mitigation Tools**
+
+---
+
+### 👤 **4. Authentication Implementation**
+
+* **Username/Password systems**
+* **Two-Factor Authentication (2FA)** with OTPs or authenticator apps
+* **Biometric Systems** (fingerprint, face ID)
+* **Public Key Infrastructure (PKI)** and **Digital Certificates**
+
+---
+
+### 📝 **5. Non-Repudiation Implementation**
+
+* **Email Signing** with S/MIME or PGP
+* **Transaction Logs and Timestamps**
+* **Blockchain** to create tamper-evident records
+
+---
+
+## 📌 Real-World Example: Online Banking
+
+| Principle       | Real-World Example                        |
+| --------------- | ----------------------------------------- |
+| Confidentiality | SSL/TLS encrypts login credentials        |
+| Integrity       | Hashes used to verify transaction data    |
+| Availability    | Backup servers keep services online 24/7  |
+| Authentication  | Login with password + OTP                 |
+| Non-Repudiation | Signed transactions with digital receipts |
+
+---
+
 
 
 
