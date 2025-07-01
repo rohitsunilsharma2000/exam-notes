@@ -114,5 +114,6 @@ Types of malware include:
 | **Social Engineering** | Phishing, Pretexting               | Trick users into giving access   |
 
 ---
+![image](https://github.com/user-attachments/assets/f3255b51-6d93-4cfc-9864-0dee5f3c291e)
 
 
