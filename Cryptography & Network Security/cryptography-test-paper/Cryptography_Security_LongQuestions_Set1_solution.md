@@ -327,8 +327,6 @@ The core **principles of information security** are often referred to as the **C
 
 Set 2: Protocols, Hashing, and Digital Signatures
 
----
-
 ## 🔑 **1. Diffie-Hellman Key Exchange**
 
 ### ✅ a) **Process Description**
@@ -349,6 +347,7 @@ The **Diffie-Hellman (DH)** key exchange algorithm, proposed by **Whitfield Diff
 * These values `(p, g)` are **public** and known to everyone.
 
 ---
+![image](https://github.com/user-attachments/assets/b45fac82-2806-42ca-89ba-96a11fbb95ab)
 
 #### **Step 2: Private Key Selection**
 
