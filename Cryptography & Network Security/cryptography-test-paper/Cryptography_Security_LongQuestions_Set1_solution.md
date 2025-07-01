@@ -325,6 +325,137 @@ The core **principles of information security** are often referred to as the **C
 
 ---
 
+Set 2: Protocols, Hashing, and Digital Signatures
+
+---
+
+## 🔑 **1. Diffie-Hellman Key Exchange**
+
+### ✅ a) **Process Description**
+
+The **Diffie-Hellman (DH)** key exchange algorithm, proposed by **Whitfield Diffie and Martin Hellman**, allows two parties to **securely share a secret key** over an insecure communication channel without actually transmitting the key.
+
+---
+
+### 🔄 **Step-by-Step Process:**
+
+#### **Step 1: Agree on Public Parameters**
+
+* Choose a large **prime number** `p` and a **primitive root** (generator) `g` such that:
+
+  $$
+  1 < g < p
+  $$
+* These values `(p, g)` are **public** and known to everyone.
+
+---
+
+#### **Step 2: Private Key Selection**
+
+* **Alice** selects a secret key `a` (private).
+* **Bob** selects a secret key `b` (private).
+
+---
+
+#### **Step 3: Public Key Computation**
+
+* Alice computes:
+
+  $$
+  A = g^a \mod p
+  $$
+* Bob computes:
+
+  $$
+  B = g^b \mod p
+  $$
+* `A` and `B` are exchanged over the network.
+
+---
+
+#### **Step 4: Shared Secret Computation**
+
+* Alice computes:
+
+  $$
+  S = B^a \mod p = (g^b)^a \mod p
+  $$
+* Bob computes:
+
+  $$
+  S = A^b \mod p = (g^a)^b \mod p
+  $$
+
+Since:
+
+$$
+(g^a)^b \equiv (g^b)^a \mod p
+$$
+
+➡️ **Both get the same secret key** `S`, which is never transmitted.
+
+---
+
+### 🧮 **Example (with small numbers):**
+
+Let:
+
+* `p = 23` (prime), `g = 5` (primitive root)
+* Alice chooses `a = 6`, Bob chooses `b = 15`
+
+Compute:
+
+* Alice's public key: `A = 5^6 mod 23 = 8`
+* Bob's public key: `B = 5^15 mod 23 = 2`
+
+Exchange:
+
+* Alice receives `B = 2`, computes: `S = 2^6 mod 23 = 64 mod 23 = 18`
+* Bob receives `A = 8`, computes: `S = 8^15 mod 23 = 18`
+
+✅ Both share the secret key `18`.
+
+---
+
+## 🔐 b) **Why Diffie-Hellman is Considered Secure**
+
+---
+
+### ✅ **Security Based on Discrete Logarithm Problem**
+
+* Given `g`, `p`, and `A = g^a mod p`, it is **computationally hard** to determine `a`.
+* This is known as the **Discrete Logarithm Problem**, which is infeasible to solve for large primes (e.g., 2048-bit).
+
+---
+
+### 🧱 **Security Features:**
+
+| Feature                 | Explanation                                                              |
+| ----------------------- | ------------------------------------------------------------------------ |
+| **No Key Transmission** | The actual secret key is never sent over the network                     |
+| **One-Way Function**    | Easy to compute `g^a mod p`, hard to reverse                             |
+| **Ephemeral Support**   | Often used with **temporary keys** to ensure **perfect forward secrecy** |
+| **Scalable**            | Used in VPNs, SSL/TLS, SSH, and many secure protocols                    |
+
+---
+
+### ❌ **Potential Vulnerabilities** (if not implemented securely):
+
+| Threat            | Defense                                       |
+| ----------------- | --------------------------------------------- |
+| Man-in-the-Middle | Use of **digital signatures or certificates** |
+| Small primes      | Always use **large primes (2048+ bits)**      |
+
+---
+
+### 🔐 Final Summary:
+
+* **Diffie-Hellman** enables **secure key exchange** over insecure channels.
+* Its security comes from the **mathematical hardness** of the discrete log problem.
+* It is widely used in **TLS, VPNs, and encrypted messaging**.
+
+---
+
 
 
 
