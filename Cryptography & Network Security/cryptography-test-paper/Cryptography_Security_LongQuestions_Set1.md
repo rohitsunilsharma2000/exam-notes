@@ -219,7 +219,10 @@
 5. **Kerberos Model:**
 
    * a) Explain the components of the Kerberos model with diagram.
+      **📝 ANS : <a href="https://www.scaler.com/topics/kerberos-authentication/">Solution</span>**
    * b) Discuss client-server authentication using Kerberos.
+      **📝 ANS : <span style="color:#2E86C1">C&NS-CS-74</span>**
+
 
 6. **Mutual Authentication:**
 
