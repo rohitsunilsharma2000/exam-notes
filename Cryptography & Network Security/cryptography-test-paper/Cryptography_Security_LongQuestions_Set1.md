@@ -194,8 +194,12 @@
 
 1. **IDEA Algorithm:**
 
-   * a) Explain the working of the IDEA encryption algorithm.
-   * b) How are the keys generated in IDEA?
+   * a) Explain the working of the IDEA encryption algorithm.  
+     **📝 ANS : <span style="color:#2E86C1">C&NS-CS-41</span>**
+
+   * b) How are the keys generated in IDEA?  
+     **📝 ANS : <span style="color:#2E86C1">C&NS-CS-42</span>**
+
 
 2. **DES with Diagram:**
 
