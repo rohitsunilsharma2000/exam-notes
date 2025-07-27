@@ -12,7 +12,7 @@
 
 1. **RSA Algorithm:**
 
-   * a) Describe the RSA algorithm with example steps.
+   * a) Describe the RSA algorithm with example steps. <a href="https://www.tutorialspoint.com/cryptography/cryptography_rsa_algorithm.htm">Solution</a>
    * b) Given *p = 11*, *q = 13*, and *e = 7*, compute *N* and the private key *d*.
 
 2. **IDEA Algorithm:**
