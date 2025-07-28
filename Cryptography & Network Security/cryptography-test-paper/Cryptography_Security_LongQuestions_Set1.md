@@ -82,7 +82,7 @@
 
 1. **DES Working:**
 
-   * a) Describe the working of DES with a neat diagram.
+   * a) Describe the working of DES with a neat diagram. _👉 page:-42_
    * b) Explain the key scheduling used in DES.
      *(Chapter 3)*
 
@@ -128,14 +128,14 @@
 
 2. **Confusion & Diffusion:**
 
-   * a) Explain confusion and diffusion in cryptography with examples.
+   * a) Explain confusion and diffusion in cryptography with examples._👉 page:-38_
    * b) What is a brute-force attack?
      *(Ch.2)*
 
 3. **DES Drawbacks:**
 
-   * a) Explain the working of the DES encryption algorithm.
-   * b) State and explain the drawbacks of DES.
+   * a) Explain the working of the DES encryption algorithm. _👉 page:-42_
+   * b) State and explain the drawbacks of DES. _👉 page:-38_
      *(Ch.3)*
 
 4. **RSA & Signatures:**
@@ -205,7 +205,7 @@
 
 2. **DES with Diagram:**
 
-   * a) Describe the working principle of DES with a block diagram.
+   * a) Describe the working principle of DES with a block diagram. _👉 page:-42_
    * b) What are the problems with symmetric key encryption?
 
 3. **RSA Public Key Use:**
