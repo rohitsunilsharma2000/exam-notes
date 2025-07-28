@@ -19,7 +19,7 @@
 
 2. **IDEA Algorithm:**
 
-   * a) Explain the working of the IDEA algorithm with a structure diagram._👉 page:-39_
+   * a) Explain the working of the IDEA algorithm with a structure diagram._👉 page:-39,42,43_
    * b) Compare its key size and number of rounds with DES.
 
 3. **Attacks:**
@@ -48,7 +48,7 @@
 
 1. **Diffie-Hellman:**
 
-   * a) Describe in detail the process of Diffie-Hellman Key Exchange.
+   * a) Describe in detail the process of Diffie-Hellman Key Exchange._👉 page:-46_
    * b) Explain why this scheme is considered secure.
 
 2. **Security Threats:**
@@ -58,7 +58,7 @@
 
 3. **DES Algorithm:**
 
-   * a) Describe the working of the DES algorithm in detail.
+   * a) Describe the working of the DES algorithm in detail._👉 page:-35_
    * b) What are the security limitations of DES?
 
 4. **Digital Signatures:**
@@ -178,7 +178,7 @@
 4. **Hash Functions:**
 
    * a) What are hash functions and how are they used in public key cryptography?
-   * b) Write short notes on MD5 and SHA-1.
+   * b) Write short notes on MD5 and SHA-1._👉 page:-52_
 
 5. **Digital Certificates:**
 
