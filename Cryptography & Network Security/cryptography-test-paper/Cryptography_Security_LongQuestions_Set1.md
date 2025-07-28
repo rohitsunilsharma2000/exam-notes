@@ -63,7 +63,7 @@
 
 4. **Digital Signatures:**
 
-   * a) Explain the working of digital signatures.
+   * a) Explain the working of digital signatures._👉 page:-55_
    * b) How do hash functions assist in digital signature generation?
 
 5. **Network Attacks:**
@@ -73,7 +73,7 @@
 
 6. **PGP Security:**
 
-   * a) Explain the working of PGP in email security.
+   * a) Explain the working of PGP in email security._👉 page:-79_
    * b) How is key management handled in PGP?
 
 ---
@@ -106,14 +106,14 @@
 
 5. **S/MIME:**
 
-   * a) What is S/MIME? Explain its architecture.
+   * a) What is S/MIME? Explain its architecture._👉 page:-80_
    * b) What cryptographic algorithms are used in S/MIME and why?
      *(Chapter 6)*
 
 6. **Authentication Protocols:**
 
-   * a) Define authentication protocol. Explain two-factor authentication.
-   * b) Compare IPsec tunnel mode and transport mode.
+   * a) Define authentication protocol. Explain two-factor authentication._👉 page:-62_
+   * b) Compare IPsec tunnel mode and transport mode._👉 page:-65_
      *(Chapter 5)*
 
 ---
@@ -240,12 +240,12 @@
 
 1. **Firewall Concepts:**
 
-   * What is a firewall? Describe its types and limitations.
+   * What is a firewall? Describe its types and limitations._👉 page:-82,85_
    * Write short notes on:
 
-     * a) Application firewalls
-     * b) DMZ
-     * c) Packet filtering
+     * a) Application firewalls _👉 page:-86_
+     * b) DMZ _👉 page:-86_
+     * c) Packet filtering _👉 page:-86_
 
 2. **RSA Math:**
 
