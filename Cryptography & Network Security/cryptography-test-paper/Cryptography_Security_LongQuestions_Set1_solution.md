@@ -456,6 +456,118 @@ Exchange:
 ---
 
 
+## **Q1. Given two prime numbers p = 19 and q = 31, find out N, E, D in RSA encryption. [WBUT 2014]** using:
+
+* Given primes: `p = 19`, `q = 31`
+* And explain every step clearly for a layman
+
+---
+
+ ✅ Step-by-step RSA Key Generation
+
+### 🔢 Step 1: Choose 2 distinct prime numbers
+
+Given:
+
+* `p = 19`
+* `q = 31`
+
+---
+
+### 🧮 Step 2: Compute `n = p × q`
+
+```math
+n = 19 × 31 = 589
+```
+
+This `n` is used in both public and private keys.
+✅ It’s the **modulus**.
+
+---
+
+### 🧠 Step 3: Compute Euler’s Totient φ(n)
+
+```math
+φ(n) = (p − 1)(q − 1) = (19 − 1)(31 − 1) = 18 × 30 = 540
+```
+
+φ(n), or totient of `n`, is **how many numbers less than `n` are coprime to it**.
+
+---
+
+### 🔐 Step 4: Choose `e` such that:
+
+* `1 < e < φ(n)`
+* `gcd(e, φ(n)) = 1` (i.e., `e` and `540` must be coprime)
+
+Let’s **assume d = 7** (a small integer coprime with 540)
+
+We now solve for `e` using:
+
+```math
+(e × d) mod φ(n) = 1
+```
+
+Put:
+
+```math
+(e × 7) mod 540 = 1
+```
+
+This means:
+
+```math
+e is the modular inverse of 7 mod 540
+```
+
+Use **Extended Euclidean Algorithm** to get:
+
+```math
+e = 463
+```
+
+✅ So:
+
+* Public exponent `e = 463`
+* Private exponent `d = 7`
+
+---
+
+## 🔑 Final RSA Keys
+
+| Key Type    | Values                  |
+| ----------- | ----------------------- |
+| Public Key  | `(e, n)` = `(463, 589)` |
+| Private Key | `(d, n)` = `(7, 589)`   |
+
+---
+
+## 🔁 For Layman:
+
+Imagine you have a **lock** and a **key**.
+
+* `e = 463` and `n = 589` make your **lock** (public key)
+* `d = 7` and `n = 589` make your **key** (private key)
+
+You lock (encrypt) the message with the **public key**, and only someone with the **private key** can unlock (decrypt) it.
+
+---
+
+### ✅ Summary Table
+
+| Step | Operation                 | Result         |
+| ---- | ------------------------- | -------------- |
+| 1.   | Choose primes             | p = 19, q = 31 |
+| 2.   | Compute n                 | 589            |
+| 3.   | Compute φ(n)              | 540            |
+| 4.   | Assume d                  | 7              |
+| 5.   | Find e: (e×d) mod 540 = 1 | e = 463        |
+| 6.   | Public Key                | (463, 589)     |
+| 7.   | Private Key               | (7, 589)       |
+
+---
+
+
 
 
 
