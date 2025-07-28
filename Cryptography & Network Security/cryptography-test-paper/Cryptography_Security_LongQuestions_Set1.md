@@ -20,7 +20,7 @@
 2. **IDEA Algorithm:**
 
    * a) Explain the working of the IDEA algorithm with a structure diagram._👉 page:-39,42,43_
-   * b) Compare its key size and number of rounds with DES.
+   * b) Compare its key size and number of rounds with DES._👉 page:-42_
 
 3. **Attacks:**
 
@@ -83,7 +83,7 @@
 1. **DES Working:**
 
    * a) Describe the working of DES with a neat diagram. _👉 page:-42_
-   * b) Explain the key scheduling used in DES.
+   * b) Explain the key scheduling used in DES._👉 page:-42_
      *(Chapter 3)*
 
 2. **Security Goals:**
