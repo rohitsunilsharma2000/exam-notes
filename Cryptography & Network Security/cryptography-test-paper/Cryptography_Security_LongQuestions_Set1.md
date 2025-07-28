@@ -12,12 +12,14 @@
 
 1. **RSA Algorithm:**
 
-   * a) Describe the RSA algorithm with example steps. <a href="https://www.tutorialspoint.com/cryptography/cryptography_rsa_algorithm.htm">Solution</a>
-   * b) Given *p = 11*, *q = 13*, and *e = 7*, compute *N* and the private key *d*.
+   * a) Describe the RSA algorithm with example steps. <a href="https://www.tutorialspoint.com/cryptography/cryptography_rsa_algorithm.htm">Solution</a> _👉 page:-51_
+
+
+   * b) Given *p = 11*, *q = 13*, and *e = 7*, compute *N* and the private key *d*. _👉 page:-45_
 
 2. **IDEA Algorithm:**
 
-   * a) Explain the working of the IDEA algorithm with a structure diagram.
+   * a) Explain the working of the IDEA algorithm with a structure diagram._👉 page:-39_
    * b) Compare its key size and number of rounds with DES.
 
 3. **Attacks:**
@@ -99,7 +101,7 @@
 4. **Block Cipher Modes:**
 
    * a) Describe block cipher modes of operation.
-   * b) Compare ECB and CBC modes.
+   * b) Compare ECB and CBC modes. _👉 page:-22,24b_
      *(Chapter 3)*
 
 5. **S/MIME:**
