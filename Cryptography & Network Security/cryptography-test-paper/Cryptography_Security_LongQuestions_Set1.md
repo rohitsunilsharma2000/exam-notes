@@ -74,7 +74,7 @@
 6. **PGP Security:**
 
    * a) Explain the working of PGP in email security._👉 page:-79_
-   * b) How is key management handled in PGP?
+   * b) How is key management handled in PGP? https://www.geeksforgeeks.org/computer-networks/pgp-authentication-and-confidentiality/
 
 ---
 
