@@ -10,12 +10,11 @@
 
 ### **Set 1: Cryptography and Network Security**
 
-1. **RSA Algorithm:**
+1. **RSA Limitations:**
 
-   * a) Describe the RSA algorithm with example steps. <a href="https://www.tutorialspoint.com/cryptography/cryptography_rsa_algorithm.htm">Solution</a> _👉 page:-51_
+   * a) Explain the working of RSA algorithm with an example. <a href="https://www.tutorialspoint.com/cryptography/cryptography_rsa_algorithm.htm">Solution</a> _👉 page:-51_
 
-
-   * b) Given *p = 11*, *q = 13*, and *e = 7*, compute *N* and the private key *d*. _👉 page:-45_
+   * b) State two limitations of RSA.
 
 2. **IDEA Algorithm:**
 
